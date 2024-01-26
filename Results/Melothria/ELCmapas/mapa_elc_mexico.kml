@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<GroundOverlay>
+<name>layer</name>
+<Icon><href>mapa_elc_mexico.png</href><viewBoundScale>0.75</viewBoundScale></Icon>
+	<LatLonBox>
+		<north>32.699584637</north><south>14.532917023</south><east>-86.702220537</east><west>-118.368888855</west>
+	</LatLonBox>
+</GroundOverlay></kml>

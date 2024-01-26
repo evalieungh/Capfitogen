@@ -1,0 +1,6 @@
+Option	Value (default)
+NbCV	5
+size	NULL
+decay	NULL
+rang	0.1
+maxit	200

@@ -1,0 +1,12 @@
+
+_________________________________________
+______Herramienta/Tool GEOQUAL________
+_________________________________________
+Lista de parametros usados en: Fri Jan 28 18:41:55 2022
+List of parameters used on: Fri Jan 28 18:41:55 2022
+
+ruta:C:/CAPFITOGEN3
+pasaporte:Mex/sindecigeo60tx_corr.txt
+precision:alta
+local:TRUE
+resultados:C:/CAPFITOGEN3/ResultadosMex/GEOQUAL

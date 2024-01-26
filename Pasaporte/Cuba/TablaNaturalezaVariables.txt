@@ -1,0 +1,15 @@
+ID	NOMVAR	NATVAR
+1	LM	Cuantitativo
+2	DM	Cuantitativo
+3	DT	Cuantitativo
+4	NGH	Cuantitativo
+5	NHG	Cuantitativo
+6	LG	Cuantitativo
+7	AG	Cuantitativo
+8	GrG	Cuantitativo
+9	P100S	Cuantitativo
+10	FM	Nominal
+11	CT	Nominal
+12	DHG	Nominal
+13	CG	Nominal
+14	TG	Nominal

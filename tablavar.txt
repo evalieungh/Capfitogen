@@ -1,0 +1,6 @@
+"TIPVAR"	"VALUE"	"APPLY"
+"Binario simetrico"	1	"as.numeric"
+"Binario asimetrico"	2	"as.numeric"
+"Nominal"	3	"as.factor"
+"Ordinal"	4	"as.ordered"
+"Cuantitativo"	5	"as.numeric"

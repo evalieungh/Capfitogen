@@ -1,0 +1,181 @@
+Paises	Denomina
+argentina	Argentina
+bolivia	Bolivia
+brasil	Brasil
+chile	Chile
+colombia	Colombia
+canada	Canada
+china	China
+mesoamerica	Meso America
+russia	Russia
+south_america	South America
+united_states	United States
+australia	Australia
+chile_c	Chile continental
+costarica	Costa Rica
+cuba	Cuba
+ecuador	Ecuador
+guatemala	Guatemala
+honduras	Honduras
+mexico	Mexico
+nicaragua	Nicaragua
+panama	Panama
+paraguay	Paraguay
+peru	Peru
+rdominic	Rep_Dominicana
+salvador	El Salvador
+uruguay	Uruguay
+venezuela	Venezuela
+albania	Albania
+austria	Austria
+belarus	Belarus
+belgium	Belgium
+bosniaher	BosniaHerzegovina
+bulgaria	Bulgaria
+croatia	Croatia
+czechr	CzechRepublic
+denmark	Denmark
+estonia	Estonia
+finland	Finland
+france	France
+germany	Germany
+greece	Greece
+hungary	Hungary
+ireland	Ireland
+italy	Italy
+latvia	Latvia
+lithuania	Lithuania
+macedonia	Macedonia
+moldova	Moldova
+montenegro	Montenegro
+netherlands	Netherlands
+norway	Norway
+poland	Poland
+portugal	Portugal
+romania	Romania
+serbia	Serbia
+slovakia	Slovakia
+slovenia	Slovenia
+spain	Spain
+sweden	Sweden
+switzerland	Switzerland
+turkey	Turkey
+ukingdom	UnitedKingdom
+ukraine	Ukraine
+europe	Europe
+afghanistan	Afghanistan
+algeria	Algeria
+angola	Angola
+armenia	Armenia
+azerbaijan	Azerbaijan
+bahrain	Bahrain
+bangladesh	Bangladesh
+benin	Benin
+botswana	Botswana
+burkina_faso	Burkina Faso
+burundi	Burundi
+c_african_rep	Cent African Republic
+cambodia	Cambodia
+cameroon	Cameroon
+chad	Chad
+christmas_is	Christmas Island
+cotedivoire	Cote dIvoire
+cyprus	Cyprus
+d_r_congo	Dem Rep of the Congo
+djibouti	Djibouti
+east_timor	East Timor
+egypt	Egypt
+eq_guinea	Equatorial Guinea
+eritrea	Eritrea
+ethiopia	Ethiopia
+fr_guiana	French Guiana
+french_s_t	French South Territ
+gabon	Gabon
+gambia	Gambia
+georgia	Georgia
+ghana	Ghana
+guinea	Guinea
+guinea_bissau	Guinea-Bissau
+guyana	Guyana
+iceland	Iceland
+india	India
+indonesia	Indonesia
+iran	Iran
+iraq	Iraq
+israel	Israel
+japan	Japan
+jordan	Jordan
+kazakhstan	Kazakhstan
+kenya	Kenya
+kuwait	Kuwait
+kyrgyzstan	Kyrgyzstan
+laos	Laos
+lebanon	Lebanon
+lesotho	Lesotho
+liberia	Liberia
+libya	Libya
+madagascar	Madagascar
+malawi	Malawi
+malaysia	Malaysia
+mali	Mali
+mauritania	Mauritania
+mayotte	Mayotte
+mongolia	Mongolia
+morocco	Morocco
+mozambique	Mozambique
+myanmar	Myanmar
+namibia	Namibia
+nepal	Nepal
+new_zealand	New Zealand
+niger	Niger
+nigeria	Nigeria
+north_korea	North Korea
+oman	Oman
+pakistan	Pakistan
+palestina	Palestina
+papua_n_guin	Papua New Guinea
+philippines	Philippines
+qatar	Qatar
+r_congo	Republic of Congo
+rwanda	Rwanda
+s_tome_princ	Sao Tome and Principe
+saudi_arabia	Saudi Arabia
+senegal	Senegal
+sierra_leone	Sierra Leone
+singapore	Singapore
+somalia	Somalia
+south_africa	South Africa
+south_korea	South Korea
+south_sudan	South Sudan
+sri_lanka	Sri Lanka
+sudan	Sudan
+suriname	Suriname
+swaziland	Swaziland
+syria	Syria
+taiwan	Taiwan
+tajikistan	Tajikistan
+tanzania	Tanzania
+thailand	Thailand
+togo	Togo
+tunisia	Tunisia
+turkmenistan	Turkmenistan
+ua_emirates	United Arab Emirates
+uganda	Uganda
+uzbekistan	Uzbekistan
+vietnam	Vietnam
+w_sahara	Western Sahara
+yemen	Yemen
+zambia	Zambia
+zimbabwe	Zimbabwe
+world	World
+user1	user1
+user2	user2
+user3	user3
+mauritius	Mauritius
+brunei	Brunei
+bhutan	Bhutan
+sadc	SADC
+westafrica	West_Africa
+nordic_countries	nordic_countries
+ne_africa	ne_africa
+arabianpeninsula	ArabianPeninsula

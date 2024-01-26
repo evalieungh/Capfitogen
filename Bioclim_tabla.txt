@@ -1,0 +1,68 @@
+VARID	VARCODE	VARDESCR_EN	VARDESCR	VARUNIDAD	VARFUENTE	VARMODULO	FUENTELINK
+3	bio_1	Temperatura media anual	Temp prom anual	°C	Worldclim	Bioclimatica	http://worldclim.org
+4	bio_10	Temperatura media del cuarto mas calido (los tres meses mas calidos)	Temp prom cuarto mas calido	°C	Worldclim	Bioclimatica	http://worldclim.org
+5	bio_11	Temperatura media del cuarto mas frio (los tres meses mas frios)	Temp prom cuarto mas frio	°C	Worldclim	Bioclimatica	http://worldclim.org
+6	bio_12	Precipitacion anual	Prec anual	mm	Worldclim	Bioclimatica	http://worldclim.org
+7	bio_13	Precipitacion del mes mas humedo	Prec mes mas humedo	mm	Worldclim	Bioclimatica	http://worldclim.org
+8	bio_14	Precipitacion del mes mas seco	Prec mes mas seco	mm	Worldclim	Bioclimatica	http://worldclim.org
+9	bio_15	Estacionalidad en la precipitacion (coeficiente de variacion)	Estacionalidad prec	mm	Worldclim	Bioclimatica	http://worldclim.org
+10	bio_16	Precipitacion del cuarto mas humedo (los tres meses mas lluviosos)	Prec cuarto  mas humedo	mm	Worldclim	Bioclimatica	http://worldclim.org
+11	bio_17	Precipitacion del cuarto mas seco (los tres meses mas secos)	Prec cuarto mas seco	mm	Worldclim	Bioclimatica	http://worldclim.org
+12	bio_18	Precipitacion del cuarto mas calido (los tres meses mas calidos)	Prec cuarto mas calido	mm	Worldclim	Bioclimatica	http://worldclim.org
+13	bio_19	Precipitacion del cuarto mas frio (los tres meses mas frio)	Prec cuarto mas frio	mm	Worldclim	Bioclimatica	http://worldclim.org
+14	bio_2	Rango medio de temperaturas diurnas (medias mensuales (maxima temperatura-minima temperatura))	Rango prom temp diurnas	°C	Worldclim	Bioclimatica	http://worldclim.org
+15	bio_3	Isotermalidad (BIOCLIM2/BIOCLIM7)(x100)	Isotermalidad	 	Worldclim	Bioclimatica	http://worldclim.org
+16	bio_4	Estacionalidad en la temperatura (desviacion estandarx100)	Estacionalidad temp	 	Worldclim	Bioclimatica	http://worldclim.org
+17	bio_5	Maxima temperatura del mes mas calido	Max temp mes mas calido	°C	Worldclim	Bioclimatica	http://worldclim.org
+18	bio_6	Minima temperatura del mes mas frio	Min temp mes mas frio	°C	Worldclim	Bioclimatica	http://worldclim.org
+19	bio_7	Rango de temperatura anual (BIOCLIM5 - BIOCLIM6)	Rango temp anual	°C	Worldclim	Bioclimatica	http://worldclim.org
+20	bio_8	Temperatura media del cuarto mas humedo (los tres meses mas lluviosos)	Temp prom cuarto humedo	°C	Worldclim	Bioclimatica	http://worldclim.org
+21	bio_9	Temperatura media del cuarto mas seco (los tres meses mas secos)	Temp prom cuarto seco	°C	Worldclim	Bioclimatica	http://worldclim.org
+24	prec_1	Precipitacion media de enero	Prec prom 1	mm	Worldclim	Bioclimatica	http://worldclim.org
+28	prec_2	Precipitacion media de febrero	Prec prom 2	mm	Worldclim	Bioclimatica	http://worldclim.org
+29	prec_3	Precipitacion media de marzo	Prec prom 3	mm	Worldclim	Bioclimatica	http://worldclim.org
+30	prec_4	Precipitacion media de abril	Prec prom 4	mm	Worldclim	Bioclimatica	http://worldclim.org
+31	prec_5	Precipitacion media de mayo	Prec prom 5	mm	Worldclim	Bioclimatica	http://worldclim.org
+32	prec_6	Precipitacion media de junio	Prec prom 6	mm	Worldclim	Bioclimatica	http://worldclim.org
+33	prec_7	Precipitacion media de julio	Prec prom 7	mm	Worldclim	Bioclimatica	http://worldclim.org
+34	prec_8	Precipitacion media de agosto	Prec prom 8	mm	Worldclim	Bioclimatica	http://worldclim.org
+35	prec_9	Precipitacion media de septiembre	Prec prom 9	mm	Worldclim	Bioclimatica	http://worldclim.org
+25	prec_10	Precipitacion media de octubre	Prec prom 10	mm	Worldclim	Bioclimatica	http://worldclim.org
+26	prec_11	Precipitacion media de noviembre	Prec prom 11	mm	Worldclim	Bioclimatica	http://worldclim.org
+27	prec_12	Precipitacion media de diciembre	Prec prom 12	mm	Worldclim	Bioclimatica	http://worldclim.org
+68	tmax_1	Temperatura maxima de enero	Temp max 1	°C	Worldclim	Bioclimatica	http://worldclim.org
+72	tmax_2	Temperatura maxima de febrero	Temp max 2	°C	Worldclim	Bioclimatica	http://worldclim.org
+73	tmax_3	Temperatura maxima de marzo	Temp max 3	°C	Worldclim	Bioclimatica	http://worldclim.org
+74	tmax_4	Temperatura maxima de abril	Temp max 4	°C	Worldclim	Bioclimatica	http://worldclim.org
+75	tmax_5	Temperatura maxima de mayo	Temp max 5	°C	Worldclim	Bioclimatica	http://worldclim.org
+76	tmax_6	Temperatura maxima de junio	Temp max 6	°C	Worldclim	Bioclimatica	http://worldclim.org
+77	tmax_7	Temperatura maxima de julio	Temp max 7	°C	Worldclim	Bioclimatica	http://worldclim.org
+78	tmax_8	Temperatura maxima de agosto	Temp max 8	°C	Worldclim	Bioclimatica	http://worldclim.org
+79	tmax_9	Temperatura maxima de septiembre	Temp max 9	°C	Worldclim	Bioclimatica	http://worldclim.org
+69	tmax_10	Temperatura maxima de octubre	Temp max 10	°C	Worldclim	Bioclimatica	http://worldclim.org
+70	tmax_11	Temperatura maxima de noviembre	Temp max 11	°C	Worldclim	Bioclimatica	http://worldclim.org
+71	tmax_12	Temperatura maxima de diciembre	Temp max 12	°C	Worldclim	Bioclimatica	http://worldclim.org
+80	tmean_1	Temperatura media de enero	Temp prom 1	°C	Worldclim	Bioclimatica	http://worldclim.org
+84	tmean_2	Temperatura media de febrero	Temp prom 2	°C	Worldclim	Bioclimatica	http://worldclim.org
+85	tmean_3	Temperatura media de marzo	Temp prom 3	°C	Worldclim	Bioclimatica	http://worldclim.org
+86	tmean_4	Temperatura media de abril	Temp prom 4	°C	Worldclim	Bioclimatica	http://worldclim.org
+87	tmean_5	Temperatura media de mayo	Temp prom 5	°C	Worldclim	Bioclimatica	http://worldclim.org
+88	tmean_6	Temperatura media de junio	Temp prom 6	°C	Worldclim	Bioclimatica	http://worldclim.org
+89	tmean_7	Temperatura media de julio	Temp prom 7	°C	Worldclim	Bioclimatica	http://worldclim.org
+90	tmean_8	Temperatura media de agosto	Temp prom 8	°C	Worldclim	Bioclimatica	http://worldclim.org
+91	tmean_9	Temperatura media de septiembre	Temp prom 9	°C	Worldclim	Bioclimatica	http://worldclim.org
+81	tmean_10	Temperatura media de octubre	Temp prom 10	°C	Worldclim	Bioclimatica	http://worldclim.org
+82	tmean_11	Temperatura media de noviembre	Temp prom 11	°C	Worldclim	Bioclimatica	http://worldclim.org
+83	tmean_12	Temperatura media de diciembre	Temp prom 12	°C	Worldclim	Bioclimatica	http://worldclim.org
+92	tmin_1	Temperatura minima de enero	Temp min 1	°C	Worldclim	Bioclimatica	http://worldclim.org
+96	tmin_2	Temperatura minima de febrero	Temp min 2	°C	Worldclim	Bioclimatica	http://worldclim.org
+97	tmin_3	Temperatura minima de marzo	Temp min 3	°C	Worldclim	Bioclimatica	http://worldclim.org
+98	tmin_4	Temperatura minima de abril	Temp min 4	°C	Worldclim	Bioclimatica	http://worldclim.org
+99	tmin_5	Temperatura minima de mayo	Temp min 5	°C	Worldclim	Bioclimatica	http://worldclim.org
+100	tmin_6	Temperatura minima de junio	Temp min 6	°C	Worldclim	Bioclimatica	http://worldclim.org
+101	tmin_7	Temperatura minima de julio	Temp min 7	°C	Worldclim	Bioclimatica	http://worldclim.org
+102	tmin_8	Temperatura minima de agosto	Temp min 8	°C	Worldclim	Bioclimatica	http://worldclim.org
+103	tmin_9	Temperatura minima de septiembre	Temp min 9	°C	Worldclim	Bioclimatica	http://worldclim.org
+93	tmin_10	Temperatura minima de octubre	Temp min 10	°C	Worldclim	Bioclimatica	http://worldclim.org
+94	tmin_11	Temperatura minima de noviembre	Temp min 11	°C	Worldclim	Bioclimatica	http://worldclim.org
+95	tmin_12	Temperatura minima de diciembre	Temp min 12	°C	Worldclim	Bioclimatica	http://worldclim.org

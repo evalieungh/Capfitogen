@@ -1,0 +1,71 @@
+
+_________________________________________
+______Herramienta/Tool SelecVar________
+_________________________________________
+Lista de parametros usados en: Wed Jan 24 00:05:38 2024
+List of parameters used on: Wed Jan 24 00:05:38 2024
+
+ruta:C:/CAPFITOGEN3
+pais:user1
+pasaporte:MelothriaPendula_GEOQUAL.txt
+distdup:1
+geoqual:TRUE
+totalqual:60
+buffy:FALSE
+tamp:1000
+resol1:Celdas 5x5 km aprox (2.5 arc-min)
+bioclimv:Temp prom anual
+bioclimv:Temp prom cuarto mas calido
+bioclimv:Temp prom cuarto mas frio
+bioclimv:Prec anual
+bioclimv:Prec mes mas humedo
+bioclimv:Prec mes mas seco
+bioclimv:Estacionalidad prec
+bioclimv:Prec cuarto  mas humedo
+bioclimv:Prec cuarto mas seco
+bioclimv:Prec cuarto mas calido
+bioclimv:Prec cuarto mas frio
+bioclimv:Rango prom temp diurnas
+bioclimv:Isotermalidad
+bioclimv:Estacionalidad temp
+bioclimv:Max temp mes mas calido
+bioclimv:Min temp mes mas frio
+bioclimv:Rango temp anual
+bioclimv:Temp prom cuarto humedo
+bioclimv:Temp prom cuarto seco
+edaphv:Avail soil water cap h1 top
+edaphv:Avail soil water cap h2 top
+edaphv:Avail soil water cap h3 top
+edaphv:Sat water cont top
+edaphv:Depth to bedrock
+edaphv:R horizon
+edaphv:Bulk density top
+edaphv:Cation exchange cap top
+edaphv:Clay content top
+edaphv:Coarse fragments top
+edaphv:Organic carbon dens top
+edaphv:Organic carbon stock top
+edaphv:Organic carbon content top
+edaphv:Soil pH H2O top
+edaphv:Soil pH KCl top
+edaphv:Sodic soil grade
+edaphv:Silt content top
+edaphv:Sand content top
+edaphv:Avail soil water cap top
+geophysv:Elevacion
+geophysv:Pendiente grados
+geophysv:Velocidad viento 1
+geophysv:Velocidad viento 7
+geophysv:Velocidad viento anual
+geophysv:Radiacion solar 1
+geophysv:Radiacion solar 7
+geophysv:Radiacion solar anual
+latitud:FALSE
+longitud:FALSE
+percenRF:0.66
+percenCorr:0.33
+CorrValue:0.5
+pValue:0.05
+nminvar:3
+ecogeopcaxe:5
+resultados:C:/CAPFITOGEN3/Results/Melothria/SelecVar

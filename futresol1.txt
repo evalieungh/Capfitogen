@@ -1,0 +1,5 @@
+"Resol1"	"Code"
+"Celdas 1x1 km aprox (30 arc-seg)"	"30s"
+"Celdas 5x5 km aprox (2.5 arc-min)"	"2.5m"
+"celdas 10x10 km aprox (5 arc-min)"	"5m"
+"celdas 20x20 km aprox (10 arc-min)"	"10m"

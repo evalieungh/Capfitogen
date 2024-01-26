@@ -1,0 +1,67 @@
+VARID	VARCODE	VARDESCR_EN	VARDESCR	VARUNIDAD	VARFUENTE	VARMODULO	FUENTELINK
+36	ref_depth	Profundidad referencia de la unidad de suelo. La profundidad referencia de todas las unidades estan ajustadas a 100 cm (con algunas excepciones)	Profundidad	Code	HWS Database	Edafica	http://www.iiasa.ac.at/Research/LUC/External-World-soil-database/
+37	s_bs	Saturacion de bases en subsuelo.	Sat bases subsuelo	%	HWS Database	Edafica	http://www.iiasa.ac.at/Research/LUC/External-World-soil-database/
+38	s_caco3	Carbonato de calcio en subsuelo. Este campo ofrece el contenido de cal en subsuelo.	CaCO3 subsuelo	% weight	HWS Database	Edafica	http://www.iiasa.ac.at/Research/LUC/External-World-soil-database/
+39	s_caso4	Yesos en subsuelo. Este campo ofrece el contenido de sulfato de calcio en subsuelo.	Yesos subsuelo	% weight	HWS Database	Edafica	http://www.iiasa.ac.at/Research/LUC/External-World-soil-database/
+40	s_cec_clay	CEC de arcilla en subsuelo. CEC arcilla es la capacidad de intercambio cationico en la fraccion de arcilla	CIC arcilla subsuelo	cmol/kg	HWS Database	Edafica	http://www.iiasa.ac.at/Research/LUC/External-World-soil-database/
+41	s_cec_soil	CEC del suelo (general) en subsuelo. Este campo ofrece la capacidad de intercambio cationico en subsuelo.	CIC subsuelo gral	cmol/kg	HWS Database	Edafica	http://www.iiasa.ac.at/Research/LUC/External-World-soil-database/
+42	s_clay	Contenido de arcilla en subsuelo	Arcilla en subsuelo	% weight	HWS Database	Edafica	http://www.iiasa.ac.at/Research/LUC/External-World-soil-database/
+43	s_ece	Salinidad en subsuelo. Este campo ofrece la conductividad electrica en subsuelo.	Salinidad subsuelo	dS/m	HWS Database	Edafica	http://www.iiasa.ac.at/Research/LUC/External-World-soil-database/
+44	s_esp	Sodicidad en subsuelo. Este campo ofrece el porcentaje de sodio intercambiable en subsuelo.	Sodicidad subsuelo	%	HWS Database	Edafica	http://www.iiasa.ac.at/Research/LUC/External-World-soil-database/
+45	s_gravel	Contenido de grava en subsuelo	Grava en subsuelo	%vol.	HWS Database	Edafica	http://www.iiasa.ac.at/Research/LUC/External-World-soil-database/
+46	s_oc	Contenido de carbon organico en subsuelo	Carbon org subsuelo	% weight	HWS Database	Edafica	http://www.iiasa.ac.at/Research/LUC/External-World-soil-database/
+47	s_ph_h2o	pH en subsuelo. pH, medido en solucion suelo-agua, es una medida de acidez o alcalinidad del suelo.	pH subsuelo	-log(H+)	HWS Database	Edafica	http://www.iiasa.ac.at/Research/LUC/External-World-soil-database/
+48	s_ref_bulk	Densidad aparente de referencia en subsuelo. Es la masa de muchas particulas del material dividido por el volumen que ocupan.	Densidad subsuelo	kg/dm3	HWS Database	Edafica	http://www.iiasa.ac.at/Research/LUC/External-World-soil-database/
+49	s_sand	Contenido de arena en subsuelo	Arena en subsuelo	% weight	HWS Database	Edafica	http://www.iiasa.ac.at/Research/LUC/External-World-soil-database/
+50	s_silt	Contenido de limo en subsuelo	Limo en subsuelo	% weight	HWS Database	Edafica	http://www.iiasa.ac.at/Research/LUC/External-World-soil-database/
+51	s_teb	Bases intercambiables totales en subsuelo	Bases int subsuelo	cmol/kg	HWS Database	Edafica	http://www.iiasa.ac.at/Research/LUC/External-World-soil-database/
+53	t_bs	Saturacion de bases en suelo superficial.	Sat bases suelo	%	HWS Database	Edafica	http://www.iiasa.ac.at/Research/LUC/External-World-soil-database/
+54	t_caco3	Carbonato de calcio en suelo superficial. Este campo ofrece el contenido de cal en suelo superficial.	CaCO3 suelo	% weight	HWS Database	Edafica	http://www.iiasa.ac.at/Research/LUC/External-World-soil-database/
+55	t_caso4	Yesos en suelo superficial. Este campo ofrece el contenido de sulfato de calcio en suelo superficial.	Yesos suelo	% weight	HWS Database	Edafica	http://www.iiasa.ac.at/Research/LUC/External-World-soil-database/
+56	t_cec_clay	CEC de arcilla en suelo superficial. CEC arcilla es la capacidad de intercambio cationico en la fraccion de arcilla	CIC arcilla suelo	cmol/kg	HWS Database	Edafica	http://www.iiasa.ac.at/Research/LUC/External-World-soil-database/
+57	t_cec_soil	CEC del suelo (general) en suelo superficial. Este campo ofrece la capacidad de intercambio cationico en suelo superficial.	CIC suelo gral	cmol/kg	HWS Database	Edafica	http://www.iiasa.ac.at/Research/LUC/External-World-soil-database/
+58	t_clay	Contenido de arcilla en suelo superficial	Arcilla en suelo	% weight	HWS Database	Edafica	http://www.iiasa.ac.at/Research/LUC/External-World-soil-database/
+59	t_ece	Salinidad en suelo superficial. Este campo ofrece la conductividad electrica en suelo superficial.	Salinidad suelo	dS/m	HWS Database	Edafica	http://www.iiasa.ac.at/Research/LUC/External-World-soil-database/
+60	t_esp	Sodicidad en suelo superficial. Este campo ofrece el porcentaje de sodio intercambiable en suelo superficial.	Sodicidad suelo	%	HWS Database	Edafica	http://www.iiasa.ac.at/Research/LUC/External-World-soil-database/
+61	t_gravel	Contenido de grava en suelo superficial	Grava en suelo	%vol.	HWS Database	Edafica	http://www.iiasa.ac.at/Research/LUC/External-World-soil-database/
+62	t_oc	Contenido de carbon organico en suelo superficial	Carbon org suelo	% weight	HWS Database	Edafica	http://www.iiasa.ac.at/Research/LUC/External-World-soil-database/
+63	t_ph_h2o	pH en suelo superficial. pH, medido en solucion suelo-agua, es una medida de acidez o alcalinidad del suelo.	pH suelo	-log(H+)	HWS Database	Edafica	http://www.iiasa.ac.at/Research/LUC/External-World-soil-database/
+64	t_ref_bulk	Densidad aparente de referencia en suelo superficial. Es la masa de muchas particulas del material dividido por el volumen que ocupan.	Densidad suelo	kg/dm3	HWS Database	Edafica	http://www.iiasa.ac.at/Research/LUC/External-World-soil-database/
+65	t_sand	Contenido de arena en suelo superficial	Arena en suelo	% weight	HWS Database	Edafica	http://www.iiasa.ac.at/Research/LUC/External-World-soil-database/
+66	t_silt	Contenido de limo en suelo superficial	Limo en suelo	% weight	HWS Database	Edafica	http://www.iiasa.ac.at/Research/LUC/External-World-soil-database/
+67	t_teb	Bases intercambiables totales en suelo superficial	Bases int suelo	cmol/kg	HWS Database	Edafica	http://www.iiasa.ac.at/Research/LUC/External-World-soil-database/
+145	t_awc1	Available soil water capacity (volumetric fraction) for h1 - topsoil	Avail soil water cap h1 top	%	Soilgrids	Edafica	https://soilgrids.org
+146	s_awc1	Available soil water capacity (volumetric fraction) for h1 - subsoil	Avail soil water cap h1 sub	%	Soilgrids	Edafica	https://soilgrids.org
+147	t_awc2	Available soil water capacity (volumetric fraction) for h2 - topsoil	Avail soil water cap h2 top	%	Soilgrids	Edafica	https://soilgrids.org
+148	s_awc2	Available soil water capacity (volumetric fraction) for h2 - subsoil	Avail soil water cap h2 sub	%	Soilgrids	Edafica	https://soilgrids.org
+149	t_awc3	Available soil water capacity (volumetric fraction) for h3 - topsoil	Avail soil water cap h3 top	%	Soilgrids	Edafica	https://soilgrids.org
+150	s_awc3	Available soil water capacity (volumetric fraction) for h3 - subsoil	Avail soil water cap h3 sub	%	Soilgrids	Edafica	https://soilgrids.org
+151	t_awcts	Saturated water content (volumetric fraction) for tS - topsoil	Sat water cont top	%	Soilgrids	Edafica	https://soilgrids.org
+152	s_awcts	Saturated water content (volumetric fraction) for tS - subsoil	Sat water cont sub	%	Soilgrids	Edafica	https://soilgrids.org
+153	depth_rock	Depth to bedrock (R horizon) up to 200 cm	Depth to bedrock	cm 	Soilgrids	Edafica	https://soilgrids.org
+154	r_horizon	Probability of occurrence of R horizon	R horizon	%	Soilgrids	Edafica	https://soilgrids.org
+155	t_bulk_dens	Bulk density (fine earth) in kg / cubic-meter - topsoil	Bulk density top	kg / cubic-m	Soilgrids	Edafica	https://soilgrids.org
+156	s_bulk_dens	Bulk density (fine earth) in kg / cubic-meter - subsoil	Bulk density sub	kg / cubic-m	Soilgrids	Edafica	https://soilgrids.org
+157	t_cecsol	Cation exchange capacity of soil in cmolc/kg - topsoil	Cation exchange cap top	cmol / kg	Soilgrids	Edafica	https://soilgrids.org
+158	s_cecsol	Cation exchange capacity of soil in cmolc/kg - subsoil	Cation exchange cap sub	cmol / kg	Soilgrids	Edafica	https://soilgrids.org
+159	t_clay_cont	Clay content (0-2 micro meter) mass fraction in % - topsoil	Clay content top	%	Soilgrids	Edafica	https://soilgrids.org
+160	s_clay_cont	Clay content (0-2 micro meter) mass fraction in % - subsoil	Clay content sub	%	Soilgrids	Edafica	https://soilgrids.org
+161	t_coarse_frag	Coarse fragments volumetric in %	Coarse fragments top	%	Soilgrids	Edafica	https://soilgrids.org
+162	s_coarse_frag	Coarse fragments volumetric in %	Coarse fragments sub	%	Soilgrids	Edafica	https://soilgrids.org
+163	t_oc_dens	Soil organic carbon density in kg per cubic-m	Organic carbon dens top	kg / cubic-m	Soilgrids	Edafica	https://soilgrids.org
+164	s_oc_dens	Soil organic carbon density in kg per cubic-m	Organic carbon dens sub	kg / cubic-m	Soilgrids	Edafica	https://soilgrids.org
+165	t_oc_stock	Soil organic carbon stock in tons per ha	Organic carbon stock top	tonnes / ha	Soilgrids	Edafica	https://soilgrids.org
+166	s_oc_stock	Soil organic carbon stock in tons per ha	Organic carbon stock sub	tonnes / ha	Soilgrids	Edafica	https://soilgrids.org
+167	t_oc_cont	Soil organic carbon content (fine earth fraction) in g per kg	Organic carbon content top	g / kg	Soilgrids	Edafica	https://soilgrids.org
+168	s_oc_cont	Soil organic carbon content (fine earth fraction) in g per kg	Organic carbon content sub	g / kg	Soilgrids	Edafica	https://soilgrids.org
+169	t_ph_hox	Soil pH x 10 in H2O	Soil pH H2O top	index*10	Soilgrids	Edafica	https://soilgrids.org
+170	s_ph_hox	Soil pH x 10 in H2O	Soil pH H2O sub	index*10	Soilgrids	Edafica	https://soilgrids.org
+171	t_ph_kcl	Soil pH x 10 in KCl	Soil pH KCl top	index*10	Soilgrids	Edafica	https://soilgrids.org
+172	s_ph_kcl	Soil pH x 10 in KCl	Soil pH KCl sub	index*10	Soilgrids	Edafica	https://soilgrids.org
+173	sodicity	Sodic soil grade	Sodic soil grade	grade	Soilgrids	Edafica	https://soilgrids.org
+174	t_silt_cont	Silt content (2-50 micro meter) mass fraction in %	Silt content top	%	Soilgrids	Edafica	https://soilgrids.org
+175	s_silt_cont	Silt content (2-50 micro meter) mass fraction in %	Silt content sub	%	Soilgrids	Edafica	https://soilgrids.org
+176	t_sand_cont	Sand content (50-2000 micro meter) mass fraction in %	Sand content top	%	Soilgrids	Edafica	https://soilgrids.org
+177	s_sand_cont	Sand content (50-2000 micro meter) mass fraction in %	Sand content sub	%	Soilgrids	Edafica	https://soilgrids.org
+178	t_soilwater_cap	Available soil water capacity (volumetric fraction) until wilting point	Avail soil water cap top	%	Soilgrids	Edafica	https://soilgrids.org
+179	s_soilwater_cap	Available soil water capacity (volumetric fraction) until wilting point	Avail soil water cap sub	%	Soilgrids	Edafica	https://soilgrids.org

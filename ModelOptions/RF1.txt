@@ -1,0 +1,6 @@
+Option	Value (default)
+"do.classif = TRUE,"	TRUE
+ntree	500
+mtry	default
+nodesize	5
+maxnodes	NULL

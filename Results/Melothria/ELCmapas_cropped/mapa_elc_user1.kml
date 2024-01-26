@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<GroundOverlay>
+<name>layer</name>
+<Icon><href>mapa_elc_user1.png</href><viewBoundScale>0.75</viewBoundScale></Icon>
+	<LatLonBox>
+		<north>30.1302687531709</north><south>14.3802687531709</south><east>-86.6975414419547</east><west>-110.780874775288</west>
+	</LatLonBox>
+</GroundOverlay></kml>

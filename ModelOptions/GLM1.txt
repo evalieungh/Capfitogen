@@ -1,0 +1,12 @@
+Option	Value (default)
+type	quadratic
+interaction.level	0
+myFormula	NULL
+test	AIC
+family	binomial
+family_link	logit
+family_variance	mu
+mustart	0.5
+control_epsilon	0.00000001
+control_maxit	50
+control_trace	FALSE

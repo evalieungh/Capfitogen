@@ -1,0 +1,1755 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="TOTALQUAL" id="TOTALQUAL">
+	<SimpleField name="TOTALQUAL100" type="float"></SimpleField>
+</Schema>
+<Folder><name>TOTALQUAL</name>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">74.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>57.831268,23.388021</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.142886,29.141634</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.246433,29.201441</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.345092,28.876004</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>34.965817,28.843</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.500217,23.609783</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>38.949917,24.344383</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>38.941467,24.332983</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>38.945,24.32525</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>38.941467,24.332933</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>38.949517,24.3442</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>38.950333,24.344167</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>38.9504,24.344167</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">55</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.775274,27.958202</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.576656,28.230708</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.614039,28.226568</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.525383,31.21815</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">55</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.327953,28.740136</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">83.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>36.573516,27.635797</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>36.507926,27.643458</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">83.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>36.568283,27.632667</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">83.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>36.5676,27.632517</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">83.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>36.56745,27.6326</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>36.56665,27.63345</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>36.566483,27.634133</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>36.564467,27.634683</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>36.560883,27.636183</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>36.558,27.63545</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>36.55785,27.635367</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">71.6666666666667</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>38.592823,24.282095</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">83.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.084267,24.323267</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>36.002583,27.7943</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.805262,27.656805</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">55</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.321617,28.679237</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.289363,28.719919</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>36.550361,27.631671</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.324737,28.673861</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.336283,28.73925</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>36.55805,27.635433</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.348383,28.719067</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.336483,28.739633</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.335983,28.738917</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.335767,28.7383</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.336267,28.740117</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.328767,28.739283</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.327417,28.739167</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.326183,28.73895</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.325067,28.738667</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.32755,28.733333</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.32795,28.732733</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.327633,28.730567</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.32425,28.72725</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">71.6666666666667</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.368916,18.345469</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">80</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.37029,18.26778</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.639173,28.86761</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>37.420767,26.377567</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.995567,25.688567</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.99525,25.689067</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>36.030433,28.034217</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.42445,29.149217</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">55</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>36.439064,27.682661</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>37.619046,27.165339</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.3941,20.019417</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.174467,18.961783</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.17335,18.962933</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.174167,18.962917</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.1739,18.963767</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>43.03885,17.447117</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>43.038783,17.447</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>43.03875,17.446983</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">83.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>43.0949,17.252917</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.11565,19.123317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">83.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.407717,18.198033</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.1391,18.965</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.12695,18.931617</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">81.6666666666667</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>43.106868,17.245297</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>43.186664,17.374235</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">80</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>43.090979,17.245012</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">81.6666666666667</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.409197,18.204629</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">83.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.409197,18.204629</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">81.6666666666667</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.409197,18.204629</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">81.6666666666667</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.409197,18.204629</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">83.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.220829,20.374054</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.548605,19.829593</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.393283,20.019067</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.3933,20.019</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.393767,20.020233</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.394183,20.020583</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.394167,20.0205</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.395067,20.019217</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.396267,20.015883</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.39645,20.015433</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.396767,20.014767</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">74.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>43.383287,16.798093</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">74.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>43.704569,16.183789</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">74.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>43.349992,15.333313</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">77.7777777777778</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>43.285556,16.920702</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">74.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>43.736439,15.052565</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">74.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>44.127223,13.882215</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">74.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>43.592527,15.481322</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">66.1111111111111</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>44.114011,13.22044</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">67.7777777777778</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>44.176078,13.20331</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">74.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>44.052474,13.517825</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">74.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>44.146748,13.235262</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">74.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>44.501765,15.20858</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">49.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>43.981116,15.277324</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">74.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>44.182661,13.925817</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">52.7777777777778</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>58.001319,23.510985</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">51.1111111111111</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>57.666667,23.416667</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">51.1111111111111</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>57.452696,23.273129</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">67.7777777777778</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>57.824428,23.385737</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">69.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>57.982717,23.500202</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">66.1111111111111</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>57.91539,23.271074</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">74.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>57.976738,23.296837</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">74.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>58.02148,23.315737</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">74.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>58.029331,23.308805</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">69.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>58.115768,23.566575</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">52.7777777777778</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>56.637391,23.45128</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">66.1111111111111</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>57.334868,23.224417</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">66.1111111111111</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>57.316667,23.216667</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">66.1111111111111</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>57.316667,23.383333</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">72.7777777777778</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>57.388978,23.1923</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">52.7777777777778</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>57.483349,23.416644</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">77.7777777777778</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>57.733581,23.136879</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">49.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>57.55,23.033333</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">52.7777777777778</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>57.105048,23.168386</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">72.7777777777778</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>57.66185,23.071717</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">52.7777777777778</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>57.730019,23.13985</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">69.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>59.153606,22.705686</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">47.7777777777778</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>58.906333,22.928</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">47.7777777777778</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>58.930389,22.923</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">47.7777777777778</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>58.888556,22.938139</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">69.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>56.317592,24.189636</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">80</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.36829,18.285132</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">71.6666666666667</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.603033,19.807119</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">71.6666666666667</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.617687,19.798824</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">71.6666666666667</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.157874,18.994868</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.535483,19.828267</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.54075,19.8311</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.5408,19.831183</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.539033,19.82795</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.53815,19.827283</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.534967,19.828183</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.878933,17.627317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.185467,20.308217</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.186783,20.30945</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.187933,20.308767</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.189717,20.310933</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.191183,20.312083</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.19305,20.31115</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.19325,20.312367</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">83.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.195817,20.319367</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.1613,20.36475</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.0438,20.5895</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.322467,21.339683</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">83.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.227017,20.228983</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.279183,20.181617</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">80</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.290867,20.151183</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.30615,20.093417</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">83.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.4183,20.05155</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">83.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.744183,19.7939</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.410917,20.026917</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">80</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.863617,20.654</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">80</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.88065,20.676133</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.86415,20.7167</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.115717,19.123117</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.114467,19.122433</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.60345,19.80745</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.535483,19.828267</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.948056,20.505278</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">74.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>43.739655,15.053526</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">66.1111111111111</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>44.133333,15.283333</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">49.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>44.273561,15.105566</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">49.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>44.149676,15.272787</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">66.1111111111111</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>43.514166,15.932994</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">74.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>44.388374,14.304023</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">49.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>43.943411,15.982003</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">55</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.761556,17.99676</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">71.6666666666667</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>43.385007,17.888281</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">55</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.836271,18.367015</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">71.6666666666667</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.140812,18.990529</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">55</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.881394,18.382211</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">55</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>43.514353,17.730067</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">80</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.397793,18.284763</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">83.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.330733,18.31635</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.39065,18.255483</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">83.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.404617,18.22565</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.4061,18.2171</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">83.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.407683,18.215283</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.255483,18.6239</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.183667,18.973067</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.11175,19.15825</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">80</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.861517,19.828417</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.824283,20.730067</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.7874,20.768133</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.77395,20.801817</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.792117,20.9149</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">80</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.3842,21.071283</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.186283,19.012367</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.884283,17.5859</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">71.6666666666667</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.710371,18.057347</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">71.6666666666667</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.718444,18.106189</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">71.6666666666667</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.705918,18.104826</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">71.6666666666667</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.709324,18.096935</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.767467,18.004183</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.27945,21.425333</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.282385,21.443489</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.280094,21.4474</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">58.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.280913,21.433221</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.279443,21.425472</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">83.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.409012,20.057097</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">80</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.410683,20.052697</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">74.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>59.134626,22.744658</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">49.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>58.667884,23.202108</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">55</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.976417,27.785917</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">55</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>36.010426,27.771901</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">71.6666666666667</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.746548,27.855838</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">55</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>38.277859,24.559305</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">49.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>57.63333,23.33333</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">74.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>58.677199,23.143777</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">74.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>43.566505,15.734903</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">74.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>43.7099,15.097164</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">55</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.332303,18.304648</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">66.1111111111111</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>44.763568,14.286421</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">74.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>44.276905,14.194037</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">74.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>44.280499,14.194453</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">80</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>43.090979,17.245012</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">66.1111111111111</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>43.716206,15.732812</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">74.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>44.14541,13.925119</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">66.1111111111111</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>44.27695,14.185817</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">74.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>44.047682,13.512503</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">74.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>43.680834,15.078606</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">71.6666666666667</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.334629,18.283871</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">74.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>43.715807,15.089583</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">55</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.284538,28.64481</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">71.6666666666667</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.49206,28.441775</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">55</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.897577,27.900765</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">55</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.473188,28.456195</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">66.1111111111111</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>56.963628,23.313542</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">66.1111111111111</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>57.308452,23.364653</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">66.1111111111111</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>56.113258,24.653401</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">49.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>57.814221,23.415904</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">74.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>57.827606,23.401197</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">76.6666666666667</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>56.142308,24.778328</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">55</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.400656,18.2362</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">55</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.110826,19.16042</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">55</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>38.217239,24.556112</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">80</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.395356,18.281247</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">71.6666666666667</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.754036,18.026615</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">71.6666666666667</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.782243,17.973154</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">80</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>38.221253,24.539141</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">55</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.95,25.683333</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">71.6666666666667</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>38.280168,24.589019</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">74.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>57.53895,23.077437</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">71.6666666666667</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>38.9504,24.344167</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">71.1111111111111</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>44.282812,14.915569</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">49.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>43.982636,15.278226</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">74.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>43.998905,15.238789</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">76.6666666666667</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.612561,29.102578</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">55</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.978798,19.618824</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">71.6666666666667</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.858541,17.626973</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">66.1111111111111</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>45.91666667,13.48333333</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">55</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.948687,28.094937</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">55</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>37.203349,26.495697</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">80</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.787304,17.968331</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">80</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.866951,17.633849</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">55</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.183911,18.916339</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">71.6666666666667</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>38.949517,24.3442</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">80</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.368872,21.058288</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">71.6666666666667</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>36.545959,27.824387</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">55</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>39.457239,31.6889</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">55</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.8815,27.535917</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">55</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>36.58346,27.640304</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">71.6666666666667</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>36.572283,27.665688</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">55</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>36.636831,27.636296</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">56.6666666666667</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.710654,18.112793</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">66.1111111111111</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>58.284511,22.74829</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">49.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>57.832598,23.498746</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">66.1111111111111</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>57.450325,23.459926</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">83.3333333333333</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.409197,18.204629</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">75</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>42.150833,18.980278</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">74.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>43.656379,14.680508</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">71.6666666666667</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>38.079456,24.576072</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">76.6666666666667</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>40.312872,21.071687</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">66.1111111111111</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>56.441709,24.507141</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">55</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>41.393283,20.019067</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">55</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>35.331819,28.691405</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">47.7777777777778</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>49.234634,14.711036</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">64.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>45.881086,13.444483</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">47.7777777777778</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>45.884158,13.441747</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#TOTALQUAL">
+		<SimpleData name="TOTALQUAL100">69.4444444444444</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>57.65285,23.086169</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>

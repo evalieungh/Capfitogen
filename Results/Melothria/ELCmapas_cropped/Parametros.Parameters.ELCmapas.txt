@@ -1,0 +1,27 @@
+
+_________________________________________
+______Herramienta/Tool ELCmapas________
+_________________________________________
+Lista de parametros usados en: Wed Jan 24 00:21:57 2024
+List of parameters used on: Wed Jan 24 00:21:57 2024
+
+ruta:C:/CAPFITOGEN3
+pais:user1
+resol1:Celdas 5x5 km aprox (2.5 arc-min)
+bioclimv:Temp prom cuarto mas frio
+bioclimv:Prec mes mas seco
+bioclimv:Prec cuarto mas seco
+bioclimv:Prec cuarto mas frio
+geophysv:Elevacion
+geophysv:Velocidad viento anual
+geophysv:Radiacion solar anual
+latitud:TRUE
+longitud:TRUE
+edaphv:Bulk density top
+edaphv:Cation exchange cap top
+edaphv:Organic carbon dens top
+edaphv:Soil pH H2O top
+maxg:5
+metodo:kmeansbic
+iterat:10
+resultados:C:/CAPFITOGEN3/Results/Melothria/ELCmap_cropped

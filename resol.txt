@@ -1,0 +1,7 @@
+"resolucion"	"resol"	"resoldec"
+"Celdas 1x1 km aprox (30 arc-seg)"	"1x1"	0.008333
+"Celdas 5x5 km aprox (2.5 arc-min)"	"5x5"	0.041667
+"celdas 10x10 km aprox (5 arc-min)"	"10x10"	0.083333
+"celdas 20x20 km aprox (10 arc-min)"	"20x20"	0.166667
+"celdas 50x50 km aprox (25 arc-min)"	"50x50"	0.416667
+"celdas 100x100 km aprox (50 arc-min)"	"100x100"	0.833333

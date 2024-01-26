@@ -1,0 +1,9 @@
+Option	Value (default)
+method	class
+parms	default
+cost	NULL
+control_xval	5
+control_minbucket	5
+control_minsplit	5
+control_cp	0.001
+control_maxdepth	25

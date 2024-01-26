@@ -1,0 +1,254 @@
+ORIGCTY	ID_0	NAMECTY	NIVELMAX
+AFG	1	Afghanistan	ADM1
+ALA	2	Åland	ADM1
+ALB	3	Albania	ADM3
+DZA	4	Algeria	ADM2
+ASM	5	American Samoa	ADM3
+AND	6	Andorra	ADM1
+AGO	7	Angola	ADM3
+AIA	8	Anguilla	ORIGCTY
+ATA	9	Antarctica	ORIGCTY
+ATG	10	Antigua and Barbuda	ADM1
+ARG	11	Argentina	ADM2
+ARM	12	Armenia	ADM1
+ABW	13	Aruba	ORIGCTY
+AUS	14	Australia	ADM2
+AUT	15	Austria	ADM2
+AZE	16	Azerbaijan	ADM1
+BHS	17	Bahamas	ADM1
+BHR	18	Bahrain	ADM1
+BGD	19	Bangladesh	ADM4
+BRB	20	Barbados	ADM1
+BLR	21	Belarus	ADM2
+BEL	22	Belgium	ADM4
+BLZ	23	Belize	ADM1
+BEN	24	Benin	ADM2
+BMU	25	Bermuda	ADM1
+BTN	26	Bhutan	ADM2
+BOL	27	Bolivia	ADM3
+BES	28	Bonaire, Saint Eustatius and Saba	ORIGCTY
+BIH	29	Bosnia and Herzegovina	ADM3
+BWA	30	Botswana	ADM2
+BVT	31	Bouvet Island	ORIGCTY
+BRA	32	Brazil	ADM3
+IOT	33	British Indian Ocean Territory	ORIGCTY
+VGB	34	British Virgin Islands	ORIGCTY
+BRN	35	Brunei	ADM2
+BGR	36	Bulgaria	ADM2
+BFA	37	Burkina Faso	ADM2
+BDI	38	Burundi	ADM4
+KHM	39	Cambodia	ADM4
+CMR	40	Cameroon	ADM2
+CAN	41	Canada	ADM3
+CPV	42	Cape Verde	ADM1
+CA-	43	Caspian Sea	ORIGCTY
+CYM	44	Cayman Islands	ADM1
+CAF	45	Central African Republic	ADM2
+TCD	46	Chad	ADM3
+CHL	47	Chile	ADM3
+CHN	48	China	ADM3
+CXR	49	Christmas Island	ORIGCTY
+CL-	50	Clipperton Island	ORIGCTY
+CCK	51	Cocos Islands	ORIGCTY
+COL	52	Colombia	ADM2
+COM	53	Comoros	ADM1
+COK	54	Cook Islands	ORIGCTY
+CRI	55	Costa Rica	ADM2
+CIV	56	Côte d'Ivoire	ADM3
+HRV	57	Croatia	ADM1
+CUB	58	Cuba	ADM2
+CUW	59	Curaçao	ORIGCTY
+CYP	60	Cyprus	ADM1
+CZE	61	Czech Republic	ADM2
+COD	62	Democratic Republic of the Congo	ADM2
+DNK	63	Denmark	ADM2
+DJI	64	Djibouti	ADM2
+DMA	65	Dominica	ADM1
+DOM	66	Dominican Republic	ADM2
+TLS	67	East Timor	ADM2
+ECU	68	Ecuador	ADM3
+EGY	69	Egypt	ADM1
+SLV	70	El Salvador	ADM2
+GNQ	71	Equatorial Guinea	ADM1
+ERI	72	Eritrea	ADM2
+EST	73	Estonia	ADM2
+ETH	74	Ethiopia	ADM3
+FLK	75	Falkland Islands	ORIGCTY
+FRO	76	Faroe Islands	ADM2
+FJI	77	Fiji	ADM2
+FIN	78	Finland	ADM4
+FRA	79	France	ADM4
+GUF	80	French Guiana	ADM2
+PYF	81	French Polynesia	ORIGCTY
+ATF	82	French Southern Territories	ADM1
+GAB	83	Gabon	ADM2
+GMB	84	Gambia	ADM2
+GEO	85	Georgia	ADM2
+DEU	86	Germany	ADM3
+GHA	87	Ghana	ADM2
+GIB	88	Gibraltar	ORIGCTY
+GRC	89	Greece	ADM2
+GRL	90	Greenland	ADM2
+GRD	91	Grenada	ADM1
+GLP	92	Guadeloupe	ADM2
+GUM	93	Guam	ADM1
+GTM	94	Guatemala	ADM2
+GGY	95	Guernsey	ORIGCTY
+GIN	96	Guinea	ADM3
+GNB	97	Guinea-Bissau	ADM2
+GUY	98	Guyana	ADM2
+HTI	99	Haiti	ADM1
+HMD	100	Heard Island and McDonald Islands	ORIGCTY
+HND	101	Honduras	ADM2
+HKG	102	Hong Kong	ADM1
+HUN	103	Hungary	ADM2
+ISL	104	Iceland	ADM2
+IND	105	India	ADM3
+IDN	106	Indonesia	ADM2
+IRN	107	Iran	ADM2
+IRQ	108	Iraq	ADM1
+IRL	109	Ireland	ADM1
+IMN	110	Isle of Man	ORIGCTY
+ISR	111	Israel	ADM1
+ITA	112	Italy	ADM3
+JAM	113	Jamaica	ADM1
+JPN	114	Japan	ADM2
+JEY	115	Jersey	ORIGCTY
+JOR	116	Jordan	ADM2
+KAZ	117	Kazakhstan	ADM2
+KEN	118	Kenya	ADM4
+KIR	119	Kiribati	ORIGCTY
+KO-	120	Kosovo	ADM2
+KWT	121	Kuwait	ADM1
+KGZ	122	Kyrgyzstan	ADM1
+LAO	123	Laos	ADM2
+LVA	124	Latvia	ADM2
+LBN	125	Lebanon	ADM2
+LSO	126	Lesotho	ADM1
+LBR	127	Liberia	ADM2
+LBY	128	Libya	ADM1
+LIE	129	Liechtenstein	ADM1
+LTU	130	Lithuania	ADM2
+LUX	131	Luxembourg	ADM4
+MAC	132	Macao	ADM1
+MKD	133	Macedonia	ADM2
+MDG	134	Madagascar	ADM4
+MWI	135	Malawi	ADM2
+MYS	136	Malaysia	ADM2
+MDV	137	Maldives	ORIGCTY
+MLI	138	Mali	ADM4
+MLT	139	Malta	ORIGCTY
+MHL	140	Marshall Islands	ORIGCTY
+MTQ	141	Martinique	ADM2
+MRT	142	Mauritania	ADM2
+MUS	143	Mauritius	ADM1
+MYT	144	Mayotte	ADM1
+MEX	145	Mexico	ADM2
+FSM	146	Micronesia	ADM1
+MDA	147	Moldova	ADM1
+MCO	148	Monaco	ADM1
+MNG	149	Mongolia	ADM2
+MNE	150	Montenegro	ADM1
+MSR	151	Montserrat	ORIGCTY
+MAR	152	Morocco	ADM4
+MOZ	153	Mozambique	ADM3
+MMR	154	Myanmar	ADM3
+NAM	155	Namibia	ADM2
+NRU	156	Nauru	ADM1
+NPL	157	Nepal	ADM4
+NLD	158	Netherlands	ADM2
+NCL	159	New Caledonia	ADM2
+NZL	160	New Zealand	ADM2
+NIC	161	Nicaragua	ADM2
+NER	162	Niger	ADM3
+NGA	163	Nigeria	ADM2
+NIU	164	Niue	ORIGCTY
+NFK	165	Norfolk Island	ORIGCTY
+PRK	166	North Korea	ADM2
+MNP	167	Northern Mariana Islands	ADM1
+NOR	168	Norway	ADM2
+OMN	169	Oman	ADM2
+PAK	170	Pakistan	ADM3
+PLW	171	Palau	ADM1
+PSE	172	Palestina	ADM2
+PAN	173	Panama	ADM3
+PNG	174	Papua New Guinea	ADM1
+PRY	175	Paraguay	ADM2
+PER	176	Peru	ADM3
+PHL	177	Philippines	ADM3
+PCN	178	Pitcairn Islands	ORIGCTY
+POL	179	Poland	ADM2
+PRT	180	Portugal	ADM3
+PRI	181	Puerto Rico	ADM1
+QAT	182	Qatar	ADM1
+COG	183	Republic of Congo	ADM2
+REU	184	Reunion	ADM2
+ROU	185	Romania	ADM1
+RUS	186	Russia	ADM2
+RWA	187	Rwanda	ADM2
+SHN	188	Saint Helena	ADM1
+KNA	189	Saint Kitts and Nevis	ADM1
+LCA	190	Saint Lucia	ADM1
+SPM	191	Saint Pierre and Miquelon	ADM1
+VCT	192	Saint Vincent and the Grenadines	ADM1
+BLM	193	Saint-Barthélemy	ORIGCTY
+MAF	194	Saint-Martin	ORIGCTY
+WSM	195	Samoa	ADM2
+SMR	196	San Marino	ADM1
+STP	197	Sao Tome and Principe	ADM1
+SAU	198	Saudi Arabia	ADM1
+SEN	199	Senegal	ADM4
+SRB	200	Serbia	ADM2
+SYC	201	Seychelles	ORIGCTY
+SLE	202	Sierra Leone	ADM3
+SGP	203	Singapore	ORIGCTY
+SMX	204	Sint Maarten	ORIGCTY
+SVK	205	Slovakia	ADM2
+SVN	206	Slovenia	ADM2
+SLB	207	Solomon Islands	ADM1
+SOM	208	Somalia	ADM2
+ZAF	209	South Africa	ADM2
+SGS	210	South Georgia and the South Sandwich Islands	ORIGCTY
+KOR	211	South Korea	ADM2
+SSD	212	South Sudan	ADM4
+ESP	213	Spain	ADM4
+SP-	214	Spratly islands	ORIGCTY
+LKA	215	Sri Lanka	ADM2
+SDN	216	Sudan	ADM4
+SUR	217	Suriname	ADM2
+SJM	218	Svalbard and Jan Mayen	ADM1
+SWZ	219	Swaziland	ADM1
+SWE	220	Sweden	ADM2
+CHE	221	Switzerland	ADM3
+SYR	222	Syria	ADM2
+TWN	223	Taiwan	ADM2
+TJK	224	Tajikistan	ADM1
+TZA	225	Tanzania	ADM3
+THA	226	Thailand	ADM3
+TGO	227	Togo	ADM2
+TKL	228	Tokelau	ADM1
+TON	229	Tonga	ADM1
+TTO	230	Trinidad and Tobago	ADM1
+TUN	231	Tunisia	ADM2
+TUR	232	Turkey	ADM2
+TKM	233	Turkmenistan	ADM1
+TCA	234	Turks and Caicos Islands	ADM1
+TUV	235	Tuvalu	ADM1
+UGA	236	Uganda	ADM4
+UKR	237	Ukraine	ADM2
+ARE	238	United Arab Emirates	ADM1
+GBR	239	United Kingdom	ADM2
+USA	240	United States	ADM2
+UMI	241	United States Minor Outlying Islands	ADM1
+URY	242	Uruguay	ADM2
+UZB	243	Uzbekistan	ADM2
+VUT	244	Vanuatu	ADM1
+VAT	245	Vatican City	ORIGCTY
+VEN	246	Venezuela	ADM2
+VNM	247	Vietnam	ADM4
+VIR	248	Virgin Islands, U.S.	ADM1
+WLF	249	Wallis and Futuna	ADM2
+ESH	250	Western Sahara	ADM1
+YEM	251	Yemen	ADM2
+ZMB	252	Zambia	ADM2
+ZWE	253	Zimbabwe	ADM2
