@@ -1,6 +1,0 @@
-Option	Value (default)
-degree	2
-nk	NULL
-penalty	2
-thresh	0.001
-prune	TRUE

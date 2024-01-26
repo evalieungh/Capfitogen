@@ -5,7 +5,8 @@
 # Universidad Nacional de Colombia (http://cienciasagrarias.bogota.unal.edu.co/)
 # International Treaty on Plant Genetic Resources for Food and Agriculture (http://www.fao.org/plant-treaty/en/)  
 # Farmer's pride project (http://www.farmerspride.eu/)
-# 2021
+# BioDT project (https://biodt.eu/)
+# 2024
 ######################################################################
 
 #You can freely use and modify this script only for non-commercial purposes.Otherwise please contact to script author. Puede de manera libre usar y modificar este script s?lo con pro?sitos no comerciales. De otra forma, contacte con el autor de las herramientas.
@@ -51,12 +52,7 @@
   ##Elemento introducido por el usuario: ruta (ruta is a parameter introduced bu the user and it should be the path to main CAPFITOGEN folder in the local PC)
   #Determinar esa ruta como directorio de trabajo
   setwd(paste(ruta))
-  write("______NUEVO PROCESO ELCmapas________", file="Error/process_info.txt", append=TRUE)
-  write(date(), file="Error/process_info.txt", append=TRUE)
   
-  ##########################################################################################################
-  #Ampliaci?n m?xima de la capacidad de uso de memoria ram - expanding memory capacity for the analysis but this function is not working anymore in R
-  #memory.size(max =TRUE)
 }
 
 #2. Installing (in case of absence) and load required packages
@@ -119,8 +115,6 @@
   library(vegan)
   library(mclust)
   library(adegenet)
-  #writing in Error/process_info.txt file is useful to know where the process failed when the user is running the tools indirectly (when the R script is hided)
-  write("1.Terminado proceso de instalaci?n y carga de paquetes", file="Error/process_info.txt", append=TRUE)
   
 }
 
@@ -128,10 +122,6 @@
 
 {
   #Correcting or adjusting some parameters introduced by uysers according to R script further requirements
-  #Correcci?n de un posible 1x1 cuando se seleccione "europe"
-  if(pais=="Europe"){
-    resol1 <- "Celdas 5x5 km aprox (2.5 arc-min)"
-  }
   
   #transformaci?n pais uppercase to lowercase
   pais<-tolower(pais)
@@ -203,8 +193,6 @@
   rm(abcd)
   rm(loadError)
   
-  write("2.Terminado proceso de carga de lista de paises y variables", file="Error/process_info.txt", append=TRUE)
-  
   ##Introducing the list of variables by component (bioclimatic, edaphic and geophysic ones) selected by the user 
   ##Elemento introducido por el usuario: bioclimv
   bioclim2<-1:length(bioclimv)
@@ -229,9 +217,7 @@
   
   edaphv<-merge(edaph,edaphv, by="VARDESCR", all=F)
   edaphv<-as.character(edaphv[,3])
-  
-  write("3.Terminado proceso de arreglo de tablas finales de variables", file="Error/process_info.txt", append=TRUE)
-  
+
 }
 
 #4. Creating stacks of raster layers (introducing selected ecogeographical layers)
@@ -260,8 +246,6 @@
     names(edaphl[[i]])<-paste(edaphv[i])
   }
   edaphstack<-do.call("stack",edaphl)
-  
-  write("4.Terminado proceso de carga de capas raster ecogeograficas .grd", file="Error/process_info.txt", append=TRUE)
   
 }
 
@@ -294,10 +278,7 @@
   edaph<-extract(edaphstack,puntos[,c("POINT_X","POINT_Y")])
   edaph<-cbind(puntos[,1],edaph)
   colnames(edaph)[1]<-"POINTID"
-  
-  write("5.Terminado proceso de extraccion para puntos/pais desde stacks", file="Error/process_info.txt", append=TRUE)
-  
-  
+
   #Se salvan las tablas de datos originales para estadisticas posteriores
   save(bioclim,file="bioclimorg.RData")
   save(geophys,file="geophysorg.RData")
@@ -318,9 +299,7 @@
   edaph<-data.frame(edaph[,1],scale(edaph[,-1]))
   edaph<- na.omit(edaph)
   colnames(edaph)[1]<-"POINTID"
-  
-  write("6.Terminado proceso de estandarizacion de variables ecogeograficas", file="Error/process_info.txt", append=TRUE)
-  
+
   #M?todos de cluster
   ##Aqu? entra la variable "metodo" definida por usuario
   ##aqu? entra la variable "maxg" definida por usuario 
@@ -410,7 +389,6 @@
       edaph<-cbind(edaph,fitedaph$pamobject$clustering)
       colnames(edaph)[ncol(edaph)]<-"EDACLUST"
     }
-    write("7.Terminado proceso de agrupamiento por componente - Medoides", file="Error/process_info.txt", append=TRUE)
   }
   
 
@@ -432,9 +410,6 @@
   geophys<-merge(geophys,geophys2,by="POINTID")
   edaph<-merge(edaph,edaph2,by="POINTID")
   rm(bioclim2,geophys2,edaph2)
-  
-  write("8.Terminado proceso de reintroduccion de variables originales no estandarizadas", file="Error/process_info.txt", append=TRUE)
-  
   
   #Consolidaci?n de tabla ?nica a trav?s de tabla puntos
   tabla<-merge(puntos,bioclim,by="POINTID",all.x=T)
@@ -473,8 +448,6 @@
   mapaelc3<-rasterize(cbind(tabla[,2],tabla[,3]),mapaelc0,field=tabla$GEOCLUST)
   mapaelc4<-rasterize(cbind(tabla[,2],tabla[,3]),mapaelc0,field=tabla$EDACLUST)
   
-  write("9.Terminado proceso de consolidaci?n de tabla unica y generacion mapa ELC", file="Error/process_info.txt", append=TRUE)
-  
 }
 
 #11. Characterizing each final cluster by the original variables (not rescaled)
@@ -508,10 +481,6 @@
   writeRaster(mapaelc3,filename=paste(resultados,"/mapa_geofisico_",pais,".tif",sep=""),overwrite=T,datatype='FLT4S')
   writeRaster(mapaelc4,filename=paste(resultados,"/mapa_edafico_",pais,".grd",sep=""),overwrite=T,datatype='FLT4S')
   writeRaster(mapaelc4,filename=paste(resultados,"/mapa_edafico_",pais,".tif",sep=""),overwrite=T,datatype='FLT4S')
-  KML(mapaelc1,file=paste(resultados,"/mapa_elc_",pais,".kml",sep=""),overwrite=T)
-  
-  write("10.Terminado proceso de exportacion de mapa ELC", file="Error/process_info.txt", append=TRUE)
-  
   
   #OBJETO SALIDA 3
   #tablas estad?sticas por componente
@@ -597,8 +566,6 @@
   
   #OBJETO SALIDA 4
   write.table(NCATS, file = paste(resultados,"/numero_categorias_",pais,".txt",sep=""), sep = "\t", row.names = FALSE, qmethod = "double")
-  write("11.Terminado proceso de exportacion tabla categorias resultantes mapa ELC", file="Error/process_info.txt", append=TRUE)
-  
   
   ##Obtenci?n de estad?sticas descriptivas para cada categor?a ELc
   nbioclim<-length(bioclimv)
@@ -636,8 +603,6 @@
   write.table(estad, file = paste(resultados,"/Combi_ELC_",pais,".txt",sep=""), sep = "\t", row.names = FALSE, qmethod = "double")
   write.table(estad, file = paste(resultados,"/Combi_ELC_",pais,".xls",sep=""), sep = "\t", row.names = FALSE, qmethod = "double")
   
-  write("12.Terminado proceso de exportacion tabla estadisticas descriptivas mapa ELC", file="Error/process_info.txt", append=TRUE)
-  write("13.Proceso terminado exitosamente", file="Error/process_info.txt", append=TRUE) 
 }
 
 

@@ -1,6 +1,0 @@
-"clasificacionBG"	"value"
-"nula/null"	0
-"baja/low"	1
-"media baja/mid-low"	2
-"media alta/mid-high"	3
-"alta/high"	4

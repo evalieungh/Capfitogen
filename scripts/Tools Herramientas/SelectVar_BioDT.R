@@ -5,7 +5,8 @@
 # Universidad Nacional de Colombia (http://cienciasagrarias.bogota.unal.edu.co/)
 # International Treaty on Plant Genetic Resources for Food and Agriculture (http://www.fao.org/plant-treaty/en/)  
 # Farmer's pride project (http://www.farmerspride.eu/)
-# 2021
+# BioDT project (https://biodt.eu/)
+# 2024
 ######################################################################
 
 #You can freely use and modify this script only for non-commercial purposes.Otherwise please contact to script author. Puede de manera libre usar y modificar este script s?lo con pro?sitos no comerciales. De otra forma, contacte con el autor de las herramientas.
@@ -55,18 +56,10 @@
   write(paste("ecogeopcaxe:", ecogeopcaxe,sep=""), file="Parametros.Parameters.SelecVar.txt", append=TRUE)
   write(paste("resultados:", resultados,sep=""), file="Parametros.Parameters.SelecVar.txt", append=TRUE)
   
-  #Rversion
-  vvv<-R.Version()
-  vvv<-as.numeric(vvv$year)
   
   #Determinar esa ruta como directorio de trabajo
   setwd(paste(ruta))
-  write("______NUEVO PROCESO ECOGEO________", file="Error/process_info.txt", append=TRUE)
-  write(date(), file="Error/process_info.txt", append=TRUE)
-  #Ampliaci?n m?xima de la capacidad de uso de memoria ram
-  #memory.size(max =TRUE)
-  write("1.Terminado proceso de determinaci?n de directorio de trabajo", file="Error/process_info.txt", append=TRUE)
-  
+
 }
 
 #2. Installing (in case of absence) and load required packages
@@ -107,18 +100,8 @@
   
   resol<-subset(resol,resolucion==paste(resol1))
   resol<-as.character(resol[1,2])
-  write("2.Terminado proceso carga de tablas de lista de pa?ses y resoluci?n", file="Error/process_info.txt", append=TRUE)
   #Uso primera vez (requiere instalar los paquetes)
   ##Elemento introducido por el usuario: primvez . Nota: Tener en cuenta que si en el mismo PC ya se ha instalado ELC mapas, no hace falta reinstalar paquetes
-  #if(primvez){
-  #if(!internet){
-  #install.packages(c("Packages/sp_1.0-4.zip","Packages/raster_2.0-31.zip","Packages/maptools_0.8-20.zip","Packages/rgdal_0.7-22.zip","Packages/dismo_0.7-23","Packages/adegenet_1.3-8.zip","Packages/ade4_1.5-2.zip","Packages/labdsv_1.5-0.zip"), repos = NULL)
-  #}
-  #if(internet){
-  #install.packages(c("sp","raster","maptools","rgdal","dismo","cluster","ade4","labdsv"), repos='http://cran.us.r-project.org',dep="Depends")
-  #}
-  #}
-  write("3.Terminado proceso de instalaci?n de paquetes", file="Error/process_info.txt", append=TRUE)
   #activar paquetes ya instalados y necesarios
   #Check e instalacion si a lugar
   packages2<-vector()
@@ -173,7 +156,6 @@
   library(clustvarsel)
   library(randomForest)
   
-  write("4.Terminado proceso de carga de paquetes", file="Error/process_info.txt", append=TRUE)
   #########################
   
 }
@@ -183,19 +165,14 @@
 {
   #introducci?n de pasaporte
   pasaporte<-read.delim(paste("Pasaporte/",pasaporte,sep=""))
-  write("5.Terminado proceso de carga de tablas originales de pasaporte", file="Error/process_info.txt", append=TRUE)
   #Selecci?n de pasaportes sobre el umbral de geoqual
   pasaporte<-subset(pasaporte,!is.na(DECLATITUDE)&!is.na(DECLONGITUDE))
   if(geoqual==TRUE){
     pasaporte<-subset(pasaporte,TOTALQUAL100>=paste(totalqual))
   }
-  write("6.Terminado proceso de fijaci?n de umbral de TOTALQUAL", file="Error/process_info.txt", append=TRUE)
-  
-  write("7.Iniciando proceso eliminaci?n duplicados espaciales", file="Error/process_info.txt", append=TRUE)
   
   #Eliminaci?n de duplicados espaciales
   puntosBG<-SpatialPointsDataFrame(pasaporte[,c("DECLONGITUDE","DECLATITUDE")],pasaporte,proj4string=CRS("+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0"))
-  write("7.1 Terminado generacion mapa de puntos BG (pasaporte) con coordenadas", file="Error/process_info.txt", append=TRUE)
   
   #Eliminando duplicados geogr?ficos
   if (mean(pasaporte$DECLATITUDE)<23){
@@ -212,7 +189,7 @@
   }
   puntosBG<-remove.duplicates(puntosBG,zero=distdup1)
   pasaporte<-puntosBG@data
-  write("7.1 Terminado proceso de eliminaci?n de duplicados espaciales distdup", file="Error/process_info.txt", append=TRUE)
+  
   rm(puntosBG)
   tabla<-pasaporte[,c(2,23,25)]
   
@@ -427,7 +404,6 @@
   write.table(entradasEDA, file = paste(resultadosEdaphic,"/accessions_used_edaphic_varselection.txt",sep=""), sep = "\t", row.names = FALSE, qmethod = "double")
   write.table(entradasEDA, file = paste(resultadosEdaphic,"/accessions_used_edaphic_varselection.xls",sep=""), sep = "\t", row.names = FALSE, qmethod = "double")
   setwd(paste(ruta))
-  write("9.Terminado proceso de eliminaci?n entradas con NAs", file="Error/process_info.txt", append=TRUE)
   
   #Eliminacion de variables monomorficas
   elimono<-list()
@@ -1061,9 +1037,6 @@
   rm(importancia.eda)
   
   setwd(paste(ruta))
-  write("12.Terminado proceso de an?lisis multivariado - PCA", file="Error/process_info.txt", append=TRUE)
-  
-  write("13.Proceso finalizado exitosamente", file="Error/process_info.txt", append=TRUE)
   
 }
 

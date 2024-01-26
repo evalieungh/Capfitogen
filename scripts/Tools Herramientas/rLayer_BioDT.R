@@ -5,8 +5,10 @@
 # Universidad Nacional de Colombia (http://cienciasagrarias.bogota.unal.edu.co/)
 # International Treaty on Plant Genetic Resources for Food and Agriculture (http://www.fao.org/plant-treaty/en/)  
 # Farmer's pride project (http://www.farmerspride.eu/)
-# 2021
+# BioDT project (https://biodt.eu/)
+# 2024
 ######################################################################
+
 
 #You can freely use and modify this script only for non-commercial purposes.Otherwise please contact to script author. Puede de manera libre usar y modificar este script s?lo con pro?sitos no comerciales. De otra forma, contacte con el autor de las herramientas.
 #In any case, we encourage you include in your study publication the correspondent credits (about R software, packages and script author). En cualquier caso, le animamos a que incluya en la publicaci?n de su estudio los cr?ditos correspondientes (acerca del software R, los paquetes y el autor del script)
@@ -21,10 +23,8 @@
 ##########################################################################################################
 ##########################################################################################################
 setwd(paste(ruta))
-write("______NUEVO PROCESO rLayer________", file="Error/process_info.txt", append=TRUE)
-write(date(), file="Error/process_info.txt", append=TRUE)
 
-#Check e instalacion si a lugar
+#Checking if each required package is installed already and it is where will looking for
 packages2<-vector()
 if(system.file(package="sp")==""){
   packages2<-append(packages2,"sp")
@@ -42,23 +42,21 @@ if(system.file(package="dismo")==""){
   packages2<-append(packages2,"dismo")
 }
 
-#Instalar los que hagan falta
+#Just in case of missing (non-installed) packages, then instrall them
 if(length(packages2)>0){
   install.packages(setdiff(packages2, rownames(installed.packages())))
 }
-#Carga de paquetes
+#loading packages
 library(sp)
 library(raster)
 library(sf)
 library(dismo)
 library(terra)
 
-#introducci?n tabla de lista de pa?ses y resoluciones de extracci?n a elegir y traducci?n
-#Rversion
-vvv<-R.Version()
-vvv<-as.numeric(vvv$year)
+#introducing some parameters and checking if they were correctly typed by users, comparing to the list of countries table and available resolution tables, and converting the original user's selection into codes valid for this script
 
-#Condicional resol por si no lo abre v?a load.RData
+# Open equivalneces tables produces errors depending on the PC nd its setup. Here we test for any error reading those tables.
+#First, script gonna try to open RData files, and in case of errors, .txt files
 loadError<-FALSE
 abcd<-try(load("resol.RData"),silent=TRUE)
 loadError <- (is(abcd, 'try-error')|is(abcd,'error'))
@@ -98,7 +96,6 @@ if(cropway=="buffer"){
   
   i <- order(pasaporte$ACCENUMB)
   pasaporte <- pasaporte[i,]
-  write("4.Cargados los datos de pasaporte y ordenados por ACCENUMB", file="Error/process_info.txt", append=TRUE)
   
   #filtro por GEOQUAL
   if(geoqual){
@@ -135,7 +132,6 @@ if(cropway=="buffer"){
     colnames(sexagesimal)[23]<-"DECLATITUDE"
     colnames(sexagesimal)[24]<-"LATITUDE"
     colnames(sexagesimal)[25]<-"DECLONGITUDE"
-    write("5.Terminado proceso de transformaci?n sexagesimal a decimal", file="Error/process_info.txt", append=TRUE)
     ###Unificaci?n coordenadas sexagesimal a decimal y decimal original
     puntosorig<-rbind(sexagesimal,decimal)
   }
@@ -2463,7 +2459,6 @@ if(cropway=="square"){
   
   i <- order(pasaporte$ACCENUMB)
   pasaporte <- pasaporte[i,]
-  write("4.Cargados los datos de pasaporte y ordenados por ACCENUMB", file="Error/process_info.txt", append=TRUE)
   
   #filtro por GEOQUAL
   if(geoqual){
@@ -2500,7 +2495,7 @@ if(cropway=="square"){
     colnames(sexagesimal)[23]<-"DECLATITUDE"
     colnames(sexagesimal)[24]<-"LATITUDE"
     colnames(sexagesimal)[25]<-"DECLONGITUDE"
-    write("5.Terminado proceso de transformaci?n sexagesimal a decimal", file="Error/process_info.txt", append=TRUE)
+    
     ###Unificaci?n coordenadas sexagesimal a decimal y decimal original
     puntosorig<-rbind(sexagesimal,decimal)
   }
