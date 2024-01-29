@@ -1,0 +1,54 @@
+
+_________________________________________
+______Herramienta/Tool ELCmapas________
+_________________________________________
+Lista de parametros usados en: Mon Jan 29 14:44:59 2024
+List of parameters used on: Mon Jan 29 14:44:59 2024
+
+ruta:C:\Users\hmpar\OneDrive\Documents\GitHub\Capfitogen
+pais:user1
+resol1:5x5
+bioclimv:bio_1
+bioclimv:bio_11
+bioclimv:bio_17
+bioclimv:bio_6
+geophysv:alt
+geophysv:wind_annual
+geophysv:srad_annual
+latitud:TRUE
+longitud:TRUE
+edaphv:t_bulk_dens
+edaphv:t_cecsol
+edaphv:t_oc_dens
+edaphv:t_ph_kcl
+maxg:5
+metodo:kmeansbic
+iterat:10
+resultados:C:\Users\hmpar\OneDrive\Documents\GitHub\Capfitogen\Results\Melothria\ELCmapasNew
+
+_________________________________________
+______Herramienta/Tool ELCmapas________
+_________________________________________
+Lista de parametros usados en: Mon Jan 29 15:44:56 2024
+List of parameters used on: Mon Jan 29 15:44:56 2024
+
+ruta:C:\Users\hmpar\OneDrive\Documents\GitHub\Capfitogen
+pais:user1
+resol1:5x5
+bioclimv:bio_1
+bioclimv:bio_11
+bioclimv:bio_17
+bioclimv:bio_6
+geophysv:alt
+geophysv:wind_annual
+geophysv:srad_annual
+latitud:TRUE
+longitud:TRUE
+edaphv:t_bulk_dens
+edaphv:t_cecsol
+edaphv:t_oc_dens
+edaphv:t_ph_kcl
+maxg:5
+metodo:kmeansbic
+iterat:10
+resultados:C:\Users\hmpar\OneDrive\Documents\GitHub\Capfitogen\Results\Melothria\ELCmapasNew

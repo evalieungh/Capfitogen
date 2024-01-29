@@ -1,4 +1,4 @@
-######################################################################
+#####################################################################
 # Script  de la herramienta ELCmapas - ELCmapas Tool script 
 # Autor de la herramienta - Author of the tool: Mauricio Parra Quijano 
 # email: mauricio.parra@fao.org, website: http://capfitogen.net
@@ -123,100 +123,104 @@
 {
   #Correcting or adjusting some parameters introduced by uysers according to R script further requirements
   
+  #Introduction of pais (spatial framework) parameter
   #transformaci?n pais uppercase to lowercase
   pais<-tolower(pais)
   
   setwd(paste(ruta))
-  #Definici?n pa?s
   
+  #This part is blocked since the pais (workframe) parameter would not be translated anymore, then the user has to introduce exactly the name of the folder inside rdatamaps containing the 1x1,5x5,10x10 or 20x20 folders and layers.
   #Evitar error por load de lista.paises.RData
-  loadError<-FALSE
-  abcd<-try(load("lista.paises.RData"),silent=TRUE)
-  loadError <- (is(abcd, 'try-error')|is(abcd,'error'))
-  if(loadError){
-    Paises<-read.delim("lista.paises.txt")
-  }
-  rm(abcd)
-  rm(loadError)
+  #loadError<-FALSE
+  #abcd<-try(load("lista.paises.RData"),silent=TRUE)
+  #loadError <- (is(abcd, 'try-error')|is(abcd,'error'))
+  #if(loadError){
+  #  Paises<-read.delim("lista.paises.txt")
+  #}
+  #rm(abcd)
+  #rm(loadError)
+  #pais<-data.frame(pais)
+  #colnames(pais)[1]<-"Paises"
+  #pais<-merge(Paises,pais,by="Paises",all.y=TRUE)
+  #pais<-paste(pais[1,2])
+  #pais<-tolower(pais)
   
-  pais<-data.frame(pais)
-  colnames(pais)[1]<-"Paises"
-  pais<-merge(Paises,pais,by="Paises",all.y=TRUE)
-  pais<-paste(pais[1,2])
-  pais<-tolower(pais)
-  
+  #This part is blocked since the resolution parameter would not be translated anymore, then the user has to introduce exactly the resolution of interest like the name of the folder within "pais" folder containing the ecogeographical layers, in other words 1x1,5x5,10x10 or 20x20 options.
   ##Elemento introducido por el usuario: resol1
   #Condicional resol por si no lo abre v?a load.RData
-  loadError<-FALSE
-  abcd<-try(load("resol.RData"),silent=TRUE)
-  loadError <- (is(abcd, 'try-error')|is(abcd,'error'))
-  if(loadError){
-    resol<-read.delim("resol.txt")
-  }
-  rm(abcd)
-  rm(loadError)
-  
-  resol<-subset(resol,resolucion==paste(resol1))
-  resol<-as.character(resol[1,2])
+  #loadError<-FALSE
+  #abcd<-try(load("resol.RData"),silent=TRUE)
+  #loadError <- (is(abcd, 'try-error')|is(abcd,'error'))
+  #if(loadError){
+  #  resol<-read.delim("resol.txt")
+  #}
+  #rm(abcd)
+  #rm(loadError)
+  #resol<-subset(resol,resolucion==paste(resol1))
+  #resol<-as.character(resol[1,2])
   
   #carga capa de puntos
   #loading map centroids matrix for the selected region or country
-  load(paste("rdatapoints/",pais,"/",resol,"/base",resol,".RData",sep=""))
+  load(paste("rdatapoints/",pais,"/",resol1,"/base",resol1,".RData",sep=""))
   if(length(puntos$POINTID)>=1000000){
     puntos$POINTID<-c(1:length(puntos$POINTID))
   }
+  
+  #Introducing the list of bioclimatic variables selected by the users.
+  #Translating names process would be block and the user has to introduce directly the variable CODE reported in "Variables names - Nombres de variables.xlsx" file
   #introducing the complete list (table) of available variables
   #Introducci?n tablas de variables disponibles
   #Evitar error por load de geophys, edaph y bioclim.RData
-  loadError<-FALSE
-  abcd<-try(load("edaph.RData"),silent=TRUE)
-  loadError <- (is(abcd, 'try-error')|is(abcd,'error'))
-  if(loadError){
-    edaph<-read.delim("edaph.txt")
-  }
-  rm(abcd)
-  rm(loadError)
-  loadError<-FALSE
-  abcd<-try(load("bioclim.RData"),silent=TRUE)
-  loadError <- (is(abcd, 'try-error')|is(abcd,'error'))
-  if(loadError){
-    bioclim<-read.delim("bioclim.txt")
-  }
-  rm(abcd)
-  rm(loadError)
-  loadError<-FALSE
-  abcd<-try(load("geophys.RData"),silent=TRUE)
-  loadError <- (is(abcd, 'try-error')|is(abcd,'error'))
-  if(loadError){
-    geophys<-read.delim("geophys.txt")
-  }
-  rm(abcd)
-  rm(loadError)
-  
+  #loadError<-FALSE
+  #abcd<-try(load("edaph.RData"),silent=TRUE)
+  #loadError <- (is(abcd, 'try-error')|is(abcd,'error'))
+  #if(loadError){
+  #  edaph<-read.delim("edaph.txt")
+  #}
+  #rm(abcd)
+  #rm(loadError)
+  #loadError<-FALSE
+  #abcd<-try(load("bioclim.RData"),silent=TRUE)
+  #loadError <- (is(abcd, 'try-error')|is(abcd,'error'))
+  #if(loadError){
+  #  bioclim<-read.delim("bioclim.txt")
+  #}
+  #rm(abcd)
+  #rm(loadError)
+  #loadError<-FALSE
+  #abcd<-try(load("geophys.RData"),silent=TRUE)
+  #loadError <- (is(abcd, 'try-error')|is(abcd,'error'))
+  #if(loadError){
+  #  geophys<-read.delim("geophys.txt")
+  #}
+  #rm(abcd)
+  #rm(loadError)
   ##Introducing the list of variables by component (bioclimatic, edaphic and geophysic ones) selected by the user 
   ##Elemento introducido por el usuario: bioclimv
-  bioclim2<-1:length(bioclimv)
-  bioclimv<-as.data.frame(cbind(bioclim2,bioclimv))
-  colnames(bioclimv)[2]<-"VARDESCR"
+  #bioclim2<-1:length(bioclimv)
+  #bioclimv<-as.data.frame(cbind(bioclim2,bioclimv))
+  #colnames(bioclimv)[2]<-"VARDESCR"
+  #bioclimv<-merge(bioclim,bioclimv, by="VARDESCR", all=F)
+  #bioclimv<-as.character(bioclimv[,3])
   
-  bioclimv<-merge(bioclim,bioclimv, by="VARDESCR", all=F)
-  bioclimv<-as.character(bioclimv[,3])
   
+  #Introducing the list of geophysic variables selected by the users.
+  #Translating names process would be block and the user has to introduce directly the variable CODE reported in "Variables names - Nombres de variables.xlsx" file
   ##Elemento introducido por el usuario: geophysv
-  geophys2<-1:length(geophysv)
-  geophysv<-as.data.frame(cbind(geophys2,geophysv))
-  colnames(geophysv)[2]<-"VARDESCR"
+  #geophys2<-1:length(geophysv)
+  #geophysv<-as.data.frame(cbind(geophys2,geophysv))
+  #colnames(geophysv)[2]<-"VARDESCR"
+  #geophysv<-merge(geophys,geophysv, by="VARDESCR", all=FALSE,sort=FALSE)
+  #geophysv<-as.character(geophysv[,3])
   
-  geophysv<-merge(geophys,geophysv, by="VARDESCR", all=FALSE,sort=FALSE)
-  geophysv<-as.character(geophysv[,3])
-  
+  #Introducing the list of edaphic variables selected by the users.
+  #Translating names process would be block and the user has to introduce directly the variable CODE reported in "Variables names - Nombres de variables.xlsx" file
   ##Elemento introducido por el usuario: edaphv
-  edaph2<-1:length(edaphv)
-  edaphv<-as.data.frame(cbind(edaph2,edaphv))
-  colnames(edaphv)[2]<-"VARDESCR"
-  
-  edaphv<-merge(edaph,edaphv, by="VARDESCR", all=F)
-  edaphv<-as.character(edaphv[,3])
+  #edaph2<-1:length(edaphv)
+  #edaphv<-as.data.frame(cbind(edaph2,edaphv))
+  #colnames(edaphv)[2]<-"VARDESCR"
+  #edaphv<-merge(edaph,edaphv, by="VARDESCR", all=F)
+  #edaphv<-as.character(edaphv[,3])
 
 }
 
@@ -230,19 +234,19 @@
   #produccion de dos stacks
   biocliml<-list()
   for(i in 1:length(bioclimv)){
-    biocliml[[i]]<-raster(paste("rdatamaps/",pais,"/",resol,"/",bioclimv[i],".tif",sep=""))
+    biocliml[[i]]<-raster(paste("rdatamaps/",pais,"/",resol1,"/",bioclimv[i],".tif",sep=""))
     names(biocliml[[i]])<-paste(bioclimv[i])
   }
   bioclimstack<-do.call("stack",biocliml)
   geophysl<-list()
   for(i in 1:length(geophysv)){
-    geophysl[[i]]<-raster(paste("rdatamaps/",pais,"/",resol,"/",geophysv[i],".tif",sep=""))
+    geophysl[[i]]<-raster(paste("rdatamaps/",pais,"/",resol1,"/",geophysv[i],".tif",sep=""))
     names(geophysl[[i]])<-paste(geophysv[i])
   }
   geophysstack<-do.call("stack",geophysl)
   edaphl<-list()
   for(i in 1:length(edaphv)){
-    edaphl[[i]]<-raster(paste("rdatamaps/",pais,"/",resol,"/",edaphv[i],".tif",sep=""))
+    edaphl[[i]]<-raster(paste("rdatamaps/",pais,"/",resol1,"/",edaphv[i],".tif",sep=""))
     names(edaphl[[i]])<-paste(edaphv[i])
   }
   edaphstack<-do.call("stack",edaphl)
@@ -358,7 +362,7 @@
   ############################################################
   #######Partici?n alrededor de medoides, uso de Clara########
   
-  #if(metodo=="medoides"){
+  if(metodo=="medoides"){
     if(nrow(bioclim)<=10000){
       fitbioclim<-pamk(bioclim[,-1],krange=2:maxg,criterion="asw",usepam=F)
       bioclim<-cbind(bioclim,fitbioclim$pamobject$clustering)
@@ -389,9 +393,248 @@
       edaph<-cbind(edaph,fitedaph$pamobject$clustering)
       colnames(edaph)[ncol(edaph)]<-"EDACLUST"
     }
+    write("7.Terminado proceso de agrupamiento por componente - Medoides", file="Error/process_info.txt", append=TRUE)
   }
   
-
+  ############################################################
+  #M?todo "elbow", o disminuci?n suma de cuadrados intragrupo#
+  #c?lculo de suma de cuadrados dentro de cada grupo
+  if(metodo=="elbow"){
+    wss <- (nrow(bioclim)-1)*sum(apply(bioclim,2,var))
+    for (i in 2:maxg) {
+      wss[i] <- sum(kmeans(bioclim[,-1],centers=i)$withinss)
+    }
+    par(mfrow=c(1,3))
+    plot(1:maxg, wss, type="b", xlab="Number of Clusters",
+         ylab="Within groups sum of squares")
+    title(main="Componente Bioclim?tico",sub="Estimaci?n No cluster")
+    dif<-vector(mode="numeric",length=maxg)
+    wss<-cbind(c(1:maxg),wss,dif)
+    colnames(wss)[1]<-"CLUSTER"
+    for (i in 2:maxg){
+      wss[i,3]<-wss[i,2]*100/wss[i-1,2]
+    }
+    for (i in 2:maxg){
+      if(wss[i,3]>=50){
+        nclust<-as.integer(paste(wss[i,1]))
+        break
+      }
+    }
+    fitbioclim<- kmeans(bioclim[,-1], nclust)
+    bioclim<- data.frame(bioclim, fitbioclim$cluster)
+    colnames(bioclim)[1]<-"POINTID"
+    colnames(bioclim)[ncol(bioclim)]<-"BIOCLUST"
+    
+    wss <- (nrow(geophys)-1)*sum(apply(geophys,2,var))
+    for (i in 2:maxg) {
+      wss[i] <- sum(kmeans(geophys[,-1],centers=i)$withinss)
+    }
+    plot(1:maxg, wss, type="b", xlab="Number of Clusters",
+         ylab="Within groups sum of squares")
+    title(main="Componente Geof?sico",sub="Estimaci?n No cluster")
+    dif<-vector(mode="numeric",length=maxg)
+    wss<-cbind(c(1:maxg),wss,dif)
+    colnames(wss)[1]<-"CLUSTER"
+    for (i in 2:maxg){
+      wss[i,3]<-wss[i,2]*100/wss[i-1,2]
+    }
+    for (i in 2:maxg){
+      if(wss[i,3]>=50){
+        nclust<-as.integer(paste(wss[i,1]))
+        break
+      }
+    }
+    fitgeophys<- kmeans(geophys[,-1], nclust)
+    geophys<- data.frame(geophys, fitgeophys$cluster)
+    colnames(geophys)[1]<-"POINTID"
+    colnames(geophys)[ncol(geophys)]<-"GEOCLUST"
+    
+    wss <- (nrow(edaph)-1)*sum(apply(edaph,2,var))
+    for (i in 2:maxg) {
+      wss[i] <- sum(kmeans(edaph[,-1],centers=i)$withinss)
+    }
+    plot(1:maxg, wss, type="b", xlab="Number of Clusters",
+         ylab="Within groups sum of squares")
+    title(main="Componente Ed?fico",sub="Estimaci?n No cluster")
+    dif<-vector(mode="numeric",length=maxg)
+    wss<-cbind(c(1:maxg),wss,dif)
+    colnames(wss)[1]<-"CLUSTER"
+    for (i in 2:maxg){
+      wss[i,3]<-wss[i,2]*100/wss[i-1,2]
+    }
+    for (i in 2:maxg){
+      if(wss[i,3]>=50){
+        nclust<-as.integer(paste(wss[i,1]))
+        break
+      }
+    }
+    fitedaph<- kmeans(edaph[,-1], nclust)
+    edaph<- data.frame(edaph, fitedaph$cluster)
+    colnames(edaph)[1]<-"POINTID"
+    colnames(edaph)[ncol(edaph)]<-"EDACLUST"
+    write("7.Terminado proceso de agrupamiento por componente - Elbow", file="Error/process_info.txt", append=TRUE)
+  }
+  
+  ############################################################
+  #M?todo Calinski-Harabasz (1974) criterion#
+  if(metodo=="calinski"){
+    #Bioclim
+    fitb<-cascadeKM(bioclim[,-1], 2, maxg,iter=iterat,criterion = "calinski")
+    calinski.bio<- as.numeric(which.max(fitb$results[2,]))
+    fitb<-fitb$partition[,calinski.bio]
+    bioclim<- data.frame(bioclim, fitb)
+    colnames(bioclim)[1]<-"POINTID"
+    colnames(bioclim)[ncol(bioclim)]<-"BIOCLUST"
+    rm(fitb)
+    #Edaphic
+    fite<-cascadeKM(edaph[,-1], 2, maxg,iter=iterat,criterion = "calinski")
+    calinski.eda<- as.numeric(which.max(fite$results[2,]))
+    fite<-fite$partition[,calinski.eda]
+    edaph<- data.frame(edaph, fite)
+    colnames(edaph)[1]<-"POINTID"
+    colnames(edaph)[ncol(edaph)]<-"EDACLUST"
+    rm(fite)
+    #Geophys
+    fitg<-cascadeKM(geophys[,-1], 2, maxg,iter=iterat,criterion = "calinski")
+    calinski.geo<- as.numeric(which.max(fitg$results[2,]))
+    fitg<-fitg$partition[,calinski.geo]
+    geophys<- data.frame(geophys, fitg)
+    colnames(geophys)[1]<-"POINTID"
+    colnames(geophys)[ncol(geophys)]<-"GEOCLUST"
+    rm(fitg)
+  }
+  
+  ############################################################
+  #simple structure index "ssi" (Dolnicar et al. 1999)#
+  if(metodo=="ssi"){
+    fitb<-cascadeKM(bioclim[,-1], 2, maxg,iter=iterat,criterion = "ssi")
+    ssi.bio<- as.numeric(which.max(fitb$results[1,]))
+    fitb<-fitb$partition[,ssi.bio]
+    bioclim<- data.frame(bioclim, fitb)
+    colnames(bioclim)[1]<-"POINTID"
+    colnames(bioclim)[ncol(bioclim)]<-"BIOCLUST"
+    rm(fitb)
+    #Edaphic
+    fite<-cascadeKM(edaph[,-1], 2, maxg,iter=iterat,criterion = "ssi")
+    ssi.eda<- as.numeric(which.max(fite$results[1,]))
+    fite<-fite$partition[,ssi.eda]
+    edaph<- data.frame(edaph, fite)
+    colnames(edaph)[1]<-"POINTID"
+    colnames(edaph)[ncol(edaph)]<-"EDACLUST"
+    rm(fite)
+    #Geophys
+    fitg<-cascadeKM(geophys[,-1], 2, maxg,iter=iterat,criterion = "ssi")
+    ssi.geo<- as.numeric(which.max(fitg$results[1,]))
+    fitg<-fitg$partition[,ssi.geo]
+    geophys<- data.frame(geophys, fitg)
+    colnames(geophys)[1]<-"POINTID"
+    colnames(geophys)[ncol(geophys)]<-"GEOCLUST"
+    rm(fitg)
+  }
+  
+  ##########################################################################
+  #optimal model according to BIC for parameterized Gaussian mixture models#
+  if(metodo=="bic"){
+    if(nrow(bioclim)>=100000){
+      setwd(paste(resultados))
+      write(paste("Number of cells from your workframe is > 100000, it may cause R shutdown"), file="Possible_Error_Mclust_BIC.txt", append=TRUE)
+      write(paste("Number of cells from your workframe =",nrow(bioclim),sep=""), file="Possible_Error_Mclust_BIC.txt", append=TRUE)
+      setwd(paste(ruta))
+    }
+    if(nrow(bioclim)>50000&nrow(bioclim)<100000){
+      setwd(paste(resultados))
+      write(paste("Number of cells from your workframe is > 50000, it may cause R processing for a long time (24 h or more) or even R shutdown"), file="Possible_Error_Mclust_BIC.txt", append=TRUE)
+      write(paste("Number of cells from your workframe =",nrow(bioclim),sep=""), file="Possible_Error_Mclust_BIC.txt", append=TRUE)
+      setwd(paste(ruta))
+    }
+    #Bioclim
+    b_clust <- mclustBIC(bioclim[,-1], G=2:maxg)
+    setwd(paste(resultados))
+    jpeg(file = "Bioclim_BIC_vs_NcompClust.jpeg")
+    plot(b_clust, G = 2:maxg)
+    dev.off()
+    setwd(paste(ruta))
+    b_summary <- summary(b_clust, data = bioclim[,-1])
+    bioclim_1<-b_summary$modelName
+    bioclim_2<-b_summary$n
+    bioclim_3<-b_summary$d
+    bioclim_4<-b_summary$G
+    bioclim_5<-b_summary$bic
+    bioclim_6<-b_summary$loglik
+    bioclim_names<-c("Optimal model code","Number of observations in data",
+                     "Number of variables","Optimal number of clusters",
+                     "Optimal BIC value", "Loglikehood to optimal BIC")
+    bioclim_values<-c(bioclim_1,bioclim_2,bioclim_3,bioclim_4,bioclim_5,bioclim_6)
+    bioclim_result<-data.frame(cbind(bioclim_names,bioclim_values))
+    colnames(bioclim_result)[1]<-"Parameters"
+    colnames(bioclim_result)[2]<-"Values"
+    write.table(bioclim_result, file = paste(resultados,"/Bioclim_BIC_results.txt",sep=""), sep = "\t", row.names = FALSE, qmethod = "double")
+    write.table(bioclim_result, file = paste(resultados,"/Bioclim_BIC_results.xls",sep=""), sep = "\t", row.names = FALSE, qmethod = "double")
+    b_summary<-b_summary$classification
+    bioclim<- data.frame(bioclim,b_summary)
+    colnames(bioclim)[1]<-"POINTID"
+    colnames(bioclim)[ncol(bioclim)]<-"BIOCLUST"
+    rm(b_summary)
+    #Edaphic
+    e_clust <- mclustBIC(edaph[,-1], G=2:maxg)
+    setwd(paste(resultados))
+    jpeg(file = "Edaph_BIC_vs_NcompClust.jpeg")
+    plot(e_clust, G = 2:maxg)
+    dev.off()
+    setwd(paste(ruta))
+    e_summary <- summary(e_clust, data = edaph[,-1])
+    edaph_1<-e_summary$modelName
+    edaph_2<-e_summary$n
+    edaph_3<-e_summary$d
+    edaph_4<-e_summary$G
+    edaph_5<-e_summary$bic
+    edaph_6<-e_summary$loglik
+    edaph_names<-c("Optimal model code","Number of observations in data",
+                   "Number of variables","Optimal number of clusters",
+                   "Optimal BIC value", "Loglikehood to optimal BIC")
+    edaph_values<-c(edaph_1,edaph_2,edaph_3,edaph_4,edaph_5,edaph_6)
+    edaph_result<-data.frame(cbind(edaph_names,edaph_values))
+    colnames(edaph_result)[1]<-"Parameters"
+    colnames(edaph_result)[2]<-"Values"
+    write.table(edaph_result, file = paste(resultados,"/edaph_BIC_results.txt",sep=""), sep = "\t", row.names = FALSE, qmethod = "double")
+    write.table(edaph_result, file = paste(resultados,"/edaph_BIC_results.xls",sep=""), sep = "\t", row.names = FALSE, qmethod = "double")
+    e_summary<-e_summary$classification
+    edaph<- data.frame(edaph,e_summary)
+    colnames(edaph)[1]<-"POINTID"
+    colnames(edaph)[ncol(edaph)]<-"EDACLUST"
+    rm(e_summary)
+    #Geophys
+    g_clust <- mclustBIC(geophys[,-1], G=2:maxg)
+    setwd(paste(resultados))
+    jpeg(file = "Geophys_BIC_vs_NcompClust.jpeg")
+    plot(g_clust, G = 2:maxg)
+    dev.off()
+    setwd(paste(ruta))
+    g_summary <- summary(g_clust, data = geophys[,-1])
+    geophys_1<-g_summary$modelName
+    geophys_2<-g_summary$n
+    geophys_3<-g_summary$d
+    geophys_4<-g_summary$G
+    geophys_5<-g_summary$bic
+    geophys_6<-g_summary$loglik
+    geophys_names<-c("Optimal model code","Number of observations in data",
+                     "Number of variables","Optimal number of clusters",
+                     "Optimal BIC value", "Loglikehood to optimal BIC")
+    geophys_values<-c(geophys_1,geophys_2,geophys_3,geophys_4,geophys_5,geophys_6)
+    geophys_result<-data.frame(cbind(geophys_names,geophys_values))
+    colnames(geophys_result)[1]<-"Parameters"
+    colnames(geophys_result)[2]<-"Values"
+    write.table(geophys_result, file = paste(resultados,"/geophys_BIC_results.txt",sep=""), sep = "\t", row.names = FALSE, qmethod = "double")
+    write.table(geophys_result, file = paste(resultados,"/geophys_BIC_results.xls",sep=""), sep = "\t", row.names = FALSE, qmethod = "double")
+    g_summary<-g_summary$classification
+    geophys<- data.frame(geophys,g_summary)
+    colnames(geophys)[1]<-"POINTID"
+    colnames(geophys)[ncol(geophys)]<-"GEOCLUST"
+    rm(g_summary)
+  }
+  
+  #End of part 8
+}
 #9. Combining clusters from each component to obtain ecogeographical categories (bioclimatic, edaphic and geophysical unique conditions)
 #10. Creating each component and the combination (ELC) map
 

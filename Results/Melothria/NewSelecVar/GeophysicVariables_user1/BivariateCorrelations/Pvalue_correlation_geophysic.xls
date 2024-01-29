@@ -1,0 +1,7 @@
+"wind_annual"	"wind_1"	"wind_7"	"alt"	"slope"	"srad_annual"
+"wind_annual"	NA	0	0	0	0	0
+"wind_1"	0	NA	0	0	0	0
+"wind_7"	0	0	NA	0	0	0.013
+"alt"	0	0	0	NA	0	0.005
+"slope"	0	0	0	0	NA	0.161
+"srad_annual"	0	0	0.013	0.005	0.161	NA

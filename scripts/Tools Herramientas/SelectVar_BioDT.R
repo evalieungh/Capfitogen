@@ -66,44 +66,46 @@
 #3. Checking the validity of introduced parameters
 
 {
-  #introducci?n tabla de lista de pa?ses y resoluciones de extracci?n a elegir y traducci?n
+  #Introduction of pais (spatial framework) parameter 
   #Definici?n pais
   #transformaci?n pais uppercase to lowercase
   pais<-tolower(pais)
   setwd(paste(ruta))
-  #Definici?n pa?s
+  
+  #This part is blocked since the pais (workframe) parameter would not be translated anymore, then the user has to introduce exactly the name of the folder inside rdatamaps containing the 1x1,5x5,10x10 or 20x20 folders and layers.
   #Evitar error por load de lista.paises.RData
-  loadError<-FALSE
-  abcd<-try(load("lista.paises.RData"),silent=TRUE)
-  loadError <- (is(abcd, 'try-error')|is(abcd,'error'))
-  if(loadError){
-    Paises<-read.delim("lista.paises.txt")
-  }
-  rm(abcd)
-  rm(loadError)
+  #loadError<-FALSE
+  #abcd<-try(load("lista.paises.RData"),silent=TRUE)
+  #loadError <- (is(abcd, 'try-error')|is(abcd,'error'))
+  #if(loadError){
+  #  Paises<-read.delim("lista.paises.txt")
+  #}
+  #rm(abcd)
+  #rm(loadError)
+  #pais<-data.frame(pais)
+  #colnames(pais)[1]<-"Paises"
+  #pais<-merge(Paises,pais,by="Paises",all.y=TRUE)
+  #pais<-paste(pais[1,2])
+  #pais<-tolower(pais)
   
-  pais<-data.frame(pais)
-  colnames(pais)[1]<-"Paises"
-  pais<-merge(Paises,pais,by="Paises",all.y=TRUE)
-  pais<-paste(pais[1,2])
-  pais<-tolower(pais)
-  #Definici?n resoluci?n
+  #This part is blocked since the resolution parameter would not be translated anymore, then the user has to introduce exactly the resolution of interest like the name of the folder within "pais" folder containing the ecogeographical layers, in other words 1x1,5x5,10x10 or 20x20 options.
   #Condicional resol por si no lo abre v?a load.RData
-  loadError<-FALSE
-  abcd<-try(load("resol.RData"),silent=TRUE)
-  loadError <- (is(abcd, 'try-error')|is(abcd,'error'))
-  if(loadError){
-    resol<-read.delim("resol.txt")
-  }
-  rm(abcd)
-  rm(loadError)
-  
-  resol<-subset(resol,resolucion==paste(resol1))
-  resol<-as.character(resol[1,2])
+  #loadError<-FALSE
+  #abcd<-try(load("resol.RData"),silent=TRUE)
+  #loadError <- (is(abcd, 'try-error')|is(abcd,'error'))
+  #if(loadError){
+  #  resol<-read.delim("resol.txt")
+  #}
+  #rm(abcd)
+  #rm(loadError)
+  #
+  #resol<-subset(resol,resolucion==paste(resol1))
+  #resol<-as.character(resol[1,2])
   #Uso primera vez (requiere instalar los paquetes)
   ##Elemento introducido por el usuario: primvez . Nota: Tener en cuenta que si en el mismo PC ya se ha instalado ELC mapas, no hace falta reinstalar paquetes
-  #activar paquetes ya instalados y necesarios
-  #Check e instalacion si a lugar
+  
+  #Installing required and missing packages
+  #Checking missing and downloading installers
   packages2<-vector()
   if(system.file(package="sp")==""){
     packages2<-append(packages2,"sp")
@@ -143,7 +145,7 @@
   if(length(packages2)>0){
     install.packages(setdiff(packages2, rownames(installed.packages())))
   }
-  #Carga de paquetes
+  #Loading required (and installed) packages. Some of them can be ignored according to the optimal number of cluster method selected by the user 
   library(sp)
   library(raster)
   library(sf)
@@ -163,7 +165,7 @@
 #4. Introducing and checking (including deletion of spatial duplicates) the occurrence data – Creating spatial objects with occurrences coordinates
 
 {
-  #introducci?n de pasaporte
+  #Introducing passport/ocurrence data in MCPD modified format
   pasaporte<-read.delim(paste("Pasaporte/",pasaporte,sep=""))
   #Selecci?n de pasaportes sobre el umbral de geoqual
   pasaporte<-subset(pasaporte,!is.na(DECLATITUDE)&!is.na(DECLONGITUDE))
@@ -171,10 +173,10 @@
     pasaporte<-subset(pasaporte,TOTALQUAL100>=paste(totalqual))
   }
   
-  #Eliminaci?n de duplicados espaciales
+  #Deleting spatial duplicates
   puntosBG<-SpatialPointsDataFrame(pasaporte[,c("DECLONGITUDE","DECLATITUDE")],pasaporte,proj4string=CRS("+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0"))
   
-  #Eliminando duplicados geogr?ficos
+  #Translating meters into decimal degrees according to latitude belts
   if (mean(pasaporte$DECLATITUDE)<23){
     distdup1<-distdup*0.00833
   }
@@ -222,34 +224,38 @@
 {
   ###BIOCLIM
   #carga de lista de variables
-  loadError<-FALSE
-  abcd<-try(load("bioclim.RData"),silent=TRUE)
-  loadError <- (is(abcd, 'try-error')|is(abcd,'error'))
-  if(loadError){
-    bioclim<-read.delim("bioclim.txt")
-  }
-  rm(abcd)
-  rm(loadError)
+  #loadError<-FALSE
+  #abcd<-try(load("bioclim.RData"),silent=TRUE)
+  #loadError <- (is(abcd, 'try-error')|is(abcd,'error'))
+  #if(loadError){
+  #  bioclim<-read.delim("bioclim.txt")
+  #}
+  #rm(abcd)
+  #rm(loadError)
   
   if(buffy){
     tamp<-tamp*0.008333
   }
+  
+  #Introducing the list of bioclimatic variables selected by the users.
+  #Translating names process would be block and the user has to introduce directly the variable CODE reported in "Variables names - Nombres de variables.xlsx" file
   #Elemento introducido por el usuario: bioclimv
   #Traducci?n de variables desde java a lista de variables
-  bioclim2<-1:length(bioclimv)
-  bioclimv<-as.data.frame(cbind(bioclim2,bioclimv))
-  colnames(bioclimv)[2]<-"VARDESCR"
-  bioclimv<-merge(bioclim,bioclimv, by="VARDESCR", all=F)
-  bioclimv<-as.character(bioclimv[,3])
-  #armado de stacks
+  #bioclim2<-1:length(bioclimv)
+  #bioclimv<-as.data.frame(cbind(bioclim2,bioclimv))
+  #colnames(bioclimv)[2]<-"VARDESCR"
+  #bioclimv<-merge(bioclim,bioclimv, by="VARDESCR", all=F)
+  #bioclimv<-as.character(bioclimv[,3])
+  
+  #Building stacks of ecogeographical layers
   biocliml<-list()
   for(i in 1:length(bioclimv)){
-    biocliml[[i]]<-raster(paste("rdatamaps/",pais,"/",resol,"/",bioclimv[i],".tif",sep=""))
+    biocliml[[i]]<-raster(paste("rdatamaps/",pais,"/",resol1,"/",bioclimv[i],".tif",sep=""))
     names(biocliml[[i]])<-paste(bioclimv[i])
   }
   bioclimstack<-do.call("stack",biocliml)
-  #Extracci?n de informaci?n
-  #bioclim?tica  
+  #Extracting information for the occurrences coordinates from the stack
+  #bioclimatic  
   if(!buffy){
     bioclim<-extract(bioclimstack,tabla[,c("DECLONGITUDE","DECLATITUDE")])
   }
@@ -258,38 +264,41 @@
   }
   bioclim<-data.frame(tabla[,1],bioclim)
   colnames(bioclim)[1]<-"ACCENUMB"
-  #consolidaci?n tabla bioclim?tica
+  #creating bioclimatic table
   ecogeot1<-merge(tabla1,bioclim,by="ACCENUMB",all.x=TRUE)
   setwd(paste(resultados))
   write.table(ecogeot1,file=paste(resultadosBioclim,"/Bioclim_extractedValues.txt",sep=""), sep = "\t", row.names = FALSE, qmethod = "double")
   write.table(ecogeot1,file=paste(resultadosBioclim,"/Bioclim_extractedValues.xls",sep=""), sep = "\t", row.names = FALSE, qmethod = "double")
   setwd(paste(ruta))
-  ###GEOPHYS
-  loadError<-FALSE
-  abcd<-try(load("geophys.RData"),silent=TRUE)
-  loadError <- (is(abcd, 'try-error')|is(abcd,'error'))
-  if(loadError){
-    geophys<-read.delim("geophys.txt")
-  }
-  rm(abcd)
-  rm(loadError)
   
+  ###GEOPHYS
+  #Introducing the list of geophysic variables selected by the users.
+  #Translating names process would be block and the user has to introduce directly the variable CODE reported in "Variables names - Nombres de variables.xlsx" file
+  #loadError<-FALSE
+  #abcd<-try(load("geophys.RData"),silent=TRUE)
+  #loadError <- (is(abcd, 'try-error')|is(abcd,'error'))
+  #if(loadError){
+  #  geophys<-read.delim("geophys.txt")
+  #}
+  #rm(abcd)
+  #rm(loadError)
   #Elemento introducido por el usuario: geophysv
   #Traducci?n de variables desde java a lista de variables
-  geophys2<-1:length(geophysv)
-  geophysv<-as.data.frame(cbind(geophys2,geophysv))
-  colnames(geophysv)[2]<-"VARDESCR"
-  geophysv<-merge(geophys,geophysv, by="VARDESCR", all=F,sort=FALSE)
-  geophysv<-as.character(geophysv[,3])
-  #armado de stacks
+  #geophys2<-1:length(geophysv)
+  #geophysv<-as.data.frame(cbind(geophys2,geophysv))
+  #colnames(geophysv)[2]<-"VARDESCR"
+  #geophysv<-merge(geophys,geophysv, by="VARDESCR", all=F,sort=FALSE)
+  #geophysv<-as.character(geophysv[,3])
+  
+  #Building stacks
   geophysl<-list()
   for(i in 1:length(geophysv)){
-    geophysl[[i]]<-raster(paste("rdatamaps/",pais,"/",resol,"/",geophysv[i],".tif",sep=""))
+    geophysl[[i]]<-raster(paste("rdatamaps/",pais,"/",resol1,"/",geophysv[i],".tif",sep=""))
     names(geophysl[[i]])<-paste(geophysv[i])
   }
   geophysstack<-do.call("stack",geophysl)
-  #Extracci?n de informaci?n
-  #geof?sica    
+  #Extracting information for the occurrences coordinates from the stack
+  #geophysic    
   if(!buffy){
     geophys<-extract(geophysstack,tabla[,c("DECLONGITUDE","DECLATITUDE")])
   }
@@ -298,7 +307,7 @@
   }
   geophys<-data.frame(tabla[,1],geophys)
   colnames(geophys)[1]<-"ACCENUMB"
-  #consolidaci?n tabla geof?sica
+  #creating geophysic table
   ecogeot2<-merge(tabla1,geophys,by="ACCENUMB",all.x=TRUE,sort=FALSE)
   if(latitud){
     ecogeot2<-cbind(ecogeot2,tabla[,2])
@@ -312,31 +321,34 @@
   write.table(ecogeot2, file = paste(resultadosGeophysic,"/Geophysic_extractedValues.txt",sep=""), sep = "\t", row.names = FALSE, qmethod = "double")
   write.table(ecogeot2, file = paste(resultadosGeophysic,"/Geophysic_extractedValues.xls",sep=""), sep = "\t", row.names = FALSE, qmethod = "double")
   setwd(paste(ruta))
-  ###EDAPHIC
-  loadError<-FALSE
-  abcd<-try(load("edaph.RData"),silent=TRUE)
-  loadError <- (is(abcd, 'try-error')|is(abcd,'error'))
-  if(loadError){
-    edaph<-read.delim("edaph.txt")
-  }
-  rm(abcd)
-  rm(loadError)
   
+  ###EDAPHIC
+  #Introducing the list of edaphic variables selected by the users.
+  #Translating names process would be block and the user has to introduce directly the variable CODE reported in "Variables names - Nombres de variables.xlsx" file
+  #loadError<-FALSE
+  #abcd<-try(load("edaph.RData"),silent=TRUE)
+  #loadError <- (is(abcd, 'try-error')|is(abcd,'error'))
+  #if(loadError){
+  #  edaph<-read.delim("edaph.txt")
+  #}
+  #rm(abcd)
+  #rm(loadError)
   #Elemento introducido por el usuario: edaphv
-  edaph2<-1:length(edaphv)
-  edaphv<-as.data.frame(cbind(edaph2,edaphv))
-  colnames(edaphv)[2]<-"VARDESCR"
-  edaphv<-merge(edaph,edaphv, by="VARDESCR", all=F)
-  edaphv<-as.character(edaphv[,3])
-  #armado de stacks
+  #edaph2<-1:length(edaphv)
+  #edaphv<-as.data.frame(cbind(edaph2,edaphv))
+  #colnames(edaphv)[2]<-"VARDESCR"
+  #edaphv<-merge(edaph,edaphv, by="VARDESCR", all=F)
+  #edaphv<-as.character(edaphv[,3])
+  
+  #Building stacks
   edaphl<-list()
   for(i in 1:length(edaphv)){
-    edaphl[[i]]<-raster(paste("rdatamaps/",pais,"/",resol,"/",edaphv[i],".tif",sep=""))
+    edaphl[[i]]<-raster(paste("rdatamaps/",pais,"/",resol1,"/",edaphv[i],".tif",sep=""))
     names(edaphl[[i]])<-paste(edaphv[i])
   }
   edaphstack<-do.call("stack",edaphl)
-  #Extracci?n de informaci?n
-  #ed?fica    
+  #Extracting information for the occurrences coordinates from the stack
+  #edaphic    
   if(!buffy){
     edaph<-extract(edaphstack,tabla[,c("DECLONGITUDE","DECLATITUDE")])
   }
@@ -345,7 +357,7 @@
   }
   edaph<-data.frame(tabla[,1],edaph)
   colnames(edaph)[1]<-"ACCENUMB"
-  #consolidaci?n tabla ed?fica
+  #creating edaphic table
   ecogeot3<-merge(tabla1,edaph,by="ACCENUMB",all.x=TRUE)
   setwd(paste(resultados))
   write.table(ecogeot3, file = paste(resultadosEdaphic,"/Edaphic_extractedValues.txt",sep=""), sep = "\t", row.names = FALSE, qmethod = "double")
@@ -356,9 +368,9 @@
 #9. Adjusting the ecogeographic information extracted for further analysis
 
 {
-  #########################################
-  #Selecci?n de Variables##################
-  #########################################
+  #############################################
+  #Variable selection process##################
+  #############################################
   #eliminaci?n accesiones con NA's - Bioclim
   borrar<-complete.cases(ecogeot1)
   ecogeot1b<-list()

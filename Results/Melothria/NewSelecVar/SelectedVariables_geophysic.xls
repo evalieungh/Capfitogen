@@ -1,0 +1,4 @@
+"VARID"	"VARCODE"	"VARDESCR_EN"	"VARDESCR"	"VARUNIDAD"	"VARFUENTE"	"VARMODULO"	"FUENTELINK"
+1	"alt"	"Elevacion. Metros sobre el nivel del mar"	"Elevacion"	"m"	"Worldclim"	"Geofisica"	"http://worldclim.org"
+131	"wind_annual"	"Velocidad viento anual"	"Velocidad viento anual"	"ms-1"	"Worldclim2"	"Geofisica"	"http://worldclim.org"
+144	"srad_annual"	"Radiacion solar anual"	"Radiacion solar anual"	"MJ m-2"	"Worldclim2"	"Geofisica"	"http://worldclim.org"

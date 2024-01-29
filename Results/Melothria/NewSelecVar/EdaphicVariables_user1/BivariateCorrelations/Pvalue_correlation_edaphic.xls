@@ -1,0 +1,14 @@
+"t_bulk_dens"	"t_oc_dens"	"t_oc_stock"	"t_awcts"	"t_awc2"	"t_awc3"	"t_awc1"	"t_oc_cont"	"t_clay_cont"	"t_cecsol"	"t_soilwater_cap"	"t_ph_kcl"	"t_silt_cont"
+"t_bulk_dens"	NA	0	0	0	0	0	0	0	0	0	0	0	0
+"t_oc_dens"	0	NA	0	0	0	0	0	0	0	0	0	0	0
+"t_oc_stock"	0	0	NA	0	0	0	0	0	0	0	0	0	0
+"t_awcts"	0	0	0	NA	0	0	0	0	0	0	0	0	0.17
+"t_awc2"	0	0	0	0	NA	0	0	0	0	0	0	0	0
+"t_awc3"	0	0	0	0	0	NA	0	0	0	0	0	0	0
+"t_awc1"	0	0	0	0	0	0	NA	0	0	0	0	0	0
+"t_oc_cont"	0	0	0	0	0	0	0	NA	0	0	0	0.978	0
+"t_clay_cont"	0	0	0	0	0	0	0	0	NA	0	0	0	0
+"t_cecsol"	0	0	0	0	0	0	0	0	0	NA	0	0.039	0
+"t_soilwater_cap"	0	0	0	0	0	0	0	0	0	0	NA	0	0
+"t_ph_kcl"	0	0	0	0	0	0	0	0.978	0	0.039	0	NA	0
+"t_silt_cont"	0	0	0	0.17	0	0	0	0	0	0	0	0	NA

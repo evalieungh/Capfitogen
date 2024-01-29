@@ -1,0 +1,5 @@
+"VARID"	"VARCODE"	"VARDESCR_EN"	"VARDESCR"	"VARUNIDAD"	"VARFUENTE"	"VARMODULO"	"FUENTELINK"
+3	"bio_1"	"Temperatura media anual"	"Temp prom anual"	"°C"	"Worldclim"	"Bioclimatica"	"http://worldclim.org"
+5	"bio_11"	"Temperatura media del cuarto mas frio (los tres meses mas frios)"	"Temp prom cuarto mas frio"	"°C"	"Worldclim"	"Bioclimatica"	"http://worldclim.org"
+11	"bio_17"	"Precipitacion del cuarto mas seco (los tres meses mas secos)"	"Prec cuarto mas seco"	"mm"	"Worldclim"	"Bioclimatica"	"http://worldclim.org"
+18	"bio_6"	"Minima temperatura del mes mas frio"	"Min temp mes mas frio"	"°C"	"Worldclim"	"Bioclimatica"	"http://worldclim.org"
