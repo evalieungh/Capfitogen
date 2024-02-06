@@ -2,80 +2,8 @@
 _________________________________________
 ______Herramienta/Tool SelecVar________
 _________________________________________
-Lista de parametros usados en: Mon Jan 29 13:55:49 2024
-List of parameters used on: Mon Jan 29 13:55:49 2024
-
-ruta:C:\Users\hmpar\OneDrive\Documents\GitHub\Capfitogen
-pais:user1
-pasaporte:MelothriaPendula_GEOQUAL.txt
-distdup:1
-geoqual:TRUE
-totalqual:60
-buffy:FALSE
-tamp:1000
-resol1:5x5
-bioclimv:bio_1
-bioclimv:bio_2
-bioclimv:bio_3
-bioclimv:bio_4
-bioclimv:bio_5
-bioclimv:bio_6
-bioclimv:bio_7
-bioclimv:bio_8
-bioclimv:bio_9
-bioclimv:bio_10
-bioclimv:bio_11
-bioclimv:bio_12
-bioclimv:bio_13
-bioclimv:bio_14
-bioclimv:bio_15
-bioclimv:bio_16
-bioclimv:bio_17
-bioclimv:bio_18
-bioclimv:bio_19
-edaphv:t_awc1
-edaphv:t_awc2
-edaphv:t_awc3
-edaphv:t_awcts
-edaphv:depth_rock
-edaphv:r_horizon
-edaphv:t_bulk_dens
-edaphv:t_cecsol
-edaphv:t_clay_cont
-edaphv:t_coarse_frag
-edaphv:t_oc_dens
-edaphv:t_oc_stock
-edaphv:t_oc_cont
-edaphv:t_ph_hox
-edaphv:t_ph_kcl
-edaphv:sodicity
-edaphv:t_silt_cont
-edaphv:t_sand_cont
-edaphv:t_soilwater_cap
-geophysv:alt
-geophysv:aspect
-geophysv:slope
-geophysv:wind_1
-geophysv:wind_7
-geophysv:wind_annual
-geophysv:srad_1
-geophysv:srad_7
-geophysv:srad_annual
-latitud:FALSE
-longitud:FALSE
-percenRF:0.66
-percenCorr:0.33
-CorrValue:0.5
-pValue:0.05
-nminvar:3
-ecogeopcaxe:5
-resultados:C:\Users\hmpar\OneDrive\Documents\GitHub\Capfitogen\Results\Melothria\NewSelecVar
-
-_________________________________________
-______Herramienta/Tool SelecVar________
-_________________________________________
-Lista de parametros usados en: Mon Jan 29 13:57:56 2024
-List of parameters used on: Mon Jan 29 13:57:56 2024
+Lista de parametros usados en: Tue Jan 30 14:28:24 2024
+List of parameters used on: Tue Jan 30 14:28:24 2024
 
 ruta:C:\Users\hmpar\OneDrive\Documents\GitHub\Capfitogen
 pais:user1

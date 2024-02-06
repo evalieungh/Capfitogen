@@ -1,6 +1,6 @@
 [general]
 creator=R package 'raster'
-created=2024-01-29 15:59:09
+created=2024-01-30 15:03:24
 [data]
 datatype=FLT4S
 byteorder=little
@@ -23,4 +23,4 @@ xmin=-110.780874775288
 ymin=14.3802687531709
 xmax=-86.6975414419547
 ymax=30.1302687531709
-projection=+proj=longlat +datum=WGS84 +no_defs
+projection=+proj=longlat

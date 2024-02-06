@@ -1,34 +1,34 @@
 VARID	VARCODE	VARDESCR_EN	VARDESCR	VARUNIDAD	VARFUENTE	VARMODULO	FUENTELINK
-1	alt	Elevacion. Metros sobre el nivel del mar	Elevacion	m	Worldclim	Geofisica	http://worldclim.org
-2	aspect	Orientacion (en grados) de la superficie del terreno. 0 y 359 corresponden al norte.	Orientacion	º	Derivada de SRTM DEM	Geofisica	NA
-22	eastness	Esticidad. Toma valores cercanos a 1 si la orientacion tiende al este, -1 si tiende al oeste y 0 si la orientacion tiende a norte o sur.	Esticidad		Derivada de SRTM DEM	Geofisica	NA
-23	northness	Norticidad. Toma valores cercanos a 1 si la orientacion tiende al norte, -1 si tiende al sur y 0 si la orientacion tiende a este u oeste.	Norticidad		Derivada de SRTM DEM	Geofisica	NA
-52	slope	Pendiente (en grados) de la superficie del terreno	Pendiente grados	º	Derivada de SRTM DEM	Geofisica	NA
-104	POINT_X	Longitud para el centroide de la celda	Longitud	Grados decimales	NA	Geofisica	NA
-105	POINT_Y	Latitud para centroide de la celda	Latitud	Grados decimales	NA	Geofisica	NA
-119	wind_1	Velocidad viento enero	Velocidad viento 1	ms-1	Worldclim2	Geofisica	http://worldclim.org
-120	wind_2	Velocidad viento febrero	Velocidad viento 2	ms-1	Worldclim2	Geofisica	http://worldclim.org
-121	wind_3	Velocidad viento marzo	Velocidad viento 3	ms-1	Worldclim2	Geofisica	http://worldclim.org
-122	wind_4	Velocidad viento abril	Velocidad viento 4	ms-1	Worldclim2	Geofisica	http://worldclim.org
-123	wind_5	Velocidad viento mayo	Velocidad viento 5	ms-1	Worldclim2	Geofisica	http://worldclim.org
-124	wind_6	Velocidad viento junio	Velocidad viento 6	ms-1	Worldclim2	Geofisica	http://worldclim.org
-125	wind_7	Velocidad viento julio	Velocidad viento 7	ms-1	Worldclim2	Geofisica	http://worldclim.org
-126	wind_8	Velocidad viento agosto	Velocidad viento 8	ms-1	Worldclim2	Geofisica	http://worldclim.org
-127	wind_9	Velocidad viento septiembre	Velocidad viento 9	ms-1	Worldclim2	Geofisica	http://worldclim.org
-128	wind_10	Velocidad viento octubre	Velocidad viento 10	ms-1	Worldclim2	Geofisica	http://worldclim.org
-129	wind_11	Velocidad viento noviembre	Velocidad viento 11	ms-1	Worldclim2	Geofisica	http://worldclim.org
-130	wind_12	Velocidad viento diciembre	Velocidad viento 12	ms-1	Worldclim2	Geofisica	http://worldclim.org
-131	wind_annual	Velocidad viento anual	Velocidad viento anual	ms-1	Worldclim2	Geofisica	http://worldclim.org
-132	srad_1	Radiacion solar enero	Radiacion solar 1	MJ m-2	Worldclim2	Geofisica	http://worldclim.org
-133	srad_2	Radiacion solar febrero	Radiacion solar 2	MJ m-2	Worldclim2	Geofisica	http://worldclim.org
-134	srad_3	Radiacion solar marzo	Radiacion solar 3	MJ m-2	Worldclim2	Geofisica	http://worldclim.org
-135	srad_4	Radiacion solar abril	Radiacion solar 4	MJ m-2	Worldclim2	Geofisica	http://worldclim.org
-136	srad_5	Radiacion solar mayo	Radiacion solar 5	MJ m-2	Worldclim2	Geofisica	http://worldclim.org
-137	srad_6	Radiacion solar junio	Radiacion solar 6	MJ m-2	Worldclim2	Geofisica	http://worldclim.org
-138	srad_7	Radiacion solar julio	Radiacion solar 7	MJ m-2	Worldclim2	Geofisica	http://worldclim.org
-139	srad_8	Radiacion solar agosto	Radiacion solar 8	MJ m-2	Worldclim2	Geofisica	http://worldclim.org
-140	srad_9	Radiacion solar septiembre	Radiacion solar 9	MJ m-2	Worldclim2	Geofisica	http://worldclim.org
-141	srad_10	Radiacion solar octubre	Radiacion solar 10	MJ m-2	Worldclim2	Geofisica	http://worldclim.org
-142	srad_11	Radiacion solar noviembre	Radiacion solar 11	MJ m-2	Worldclim2	Geofisica	http://worldclim.org
-143	srad_12	Radiacion solar diciembre	Radiacion solar 12	MJ m-2	Worldclim2	Geofisica	http://worldclim.org
-144	srad_annual	Radiacion solar anual	Radiacion solar anual	MJ m-2	Worldclim2	Geofisica	http://worldclim.org
+1	alt	Elevation. Meters above the sea level	Elevacion	m	Worldclim	Geofisico/Geophysic	http://worldclim.org
+2	aspect	Aspect (degree) of the land. 0 and 359 degrees correspond to north.	Orientacion	º	Derivada de SRTM DEM	Geofisico/Geophysic	NA
+22	eastness	Eastness 	Esticidad	NA	Derivada de SRTM DEM	Geofisico/Geophysic	NA
+23	northness	Northness 	Norticidad	NA	Derivada de SRTM DEM	Geofisico/Geophysic	NA
+52	slope	Slope (in degrees) of the land surface	Pendiente grados	º	Derivada de SRTM DEM	Geofisico/Geophysic	NA
+104	POINT_X	Longitude for the cell centroid	Longitud	Grados decimales	NA	Geofisico/Geophysic	NA
+105	POINT_Y	Latitude for the cell centroid	Latitud	Grados decimales	NA	Geofisico/Geophysic	NA
+119	wind_1	Wind speed January	Velocidad viento 1	ms-1	Worldclim2	Geofisico/Geophysic	http://worldclim.org
+120	wind_2	Wind speed February	Velocidad viento 2	ms-1	Worldclim2	Geofisico/Geophysic	http://worldclim.org
+121	wind_3	Wind speed March	Velocidad viento 3	ms-1	Worldclim2	Geofisico/Geophysic	http://worldclim.org
+122	wind_4	Wind speed April	Velocidad viento 4	ms-1	Worldclim2	Geofisico/Geophysic	http://worldclim.org
+123	wind_5	Wind speed May	Velocidad viento 5	ms-1	Worldclim2	Geofisico/Geophysic	http://worldclim.org
+124	wind_6	Wind speed June	Velocidad viento 6	ms-1	Worldclim2	Geofisico/Geophysic	http://worldclim.org
+125	wind_7	Wind speed July	Velocidad viento 7	ms-1	Worldclim2	Geofisico/Geophysic	http://worldclim.org
+126	wind_8	Wind speed August	Velocidad viento 8	ms-1	Worldclim2	Geofisico/Geophysic	http://worldclim.org
+127	wind_9	Wind speed September	Velocidad viento 9	ms-1	Worldclim2	Geofisico/Geophysic	http://worldclim.org
+128	wind_10	Wind speed October	Velocidad viento 10	ms-1	Worldclim2	Geofisico/Geophysic	http://worldclim.org
+129	wind_11	Wind speed November	Velocidad viento 11	ms-1	Worldclim2	Geofisico/Geophysic	http://worldclim.org
+130	wind_12	Wind speed December	Velocidad viento 12	ms-1	Worldclim2	Geofisico/Geophysic	http://worldclim.org
+131	wind_annual	Wind speed Annual	Velocidad viento anual	ms-1	Worldclim2	Geofisico/Geophysic	http://worldclim.org
+132	srad_1	Solar radiation January	Radiacion solar 1	kJ m-2 day-1	Worldclim2	Geofisico/Geophysic	http://worldclim.org
+133	srad_2	Solar radiation February	Radiacion solar 2	kJ m-2 day-1	Worldclim2	Geofisico/Geophysic	http://worldclim.org
+134	srad_3	Solar radiation March	Radiacion solar 3	kJ m-2 day-1	Worldclim2	Geofisico/Geophysic	http://worldclim.org
+135	srad_4	Solar radiation April	Radiacion solar 4	kJ m-2 day-1	Worldclim2	Geofisico/Geophysic	http://worldclim.org
+136	srad_5	Solar radiation May	Radiacion solar 5	kJ m-2 day-1	Worldclim2	Geofisico/Geophysic	http://worldclim.org
+137	srad_6	Solar radiation June	Radiacion solar 6	kJ m-2 day-1	Worldclim2	Geofisico/Geophysic	http://worldclim.org
+138	srad_7	Solar radiation July	Radiacion solar 7	kJ m-2 day-1	Worldclim2	Geofisico/Geophysic	http://worldclim.org
+139	srad_8	Solar radiation August	Radiacion solar 8	kJ m-2 day-1	Worldclim2	Geofisico/Geophysic	http://worldclim.org
+140	srad_9	Solar radiation September	Radiacion solar 9	kJ m-2 day-1	Worldclim2	Geofisico/Geophysic	http://worldclim.org
+141	srad_10	Solar radiation October	Radiacion solar 10	kJ m-2 day-1	Worldclim2	Geofisico/Geophysic	http://worldclim.org
+142	srad_11	Solar radiation November	Radiacion solar 11	kJ m-2 day-1	Worldclim2	Geofisico/Geophysic	http://worldclim.org
+143	srad_12	Solar radiation December	Radiacion solar 12	kJ m-2 day-1	Worldclim2	Geofisico/Geophysic	http://worldclim.org
+144	srad_annual	Solar radiation Annual	Radiacion solar anual	kJ m-2 day-1	Worldclim2	Geofisico/Geophysic	http://worldclim.org

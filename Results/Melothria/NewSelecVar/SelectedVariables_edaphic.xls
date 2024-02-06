@@ -1,5 +1,0 @@
-"VARID"	"VARCODE"	"VARDESCR_EN"	"VARDESCR"	"VARUNIDAD"	"VARFUENTE"	"VARMODULO"	"FUENTELINK"
-155	"t_bulk_dens"	"Bulk density (fine earth) in kg / cubic-meter - topsoil"	"Bulk density top"	"kg / cubic-m"	"Soilgrids"	"Edafica"	"https://soilgrids.org"
-157	"t_cecsol"	"Cation exchange capacity of soil in cmolc/kg - topsoil"	"Cation exchange cap top"	"cmol / kg"	"Soilgrids"	"Edafica"	"https://soilgrids.org"
-163	"t_oc_dens"	"Soil organic carbon density in kg per cubic-m"	"Organic carbon dens top"	"kg / cubic-m"	"Soilgrids"	"Edafica"	"https://soilgrids.org"
-171	"t_ph_kcl"	"Soil pH x 10 in KCl"	"Soil pH KCl top"	"index*10"	"Soilgrids"	"Edafica"	"https://soilgrids.org"
