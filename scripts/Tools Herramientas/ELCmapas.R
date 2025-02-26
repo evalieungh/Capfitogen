@@ -244,11 +244,11 @@ write("4.Terminado proceso de carga de capas raster ecogeograficas .grd", file="
 
 #Extracci?n de informaci?n
 #bioclim?tica
-bioclim<-extract(bioclimstack,puntos[,c("POINT_X","POINT_Y")])
+bioclim<-terra::extract(bioclimstack,puntos[,c("POINT_X","POINT_Y")])
 bioclim<-cbind(puntos[,1],bioclim)
 colnames(bioclim)[1]<-"POINTID"
 #geof?sica
-geophys<-extract(geophysstack,puntos[,c("POINT_X","POINT_Y")])
+geophys<-terra::extract(geophysstack,puntos[,c("POINT_X","POINT_Y")])
 geophys<-cbind(puntos[,1],geophys)
 colnames(geophys)[1]<-"POINTID"
 ##Aqu? entran los logical latitud y longitud a gusto del usuario
@@ -261,7 +261,7 @@ if(latitud){
   colnames(geophys)[ncol(geophys)]<-"LATITUD"
 }
 #ed?fica
-edaph<-extract(edaphstack,puntos[,c("POINT_X","POINT_Y")])
+edaph<-terra::extract(edaphstack,puntos[,c("POINT_X","POINT_Y")])
 edaph<-cbind(puntos[,1],edaph)
 colnames(edaph)[1]<-"POINTID"
 

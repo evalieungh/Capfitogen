@@ -175,7 +175,7 @@ if(mapaelcf){
     if(any(is.na(unique(puntosorig$BG_ELC)))){
       mapaelc<-raster(paste("ELCmapas/",mapaelc,sep=""))
       puntosBG<-SpatialPoints(puntosorig[,c("DECLONGITUDE","DECLATITUDE")],proj4string=CRS("+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0"))
-      BGcat<-extract(mapaelc,puntosBG)
+      BGcat<-terra::extract(mapaelc,puntosBG)
       puntosorig$BG_ELC<-BGcat
     }
     ####Si no hay NA's en la columna BG_ELC, va a trabajar con los valores de esa columna
@@ -183,7 +183,7 @@ if(mapaelcf){
   if(!any(namespas=="BG_ELC")){
     mapaelc<-raster(paste("ELCmapas/",mapaelc,sep=""))
     puntosBG<-SpatialPoints(puntosorig[,c("DECLONGITUDE","DECLATITUDE")],proj4string=CRS("+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0"))
-    BG_ELC<-extract(mapaelc,puntosBG)
+    BG_ELC<-terra::extract(mapaelc,puntosBG)
     puntosorig<-cbind(puntosorig,BG_ELC)
   }
 }
@@ -436,7 +436,7 @@ if(celdas){
   aaa<-rasterFromCells(aaa, 1:ncell(aaa))
   
   #extraccion cell value
-  cellvalue<-extract(aaa,puntos)
+  cellvalue<-terra::extract(aaa,puntos)
   puntosorig<-cbind(puntosorig,cellvalue)
   puntosfuera<-subset(puntosorig,is.na(cellvalue))
   if(nrow(puntosfuera)>0){
@@ -572,7 +572,7 @@ if(celdas){
   stat.top.celdas<-data.frame(cbind(Parametros.Parameters,Valores.Values))
   write.table(stat.top.celdas,paste(resultadosCell,"/Tabla_Estadisticas_Stats_Table_Complementa.txt",sep=""), sep = "\t", row.names = FALSE, qmethod = "double")
   write.table(stat.top.celdas,paste(resultadosCell,"/Tabla_Estadisticas_Stats_Table_Complementa.xls",sep=""), sep = "\t", row.names = FALSE, qmethod = "double")
-  tabla_especies<-puntosorigshp@data
+  tabla_especies<-as.data.frame(puntosorigshp)
   cellvector<-data.frame(as.numeric(paste(res[1:nceldas,1])))
   colnames(cellvector)[1]<-"cellvalue"
   sp_corte<-merge(tabla_especies,cellvector,by="cellvalue",all.y=TRUE)
