@@ -1,5 +1,5 @@
 #############################################
-#rLayer 2024 parameters script
+#rLayer 2021 parameters script
 #############################################
 #To cite CAPFITOGEN in publications use: Parra-Quijano, M., Iriondo, J.M., Torres, M.E., Lopez, F., Phillips, J., and Kell, S. 2021. CAPFITOGEN3: A toolbox for the conservation and promotion of the use of agricultural biodiversity. ISBN: 978-958-505-038-9 URL:  http://www.capfitogen.net/en
 
@@ -7,7 +7,7 @@
 
 #### for each parameter (word in black color) please assign a value or select an option
 
-ruta<-"C:/Users/hmpar/OneDrive/Documents/GitHub/Capfitogen"
+ruta<-"C:/CAPFITOGEN3"
 #Text type parameter (text that goes between quotation marks "")
 #### Note: It is the path where the structure of folders and files that are necessary to run the tools is located. It is usually a folder called CAPFITOGEN3 located in the root of the main hard drive (usually c:/)
 
@@ -15,16 +15,18 @@ ruta<-"C:/Users/hmpar/OneDrive/Documents/GitHub/Capfitogen"
 #Type of layer cropping
 #############################################
 
-#cropway<-"polygon"
+cropway<-"polygon"
 #cropway<-"square"
-cropway<-"buffer"
+#cropway<-"buffer"
+#cropway<-"country"
 #Text type parameter (text that goes between quotation marks "")
 #### Note1: This parameter tells rLayer how to crop the world layers (world) to fit certain limits.
 #### Note2: If cropway="polygon", a shapefile type vector file provided by the user will be used as an outline to crop the layers.
 #### Note3: If cropway="square", the collection sites (coordinates) included in the passport table will be used to crop the layers, using the maximum extension of the distribution of said points to make a square or rectangle cropping.
 #### Note4: If cropway="buffer", the collection sites (coordinates) included in the passport table will be used to create a circular area around each site with a radius specified in the buffer parameter
+#### Note5: If cropway="country", the set of layers disposed in rdatamaps/world/resol (1x1, 5x5, 10x10 or 20x20) correspond to an updated set of bioclimatic layers from worldclim the user is interested to use for a specific country or region, (after cropping and adjusting these updated layers, they should replace the original ones, ina similar way wc_2 set of layers replace the original bioclim(bc), precipitation (pr), max temperature (tx) or min temperature (tn)) 
 
-buffer<-100 #Only applies if cropway="buffer"
+buffer<-30 #Only applies if cropway="buffer"
 #Number type parameter (which will appear in blue in Rstudio)
 #### Note: Numerical parameter that expresses kilometers (km) and that indicates the radius that will be used to generate the surrounding areas around each coordinate/site. The circular areas will be merged to outline the entire area with which the world layers will be cropped.
 
@@ -33,7 +35,7 @@ shapefile<-"albania" #Only applies if cropway="polygon"
 #### Note1: In this parameter you must indicate the name of the shapefile, which must be in the WGS84 lat-long coordinates system and contain a single polygon by which you want to crop
 #### Note2: The shapefile (The 4-7 files that make it up. Among these, the mandatory files .shp, .dbf and .shx must be included) must be found in the Pasaporte folder (path X:/CAPFITOGEN/Pasaporte)
 
-pasaporte<-"MelothriaPendula_GEOQUAL.txt" #Only applies if cropway="square" or cropway="buffer"
+pasaporte<-"PasaporteOriginalEvaluadoGEOQUAL.txt" #Only applies if cropway="square" or cropway="buffer"
 #Text type parameter (text that goes between quotation marks "")
 # Note1: this text file must be in the Pasaporte folder, which in turn is a folder within "ruta"
 # Note2: this table has the same structure as other passport tables. It may have already been analyzed using the GEOQUAL tool
@@ -47,18 +49,27 @@ totalqual<-60 #Only applies if geoqual=TRUE
 ##### Note1: Threshold allowed for GEOQUAL (values equal to or greater than the one indicated for the TOTALQUAL parameter)
 ##### Note2: It must be a value between 0 and 100. If the value stipulated for totalqual is very high and no record in the passport table has values higher than that value in the TOTALQUAL100 column, it will surely generate an error.
 
-#resol1<-"Celdas 1x1 km aprox (30 arc-seg)"
-resol1<-"Celdas 5x5 km aprox (2.5 arc-min)"
+cropcountry<-"bc" #Only applies if cropway="country"
+#cropcountry<-"pr"
+#cropcountry<-"tn"
+#cropcountry<-"tx"
+#Text type parameter (text that goes between quotation marks "")
+##### Note1: When cropping a set of world coverage layers (updated bioclimatic variables from worldclim) by pre-defined countries, the user have to define the set of bioclimatic variables to be cropped.
+##### Note2: when cropcountry="bc" the user is indicating only 19 bioclimatic variables should be cropped, "pr" only monthly precipitation variables should be cropped, "tn" only monthly minimum temperature and "tx" only monthly maximum temperature.
+
+resol1<-"Celdas 1x1 km aprox (30 arc-seg)"
+#resol1<-"Celdas 5x5 km aprox (2.5 arc-min)"
 #resol1<-"celdas 20x20 km aprox (10 arc-min)"
 #resol1<-"celdas 10x10 km aprox (5 arc-min)"
 #Text type parameter (text that goes between quotation marks "")
 ###### Note1: This parameter indicates the resolution of the world ecogeographic layers from which the cropped layers will be obtained
 ###### Note2: To choose a resol option, you must first check that the resolution of the world layers is already available in the path x:/CAPFITOGEN/rdatamaps/world/ and that the "1x1", "5x5", "10x10" or "20x20" folders are also within this path 
 
-#uname<-"user1"
-uname<-"user2"
+uname<-"user1"
+#uname<-"user2"
 #uname<-"user3"
 #Text type parameter (text that goes between quotation marks "")
 ##### Note: the uname parameter is used to define the name of the folder that will be generated within X:/CAPFITOGEN/rdatamaps and that will contain the cropped layers
 ##### Note2: The name determined in the uname parameter can then be used in the different CAPFITOGEN tools in the "pais" parameter.
-##### Note: For the local version of CAPFITOGEN, only the options "user1", "user2" and "user3" are offered.
+##### Note3: For the local version of CAPFITOGEN, only the options "user1", "user2" and "user3" are offered.
+##### Note4: when using cropway="country", in the resultant folder called "user1","user2" or "user3" can be find the updated bioclimatic layers. They should be moved to the original set of layers country folder in order to replace the older set of bioclimatic variables. Only in cropway="country" case, "user1","user2" or "user3" will not be usable as a workframe (usually corresponding to "pais" parameter) in other tools.

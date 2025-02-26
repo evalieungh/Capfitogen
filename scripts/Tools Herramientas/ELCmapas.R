@@ -1,12 +1,12 @@
-######################################################################
+#######################################################################
 # Script  de la herramienta ELCmapas - ELCmapas Tool script 
 # Autor de la herramienta - Author of the tool: Mauricio Parra Quijano 
-# email: mauricio.parra@fao.org, website: http://capfitogen.net
+# email: mauricio.parra@fao.org, website: http://capfitogen.net/en
 # Universidad Nacional de Colombia (http://cienciasagrarias.bogota.unal.edu.co/)
 # International Treaty on Plant Genetic Resources for Food and Agriculture (http://www.fao.org/plant-treaty/en/)  
 # Farmer's pride project (http://www.farmerspride.eu/)
-# 2021
-######################################################################
+# 2024
+#######################################################################
 
 #You can freely use and modify this script only for non-commercial purposes.Otherwise please contact to script author. Puede de manera libre usar y modificar este script s?lo con pro?sitos no comerciales. De otra forma, contacte con el autor de las herramientas.
 #In any case, we encourage you include in your study publication the correspondent credits (about R software, packages and script author). En cualquier caso, le animamos a que incluya en la publicaci?n de su estudio los cr?ditos correspondientes (acerca del software R, los paquetes y el autor del script)
@@ -78,11 +78,11 @@ if(system.file(package="sp")==""){
 if(system.file(package="raster")==""){
   packages2<-append(packages2,"raster")
 }
-if(system.file(package="maptools")==""){
-  packages2<-append(packages2,"maptools")
+if(system.file(package="sf")==""){
+  packages2<-append(packages2,"sf")
 }
-if(system.file(package="rgdal")==""){
-  packages2<-append(packages2,"rgdal")
+if(system.file(package="terra")==""){
+  packages2<-append(packages2,"terra")
 }
 if(system.file(package="vegan")==""){
   packages2<-append(packages2,"vegan")
@@ -106,9 +106,8 @@ library(flexmix)
 library(fpc)
 library(sp)
 library(raster)
-library(maptools)
-library(rgdal)
-#library(ncdf)
+library(sf)
+library(terra)
 library(vegan)
 library(mclust)
 library(adegenet)
