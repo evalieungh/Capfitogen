@@ -1,12 +1,12 @@
-######################################################################
+#####################################################################
 # Script  de la herramienta rLayer - rLayer tool script 
 # Autor de la herramienta - Author of the tool: Mauricio Parra Quijano 
-# email: mauricio.parra@fao.org, website: http://capfitogen.net
+# email: mauricio.parra@fao.org, website: http://capfitogen.net/en
 # Universidad Nacional de Colombia (http://cienciasagrarias.bogota.unal.edu.co/)
 # International Treaty on Plant Genetic Resources for Food and Agriculture (http://www.fao.org/plant-treaty/en/)  
 # Farmer's pride project (http://www.farmerspride.eu/)
-# 2021
-######################################################################
+# 2024
+#####################################################################
 
 #You can freely use and modify this script only for non-commercial purposes.Otherwise please contact to script author. Puede de manera libre usar y modificar este script s?lo con pro?sitos no comerciales. De otra forma, contacte con el autor de las herramientas.
 #In any case, we encourage you include in your study publication the correspondent credits (about R software, packages and script author). En cualquier caso, le animamos a que incluya en la publicaci?n de su estudio los cr?ditos correspondientes (acerca del software R, los paquetes y el autor del script)
@@ -32,18 +32,13 @@ if(system.file(package="sp")==""){
 if(system.file(package="raster")==""){
   packages2<-append(packages2,"raster")
 }
-if(system.file(package="maptools")==""){
-  packages2<-append(packages2,"maptools")
-}
-if(system.file(package="rgdal")==""){
-  packages2<-append(packages2,"rgdal")
+if(system.file(package="sf")==""){
+  packages2<-append(packages2,"sf")
 }
 if(system.file(package="dismo")==""){
   packages2<-append(packages2,"dismo")
 }
-if(system.file(package="rgeos")==""){
-  packages2<-append(packages2,"rgeos")
-}
+
 
 #Instalar los que hagan falta
 if(length(packages2)>0){
@@ -52,10 +47,8 @@ if(length(packages2)>0){
 #Carga de paquetes
 library(sp)
 library(raster)
-library(maptools)
-library(rgeos)
 library(dismo)
-library(rgdal)
+library(sf)
 
 #introducci?n tabla de lista de pa?ses y resoluciones de extracci?n a elegir y traducci?n
 #Rversion
@@ -1304,7 +1297,9 @@ if(cropway=="polygon"){
   molde<-raster(paste("rdatamaps/world/",resol,"/alt.tif",sep=""))
   crs(molde)<-CRS("+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0")
   #Entrada polygon
-  areas<-readOGR(paste("Pasaporte/",shapefile,".shp",sep=""))
+  areas<-st_read(paste("Pasaporte/",shapefile,".shp",sep=""))
+  areas<-as_Spatial(areas)
+  
   areas<-SpatialPolygons(areas@polygons,proj4string=CRS("+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0") )
   molde<-crop(molde,areas)
   molde<-mask(molde,areas)
@@ -3319,4 +3314,366 @@ if(cropway=="square"){
   dir.create(as.vector(paste(resol)))
   save(puntos,file=paste(resol,"/","base",resol,".RData",sep=""))
   rm(tmean_12)
+}
+
+if(cropway=="country"){
+  #Entrada raster 
+  setwd(paste(ruta))
+  if(cropcountry=="bc"){
+    molde<-raster(paste("rdatamaps/",pais,"/",resol,"/bio_1.tif",sep=""))
+    crs(molde)<-CRS("+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0")
+    moldextent<-extent(molde)
+    
+    #Corte
+    bio_1<-crop(raster(paste("rdatamaps/world/",resol,"/bio_1.tif",sep="")),molde)
+    extent(bio_1)<-moldextent
+    bio_1<-mask(bio_1,molde)
+    writeRaster(bio_1,filename=paste("rdatamaps/",uname,"/",resol,"/bio_1.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(bio_1)
+    
+    bio_2<-crop(raster(paste("rdatamaps/world/",resol,"/bio_2.tif",sep="")),molde)
+    extent(bio_2)<-moldextent
+    bio_2<-mask(bio_2,molde)
+    writeRaster(bio_2,filename=paste("rdatamaps/",uname,"/",resol,"/bio_2.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(bio_2)
+    
+    bio_3<-crop(raster(paste("rdatamaps/world/",resol,"/bio_3.tif",sep="")),molde)
+    extent(bio_3)<-moldextent
+    bio_3<-mask(bio_3,molde)
+    writeRaster(bio_3,filename=paste("rdatamaps/",uname,"/",resol,"/bio_3.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(bio_3)
+    
+    bio_4<-crop(raster(paste("rdatamaps/world/",resol,"/bio_4.tif",sep="")),molde)
+    extent(bio_4)<-moldextent
+    bio_4<-mask(bio_4,molde)
+    writeRaster(bio_4,filename=paste("rdatamaps/",uname,"/",resol,"/bio_4.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(bio_4)
+    
+    bio_5<-crop(raster(paste("rdatamaps/world/",resol,"/bio_5.tif",sep="")),molde)
+    extent(bio_5)<-moldextent
+    bio_5<-mask(bio_5,molde)
+    writeRaster(bio_5,filename=paste("rdatamaps/",uname,"/",resol,"/bio_5.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(bio_5)
+    
+    bio_6<-crop(raster(paste("rdatamaps/world/",resol,"/bio_6.tif",sep="")),molde)
+    extent(bio_6)<-moldextent
+    bio_6<-mask(bio_6,molde)
+    writeRaster(bio_6,filename=paste("rdatamaps/",uname,"/",resol,"/bio_6.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(bio_6)
+    
+    bio_7<-crop(raster(paste("rdatamaps/world/",resol,"/bio_7.tif",sep="")),molde)
+    extent(bio_7)<-moldextent
+    bio_7<-mask(bio_7,molde)
+    writeRaster(bio_7,filename=paste("rdatamaps/",uname,"/",resol,"/bio_7.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(bio_7)
+    
+    bio_8<-crop(raster(paste("rdatamaps/world/",resol,"/bio_8.tif",sep="")),molde)
+    extent(bio_8)<-moldextent
+    bio_8<-mask(bio_8,molde)
+    writeRaster(bio_8,filename=paste("rdatamaps/",uname,"/",resol,"/bio_8.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(bio_8)
+    
+    bio_9<-crop(raster(paste("rdatamaps/world/",resol,"/bio_9.tif",sep="")),molde)
+    extent(bio_9)<-moldextent
+    bio_9<-mask(bio_9,molde)
+    writeRaster(bio_9,filename=paste("rdatamaps/",uname,"/",resol,"/bio_9.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(bio_9)
+    
+    bio_10<-crop(raster(paste("rdatamaps/world/",resol,"/bio_10.tif",sep="")),molde)
+    extent(bio_10)<-moldextent
+    bio_10<-mask(bio_10,molde)
+    writeRaster(bio_10,filename=paste("rdatamaps/",uname,"/",resol,"/bio_10.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(bio_10)
+    
+    bio_11<-crop(raster(paste("rdatamaps/world/",resol,"/bio_11.tif",sep="")),molde)
+    extent(bio_11)<-moldextent
+    bio_11<-mask(bio_11,molde)
+    writeRaster(bio_11,filename=paste("rdatamaps/",uname,"/",resol,"/bio_11.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(bio_11)
+    
+    bio_12<-crop(raster(paste("rdatamaps/world/",resol,"/bio_12.tif",sep="")),molde)
+    extent(bio_12)<-moldextent
+    bio_12<-mask(bio_12,molde)
+    writeRaster(bio_12,filename=paste("rdatamaps/",uname,"/",resol,"/bio_12.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(bio_12)
+    
+    bio_13<-crop(raster(paste("rdatamaps/world/",resol,"/bio_13.tif",sep="")),molde)
+    extent(bio_13)<-moldextent
+    bio_13<-mask(bio_13,molde)
+    writeRaster(bio_13,filename=paste("rdatamaps/",uname,"/",resol,"/bio_13.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(bio_13)
+    
+    bio_14<-crop(raster(paste("rdatamaps/world/",resol,"/bio_14.tif",sep="")),molde)
+    extent(bio_14)<-moldextent
+    bio_14<-mask(bio_14,molde)
+    writeRaster(bio_14,filename=paste("rdatamaps/",uname,"/",resol,"/bio_14.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(bio_14)
+    
+    bio_15<-crop(raster(paste("rdatamaps/world/",resol,"/bio_15.tif",sep="")),molde)
+    extent(bio_15)<-moldextent
+    bio_15<-mask(bio_15,molde)
+    writeRaster(bio_15,filename=paste("rdatamaps/",uname,"/",resol,"/bio_15.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(bio_15)
+    
+    bio_16<-crop(raster(paste("rdatamaps/world/",resol,"/bio_16.tif",sep="")),molde)
+    extent(bio_16)<-moldextent
+    bio_16<-mask(bio_16,molde)
+    writeRaster(bio_16,filename=paste("rdatamaps/",uname,"/",resol,"/bio_16.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(bio_16)
+    
+    bio_17<-crop(raster(paste("rdatamaps/world/",resol,"/bio_17.tif",sep="")),molde)
+    extent(bio_17)<-moldextent
+    bio_17<-mask(bio_17,molde)
+    writeRaster(bio_17,filename=paste("rdatamaps/",uname,"/",resol,"/bio_17.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(bio_17)
+    
+    bio_18<-crop(raster(paste("rdatamaps/world/",resol,"/bio_18.tif",sep="")),molde)
+    extent(bio_18)<-moldextent
+    bio_18<-mask(bio_18,molde)
+    writeRaster(bio_18,filename=paste("rdatamaps/",uname,"/",resol,"/bio_18.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(bio_18)
+    
+    bio_19<-crop(raster(paste("rdatamaps/world/",resol,"/bio_19.tif",sep="")),molde)
+    extent(bio_19)<-moldextent
+    bio_19<-mask(bio_19,molde)
+    writeRaster(bio_19,filename=paste("rdatamaps/",uname,"/",resol,"/bio_19.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(bio_19)
+  }
+  
+  if(cropcountry=="pr"){
+    molde<-raster(paste("rdatamaps/",pais,"/",resol,"/prec_1.tif",sep=""))
+    crs(molde)<-CRS("+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0")
+    moldextent<-extent(molde)
+    
+    #Crop
+    prec_1<-crop(raster(paste("rdatamaps/world/",resol,"/prec_1.tif",sep="")),molde)
+    extent(prec_1)<-moldextent
+    prec_1<-mask(prec_1,molde)
+    writeRaster(prec_1,filename=paste("rdatamaps/",uname,"/",resol,"/prec_1.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(prec_1)
+    
+    prec_2<-crop(raster(paste("rdatamaps/world/",resol,"/prec_2.tif",sep="")),molde)
+    extent(prec_2)<-moldextent
+    prec_2<-mask(prec_2,molde)
+    writeRaster(prec_2,filename=paste("rdatamaps/",uname,"/",resol,"/prec_2.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(prec_2)
+    
+    prec_3<-crop(raster(paste("rdatamaps/world/",resol,"/prec_3.tif",sep="")),molde)
+    extent(prec_3)<-moldextent
+    prec_3<-mask(prec_3,molde)
+    writeRaster(prec_3,filename=paste("rdatamaps/",uname,"/",resol,"/prec_3.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(prec_3)
+    
+    prec_4<-crop(raster(paste("rdatamaps/world/",resol,"/prec_4.tif",sep="")),molde)
+    extent(prec_4)<-moldextent
+    prec_4<-mask(prec_4,molde)
+    writeRaster(prec_4,filename=paste("rdatamaps/",uname,"/",resol,"/prec_4.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(prec_4)
+    
+    prec_5<-crop(raster(paste("rdatamaps/world/",resol,"/prec_5.tif",sep="")),molde)
+    extent(prec_5)<-moldextent
+    prec_5<-mask(prec_5,molde)
+    writeRaster(prec_5,filename=paste("rdatamaps/",uname,"/",resol,"/prec_5.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(prec_5)
+    
+    prec_6<-crop(raster(paste("rdatamaps/world/",resol,"/prec_6.tif",sep="")),molde)
+    extent(prec_6)<-moldextent
+    prec_6<-mask(prec_6,molde)
+    writeRaster(prec_6,filename=paste("rdatamaps/",uname,"/",resol,"/prec_6.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(prec_6)
+    
+    prec_7<-crop(raster(paste("rdatamaps/world/",resol,"/prec_7.tif",sep="")),molde)
+    extent(prec_7)<-moldextent
+    prec_7<-mask(prec_7,molde)
+    writeRaster(prec_7,filename=paste("rdatamaps/",uname,"/",resol,"/prec_7.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(prec_7)
+    
+    prec_8<-crop(raster(paste("rdatamaps/world/",resol,"/prec_8.tif",sep="")),molde)
+    extent(prec_8)<-moldextent
+    prec_8<-mask(prec_8,molde)
+    writeRaster(prec_8,filename=paste("rdatamaps/",uname,"/",resol,"/prec_8.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(prec_8)
+    
+    prec_9<-crop(raster(paste("rdatamaps/world/",resol,"/prec_9.tif",sep="")),molde)
+    extent(prec_9)<-moldextent
+    prec_9<-mask(prec_9,molde)
+    writeRaster(prec_9,filename=paste("rdatamaps/",uname,"/",resol,"/prec_9.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(prec_9)
+    
+    prec_10<-crop(raster(paste("rdatamaps/world/",resol,"/prec_10.tif",sep="")),molde)
+    extent(prec_10)<-moldextent
+    prec_10<-mask(prec_10,molde)
+    writeRaster(prec_10,filename=paste("rdatamaps/",uname,"/",resol,"/prec_10.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(prec_10)
+    
+    prec_11<-crop(raster(paste("rdatamaps/world/",resol,"/prec_11.tif",sep="")),molde)
+    extent(prec_11)<-moldextent
+    prec_11<-mask(prec_11,molde)
+    writeRaster(prec_11,filename=paste("rdatamaps/",uname,"/",resol,"/prec_11.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(prec_11)
+    
+    prec_12<-crop(raster(paste("rdatamaps/world/",resol,"/prec_12.tif",sep="")),molde)
+    extent(prec_12)<-moldextent
+    prec_12<-mask(prec_12,molde)
+    writeRaster(prec_12,filename=paste("rdatamaps/",uname,"/",resol,"/prec_12.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(prec_12)
+  }
+  
+  if(countrycrop=="tn"){
+    molde<-raster(paste("rdatamaps/",pais,"/",resol,"/tmin_1.tif",sep=""))
+    crs(molde)<-CRS("+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0")
+    moldextent<-extent(molde)
+    
+    #Crop
+    tmin_1<-crop(raster(paste("rdatamaps/world/",resol,"/tmin_1.tif",sep="")),molde)
+    extent(tmin_1)<-moldextent
+    tmin_1<-mask(tmin_1,molde)
+    writeRaster(tmin_1,filename=paste("rdatamaps/",uname,"/",resol,"/tmin_1.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(tmin_1)
+    
+    tmin_2<-crop(raster(paste("rdatamaps/world/",resol,"/tmin_2.tif",sep="")),molde)
+    extent(tmin_2)<-moldextent
+    tmin_2<-mask(tmin_2,molde)
+    writeRaster(tmin_2,filename=paste("rdatamaps/",uname,"/",resol,"/tmin_2.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(tmin_2)
+    
+    tmin_3<-crop(raster(paste("rdatamaps/world/",resol,"/tmin_3.tif",sep="")),molde)
+    extent(tmin_3)<-moldextent
+    tmin_3<-mask(tmin_3,molde)
+    writeRaster(tmin_3,filename=paste("rdatamaps/",uname,"/",resol,"/tmin_3.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(tmin_3)
+    
+    tmin_4<-crop(raster(paste("rdatamaps/world/",resol,"/tmin_4.tif",sep="")),molde)
+    extent(tmin_4)<-moldextent
+    tmin_4<-mask(tmin_4,molde)
+    writeRaster(tmin_4,filename=paste("rdatamaps/",uname,"/",resol,"/tmin_4.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(tmin_4)
+    
+    tmin_5<-crop(raster(paste("rdatamaps/world/",resol,"/tmin_5.tif",sep="")),molde)
+    extent(tmin_5)<-moldextent
+    tmin_5<-mask(tmin_5,molde)
+    writeRaster(tmin_5,filename=paste("rdatamaps/",uname,"/",resol,"/tmin_5.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(tmin_5)
+    
+    tmin_6<-crop(raster(paste("rdatamaps/world/",resol,"/tmin_6.tif",sep="")),molde)
+    extent(tmin_6)<-moldextent
+    tmin_6<-mask(tmin_6,molde)
+    writeRaster(tmin_6,filename=paste("rdatamaps/",uname,"/",resol,"/tmin_6.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(tmin_6)
+    
+    tmin_7<-crop(raster(paste("rdatamaps/world/",resol,"/tmin_7.tif",sep="")),molde)
+    extent(tmin_7)<-moldextent
+    tmin_7<-mask(tmin_7,molde)
+    writeRaster(tmin_7,filename=paste("rdatamaps/",uname,"/",resol,"/tmin_7.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(tmin_7)
+    
+    tmin_8<-crop(raster(paste("rdatamaps/world/",resol,"/tmin_8.tif",sep="")),molde)
+    extent(tmin_8)<-moldextent
+    tmin_8<-mask(tmin_8,molde)
+    writeRaster(tmin_8,filename=paste("rdatamaps/",uname,"/",resol,"/tmin_8.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(tmin_8)
+    
+    tmin_9<-crop(raster(paste("rdatamaps/world/",resol,"/tmin_9.tif",sep="")),molde)
+    extent(tmin_9)<-moldextent
+    tmin_9<-mask(tmin_9,molde)
+    writeRaster(tmin_9,filename=paste("rdatamaps/",uname,"/",resol,"/tmin_9.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(tmin_9)
+    
+    tmin_10<-crop(raster(paste("rdatamaps/world/",resol,"/tmin_10.tif",sep="")),molde)
+    extent(tmin_10)<-moldextent
+    tmin_10<-mask(tmin_10,molde)
+    writeRaster(tmin_10,filename=paste("rdatamaps/",uname,"/",resol,"/tmin_10.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(tmin_10)
+    
+    tmin_11<-crop(raster(paste("rdatamaps/world/",resol,"/tmin_11.tif",sep="")),molde)
+    extent(tmin_11)<-moldextent
+    tmin_11<-mask(tmin_11,molde)
+    writeRaster(tmin_11,filename=paste("rdatamaps/",uname,"/",resol,"/tmin_11.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(tmin_11)
+    
+    tmin_12<-crop(raster(paste("rdatamaps/world/",resol,"/tmin_12.tif",sep="")),molde)
+    extent(tmin_12)<-moldextent
+    tmin_12<-mask(tmin_12,molde)
+    writeRaster(tmin_12,filename=paste("rdatamaps/",uname,"/",resol,"/tmin_12.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(tmin_12)
+  }
+  
+  if(countrycrop=="tx"){
+    molde<-raster(paste("rdatamaps/",pais,"/",resol,"/tmax_1.tif",sep=""))
+    crs(molde)<-CRS("+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0")
+    moldextent<-extent(molde)
+    
+    #Crop
+    tmax_1<-crop(raster(paste("rdatamaps/world/",resol,"/tmax_1.tif",sep="")),molde)
+    extent(tmax_1)<-moldextent
+    tmax_1<-mask(tmax_1,molde)
+    writeRaster(tmax_1,filename=paste("rdatamaps/",uname,"/",resol,"/tmax_1.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(tmax_1)
+    
+    tmax_2<-crop(raster(paste("rdatamaps/world/",resol,"/tmax_2.tif",sep="")),molde)
+    extent(tmax_2)<-moldextent
+    tmax_2<-mask(tmax_2,molde)
+    writeRaster(tmax_2,filename=paste("rdatamaps/",uname,"/",resol,"/tmax_2.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(tmax_2)
+    
+    tmax_3<-crop(raster(paste("rdatamaps/world/",resol,"/tmax_3.tif",sep="")),molde)
+    extent(tmax_3)<-moldextent
+    tmax_3<-mask(tmax_3,molde)
+    writeRaster(tmax_3,filename=paste("rdatamaps/",uname,"/",resol,"/tmax_3.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(tmax_3)
+    
+    tmax_4<-crop(raster(paste("rdatamaps/world/",resol,"/tmax_4.tif",sep="")),molde)
+    extent(tmax_4)<-moldextent
+    tmax_4<-mask(tmax_4,molde)
+    writeRaster(tmax_4,filename=paste("rdatamaps/",uname,"/",resol,"/tmax_4.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(tmax_4)
+    
+    tmax_5<-crop(raster(paste("rdatamaps/world/",resol,"/tmax_5.tif",sep="")),molde)
+    extent(tmax_5)<-moldextent
+    tmax_5<-mask(tmax_5,molde)
+    writeRaster(tmax_5,filename=paste("rdatamaps/",uname,"/",resol,"/tmax_5.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(tmax_5)
+    
+    tmax_6<-crop(raster(paste("rdatamaps/world/",resol,"/tmax_6.tif",sep="")),molde)
+    extent(tmax_6)<-moldextent
+    tmax_6<-mask(tmax_6,molde)
+    writeRaster(tmax_6,filename=paste("rdatamaps/",uname,"/",resol,"/tmax_6.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(tmax_6)
+    
+    tmax_7<-crop(raster(paste("rdatamaps/world/",resol,"/tmax_7.tif",sep="")),molde)
+    extent(tmax_7)<-moldextent
+    tmax_7<-mask(tmax_7,molde)
+    writeRaster(tmax_7,filename=paste("rdatamaps/",uname,"/",resol,"/tmax_7.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(tmax_7)
+    
+    tmax_8<-crop(raster(paste("rdatamaps/world/",resol,"/tmax_8.tif",sep="")),molde)
+    extent(tmax_8)<-moldextent
+    tmax_8<-mask(tmax_8,molde)
+    writeRaster(tmax_8,filename=paste("rdatamaps/",uname,"/",resol,"/tmax_8.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(tmax_8)
+    
+    tmax_9<-crop(raster(paste("rdatamaps/world/",resol,"/tmax_9.tif",sep="")),molde)
+    extent(tmax_9)<-moldextent
+    tmax_9<-mask(tmax_9,molde)
+    writeRaster(tmax_9,filename=paste("rdatamaps/",uname,"/",resol,"/tmax_9.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(tmax_9)
+    
+    tmax_10<-crop(raster(paste("rdatamaps/world/",resol,"/tmax_10.tif",sep="")),molde)
+    extent(tmax_10)<-moldextent
+    tmax_10<-mask(tmax_10,molde)
+    writeRaster(tmax_10,filename=paste("rdatamaps/",uname,"/",resol,"/tmax_10.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(tmax_10)
+    
+    tmax_11<-crop(raster(paste("rdatamaps/world/",resol,"/tmax_11.tif",sep="")),molde)
+    extent(tmax_11)<-moldextent
+    tmax_11<-mask(tmax_11,molde)
+    writeRaster(tmax_11,filename=paste("rdatamaps/",uname,"/",resol,"/tmax_11.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(tmax_11)
+    
+    tmax_12<-crop(raster(paste("rdatamaps/world/",resol,"/tmax_12.tif",sep="")),molde)
+    extent(tmax_12)<-moldextent
+    tmax_12<-mask(tmax_12,molde)
+    writeRaster(tmax_12,filename=paste("rdatamaps/",uname,"/",resol,"/tmax_12.tif",sep=""),overwrite=T,datatype='FLT4S')
+    rm(tmax_12) 
+  }
 }

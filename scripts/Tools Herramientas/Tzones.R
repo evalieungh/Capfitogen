@@ -1,11 +1,10 @@
-#####################################################################
-# Script  de la herramienta ELCmapas - ELCmapas Tool script 
+######################################################################
+# Script  de la herramienta Tzones - Tzones tool script 
 # Autor de la herramienta - Author of the tool: Mauricio Parra Quijano 
 # email: mauricio.parra@fao.org, website: http://capfitogen.net
 # Universidad Nacional de Colombia (http://cienciasagrarias.bogota.unal.edu.co/)
 # International Treaty on Plant Genetic Resources for Food and Agriculture (http://www.fao.org/plant-treaty/en/)  
 # Farmer's pride project (http://www.farmerspride.eu/)
-# BioDT project (https://biodt.eu/)
 # 2024
 ######################################################################
 
@@ -20,244 +19,251 @@
 #POR FAVOR SELECCIONE TODAS LAS LINEAS DE ESTE SCRIPT Y DESPUES HAGA CLICK EN EL BOTON "RUN". LOS RESULTADOS LOS ENCONTRARA DONDE LO INDICO EN EL SCRIPT DE PARAMETROS
 
 ##########################################################################################################
+###########################################################################################################
+#Parametros
+setwd(paste(resultados))
+write(paste(), file="Parametros.Parameters.Tzones.txt", append=TRUE)
+write("_________________________________________", file="Parametros.Parameters.Tzones.txt", append=TRUE)
+write("______Herramienta/Tool Tzones________", file="Parametros.Parameters.Tzones.txt", append=TRUE)
+write("_________________________________________", file="Parametros.Parameters.Tzones.txt", append=TRUE)
+write(paste("Lista de parametros usados en: ", date(),sep=""), file="Parametros.Parameters.Tzones.txt", append=TRUE)
+write(paste("List of parameters used on: ", date(),sep=""), file="Parametros.Parameters.Tzones.txt", append=TRUE)
+write(paste(), file="Parametros.Parameters.Tzones.txt", append=TRUE)
+
+write(paste("ruta:", ruta,sep=""), file="Parametros.Parameters.Tzones.txt", append=TRUE)
+write(paste("elcready:", elcready,sep=""), file="Parametros.Parameters.Tzones.txt", append=TRUE)
+write(paste("pais:", pais,sep=""), file="Parametros.Parameters.Tzones.txt", append=TRUE)
+write(paste("resol1:", resol1,sep=""), file="Parametros.Parameters.Tzones.txt", append=TRUE)
+write(paste("bioclimv:", bioclimv,sep=""), file="Parametros.Parameters.Tzones.txt", append=TRUE)
+write(paste("edaphv:", edaphv,sep=""), file="Parametros.Parameters.Tzones.txt", append=TRUE)
+#Correccion por tema de letra v en parametro geophys
+
+if(exists("geophys")){
+  geophysv<-geophys
+  rm(geophys)
+}
+
+write(paste("geophysv:", geophysv,sep=""), file="Parametros.Parameters.Tzones.txt", append=TRUE)
+write(paste("latitud:", latitud,sep=""), file="Parametros.Parameters.Tzones.txt", append=TRUE)
+write(paste("longitud:", longitud,sep=""), file="Parametros.Parameters.Tzones.txt", append=TRUE)
+write(paste("ssp:", ssp,sep=""), file="Parametros.Parameters.Tzones.txt", append=TRUE)
+write(paste("gcm:", gcm,sep=""), file="Parametros.Parameters.Tzones.txt", append=TRUE)
+write(paste("proy:", proy,sep=""), file="Parametros.Parameters.Tzones.txt", append=TRUE)
+write(paste("maxg:", maxg,sep=""), file="Parametros.Parameters.Tzones.txt", append=TRUE)
+write(paste("metodo:", metodo,sep=""), file="Parametros.Parameters.Tzones.txt", append=TRUE)
+write(paste("iterat:", iterat,sep=""), file="Parametros.Parameters.Tzones.txt", append=TRUE)
+write(paste("iterarf:", iterarf,sep=""), file="Parametros.Parameters.Tzones.txt", append=TRUE)
+write(paste("transfer:", transfer,sep=""), file="Parametros.Parameters.Tzones.txt", append=TRUE)
+write(paste("pasaporte:", pasaporte,sep=""), file="Parametros.Parameters.Tzones.txt", append=TRUE)
+write(paste("geoqual:", geoqual,sep=""), file="Parametros.Parameters.Tzones.txt", append=TRUE)
+write(paste("totalqual:", totalqual,sep=""), file="Parametros.Parameters.Tzones.txt", append=TRUE)
+write(paste("tecogaps:", tecogaps,sep=""), file="Parametros.Parameters.Tzones.txt", append=TRUE)
+write(paste("ttresh:", ttresh,sep=""), file="Parametros.Parameters.Tzones.txt", append=TRUE)
+write(paste("resultados:", resultados,sep=""), file="Parametros.Parameters.Tzones.txt", append=TRUE)
+write(paste("resultados2:", resultados2,sep=""), file="Parametros.Parameters.Tzones.txt", append=TRUE)
+
+##Elemento introducido por el usuario: ruta
+#Determinar esa ruta como directorio de trabajo
+setwd(paste(ruta))
+write("______NUEVO PROCESO Tzones________", file="Error/process_info.txt", append=TRUE)
+write(date(), file="Error/process_info.txt", append=TRUE)
+
 ##########################################################################################################
 
-#1. Creating a report of parameters used
+#Revisar, descargar (si fuera el caso) y activar paquetes necesarios
+#Check e instalacion si a lugar
+packages2<-vector()
 
-{
-  #Parametros/Parameters
-  setwd(paste(resultados))
-  write(paste(), file="Parametros.Parameters.ELCmapas.txt", append=TRUE)
-  write("_________________________________________", file="Parametros.Parameters.ELCmapas.txt", append=TRUE)
-  write("______Herramienta/Tool ELCmapas________", file="Parametros.Parameters.ELCmapas.txt", append=TRUE)
-  write("_________________________________________", file="Parametros.Parameters.ELCmapas.txt", append=TRUE)
-  write(paste("Lista de parametros usados en: ", date(),sep=""), file="Parametros.Parameters.ELCmapas.txt", append=TRUE)
-  write(paste("List of parameters used on: ", date(),sep=""), file="Parametros.Parameters.ELCmapas.txt", append=TRUE)
-  write(paste(), file="Parametros.Parameters.ELCmapas.txt", append=TRUE)
-  
-  write(paste("ruta:", ruta,sep=""), file="Parametros.Parameters.ELCmapas.txt", append=TRUE)
-  write(paste("pais:", pais,sep=""), file="Parametros.Parameters.ELCmapas.txt", append=TRUE)
-  write(paste("resol1:", resol1,sep=""), file="Parametros.Parameters.ELCmapas.txt", append=TRUE)
-  write(paste("bioclimv:", bioclimv,sep=""), file="Parametros.Parameters.ELCmapas.txt", append=TRUE)
-  write(paste("geophysv:", geophysv,sep=""), file="Parametros.Parameters.ELCmapas.txt", append=TRUE)
-  write(paste("latitud:", latitud,sep=""), file="Parametros.Parameters.ELCmapas.txt", append=TRUE)
-  write(paste("longitud:", longitud,sep=""), file="Parametros.Parameters.ELCmapas.txt", append=TRUE)
-  write(paste("edaphv:", edaphv,sep=""), file="Parametros.Parameters.ELCmapas.txt", append=TRUE)
-  write(paste("maxg:", maxg,sep=""), file="Parametros.Parameters.ELCmapas.txt", append=TRUE)
-  write(paste("metodo:", metodo,sep=""), file="Parametros.Parameters.ELCmapas.txt", append=TRUE)
-  write(paste("iterat:", iterat,sep=""), file="Parametros.Parameters.ELCmapas.txt", append=TRUE)
-  write(paste("resultados:", resultados,sep=""), file="Parametros.Parameters.ELCmapas.txt", append=TRUE)
-  
-  
-  ##Elemento introducido por el usuario: ruta (ruta is a parameter introduced bu the user and it should be the path to main CAPFITOGEN folder in the local PC)
-  #Determinar esa ruta como directorio de trabajo
-  setwd(paste(ruta))
-  
+if(system.file(package="modeltools")==""){
+  packages2<-append(packages2,"modeltools")
+}
+if(system.file(package="lattice")==""){
+  packages2<-append(packages2,"lattice")
+}
+if(system.file(package="flexmix")==""){
+  packages2<-append(packages2,"flexmix")
+}
+if(system.file(package="fpc")==""){
+  packages2<-append(packages2,"fpc")
+}
+if(system.file(package="sp")==""){
+  packages2<-append(packages2,"sp")
+}
+if(system.file(package="raster")==""){
+  packages2<-append(packages2,"raster")
+}
+if(system.file(package="sf")==""){
+  packages2<-append(packages2,"sf")
+}
+if(system.file(package="vegan")==""){
+  packages2<-append(packages2,"vegan")
+}
+if(system.file(package="mclust")==""){
+  packages2<-append(packages2,"mclust")
+}
+if(system.file(package="adegenet")==""){
+  packages2<-append(packages2,"adegenet")
+}
+if(system.file(package="randomForest")==""){
+  packages2<-append(packages2,"randomForest")
 }
 
-#2. Installing (in case of absence) and load required packages
-
-{
-  #Checking package installation and installing them in case
-  #activar paquetes ya instalados y necesarios
-  #Check e instalacion si a lugar
-  packages2<-vector()
-  if(system.file(package="modeltools")==""){
-    packages2<-append(packages2,"modeltools")
-  }
-  if(system.file(package="lattice")==""){
-    packages2<-append(packages2,"lattice")
-  }
-  if(system.file(package="flexmix")==""){
-    packages2<-append(packages2,"flexmix")
-  }
-  if(system.file(package="fpc")==""){
-    packages2<-append(packages2,"fpc")
-  }
-  if(system.file(package="sp")==""){
-    packages2<-append(packages2,"sp")
-  }
-  if(system.file(package="raster")==""){
-    packages2<-append(packages2,"raster")
-  }
-  if(system.file(package="sf")==""){
-    packages2<-append(packages2,"sf")
-  }
-  if(system.file(package="terra")==""){
-    packages2<-append(packages2,"terra")
-  }
-  if(system.file(package="vegan")==""){
-    packages2<-append(packages2,"vegan")
-  }
-  if(system.file(package="mclust")==""){
-    packages2<-append(packages2,"mclust")
-  }
-  if(system.file(package="adegenet")==""){
-    packages2<-append(packages2,"adegenet")
-  }
-  
-  #Missing packages to be installed
-  #Instalar los que hagan falta
-  if(length(packages2)>0){
-    install.packages(setdiff(packages2, rownames(installed.packages())))
-  }
-  #Carga de paquetes
-  #Loading packages required for ELCmapas process
-  library(modeltools)
-  library(lattice)
-  library(flexmix)
-  library(fpc)
-  library(sp)
-  library(raster)
-  library(sf)
-  library(terra)
-  #library(ncdf) not needed anymore
-  library(vegan)
-  library(mclust)
-  library(adegenet)
-  
+#Instalar los que hagan falta
+if(length(packages2)>0){
+  install.packages(setdiff(packages2, rownames(installed.packages())))
 }
+#Carga de paquetes
 
-#3. Checking the validity of introduced parameters
+library(modeltools)
+library(lattice)
+library(flexmix)
+library(fpc) # Este paquete solo se carga en versiones R 2020 si antes se actualiza el paquete diptest
+library(sp) 
+library(raster)
+library(sf)
+library(vegan)
+library(mclust)
+library(adegenet)#este paquete en version moderna de R requiere que se actualice el paquete colorspace 
+library(randomForest)
 
-{
-  #Correcting or adjusting some parameters introduced by uysers according to R script further requirements
+
+write("1.Terminado proceso de instalaci?n y carga de paquetes", file="Error/process_info.txt", append=TRUE)
+
+#Rversion
+vvv<-R.Version()
+vvv<-as.numeric(vvv$year)
+
+######################################################################
+#Proceso regular ELCmapas si a lugar
+######################################################################
+
+if(!elcready){
   
-  #Introduction of pais (spatial framework) parameter
-  #transformaci?n pais uppercase to lowercase
   pais<-tolower(pais)
   
-  setwd(paste(ruta))
+  #Check del nombre del set de capas ecogeograficas en rdatamap
+  #Carga del pais
+  loadError<-FALSE
+  abcd<-try(load("lista.paises.RData"),silent=TRUE)
+  loadError <- (is(abcd, 'try-error')|is(abcd,'error'))
+  if(loadError){
+    Paises<-read.delim("lista.paises.txt")
+  }
+  rm(abcd)
+  rm(loadError)
   
-  #This part is blocked since the pais (workframe) parameter would not be translated anymore, then the user has to introduce exactly the name of the folder inside rdatamaps containing the 1x1,5x5,10x10 or 20x20 folders and layers.
-  #Evitar error por load de lista.paises.RData
-  #loadError<-FALSE
-  #abcd<-try(load("lista.paises.RData"),silent=TRUE)
-  #loadError <- (is(abcd, 'try-error')|is(abcd,'error'))
-  #if(loadError){
-  #  Paises<-read.delim("lista.paises.txt")
-  #}
-  #rm(abcd)
-  #rm(loadError)
-  #pais<-data.frame(pais)
-  #colnames(pais)[1]<-"Paises"
-  #pais<-merge(Paises,pais,by="Paises",all.y=TRUE)
-  #pais<-paste(pais[1,2])
-  #pais<-tolower(pais)
+  pais2<-data.frame(pais)
+  colnames(pais2)[1]<-"Paises"
   
-  #This part is blocked since the resolution parameter would not be translated anymore, then the user has to introduce exactly the resolution of interest like the name of the folder within "pais" folder containing the ecogeographical layers, in other words 1x1,5x5,10x10 or 20x20 options.
-  ##Elemento introducido por el usuario: resol1
+  abcd<-merge(Paises,pais2,by="Paises",all.y=TRUE)
+
+  if(is.na(abcd[1,2])){
+    stop("pais parameter introduced by the user is not the expected, please check lista_paises.xlsx file for the correct option",call.=FALSE)
+  }
+  rm(abcd)
+  rm(pais2)
+  
+  
+  ##Definici?n resoluci?n
   #Condicional resol por si no lo abre v?a load.RData
-  #loadError<-FALSE
-  #abcd<-try(load("resol.RData"),silent=TRUE)
-  #loadError <- (is(abcd, 'try-error')|is(abcd,'error'))
-  #if(loadError){
-  #  resol<-read.delim("resol.txt")
-  #}
-  #rm(abcd)
-  #rm(loadError)
-  #resol<-subset(resol,resolucion==paste(resol1))
-  #resol<-as.character(resol[1,2])
+  loadError<-FALSE
+  abcd<-try(load("resol.RData"),silent=TRUE)
+  loadError <- (is(abcd, 'try-error')|is(abcd,'error'))
+  if(loadError){
+    resol<-read.delim("resol.txt")
+  }
+  rm(abcd)
+  rm(loadError)
+  
+  resol<-subset(resol,resolucion==paste(resol1))
+  resol<-as.character(resol[1,2])
   
   #carga capa de puntos
-  #loading map centroids matrix for the selected region or country
-  load(paste("rdatapoints/",pais,"/",resol1,"/base",resol1,".RData",sep=""))
+  load(paste("rdatapoints/",pais,"/",resol,"/base",resol,".RData",sep=""))
   if(length(puntos$POINTID)>=1000000){
     puntos$POINTID<-c(1:length(puntos$POINTID))
   }
   
-  #Introducing the list of bioclimatic variables selected by the users.
-  #Translating names process would be block and the user has to introduce directly the variable CODE reported in "Variables names - Nombres de variables.xlsx" file
-  #introducing the complete list (table) of available variables
+  
   #Introducci?n tablas de variables disponibles
   #Evitar error por load de geophys, edaph y bioclim.RData
-  #loadError<-FALSE
-  #abcd<-try(load("edaph.RData"),silent=TRUE)
-  #loadError <- (is(abcd, 'try-error')|is(abcd,'error'))
-  #if(loadError){
-  #  edaph<-read.delim("edaph.txt")
-  #}
-  #rm(abcd)
-  #rm(loadError)
-  #loadError<-FALSE
-  #abcd<-try(load("bioclim.RData"),silent=TRUE)
-  #loadError <- (is(abcd, 'try-error')|is(abcd,'error'))
-  #if(loadError){
-  #  bioclim<-read.delim("bioclim.txt")
-  #}
-  #rm(abcd)
-  #rm(loadError)
-  #loadError<-FALSE
-  #abcd<-try(load("geophys.RData"),silent=TRUE)
-  #loadError <- (is(abcd, 'try-error')|is(abcd,'error'))
-  #if(loadError){
-  #  geophys<-read.delim("geophys.txt")
-  #}
-  #rm(abcd)
-  #rm(loadError)
-  ##Introducing the list of variables by component (bioclimatic, edaphic and geophysic ones) selected by the user 
+  loadError<-FALSE
+  abcd<-try(load("edaph.RData"),silent=TRUE)
+  loadError <- (is(abcd, 'try-error')|is(abcd,'error'))
+  if(loadError){
+    edaph<-read.delim("edaph.txt")
+  }
+  rm(abcd)
+  rm(loadError)
+  loadError<-FALSE
+  abcd<-try(load("bioclim.RData"),silent=TRUE)
+  loadError <- (is(abcd, 'try-error')|is(abcd,'error'))
+  if(loadError){
+    bioclim<-read.delim("bioclim.txt")
+  }
+  rm(abcd)
+  rm(loadError)
+  loadError<-FALSE
+  abcd<-try(load("geophys.RData"),silent=TRUE)
+  loadError <- (is(abcd, 'try-error')|is(abcd,'error'))
+  if(loadError){
+    geophys<-read.delim("geophys.txt")
+  }
+  rm(abcd)
+  rm(loadError)
+  
+  write("2.Terminado proceso de carga de lista de paises y variables", file="Error/process_info.txt", append=TRUE)
+  
   ##Elemento introducido por el usuario: bioclimv
-  #bioclim2<-1:length(bioclimv)
-  #bioclimv<-as.data.frame(cbind(bioclim2,bioclimv))
-  #colnames(bioclimv)[2]<-"VARDESCR"
-  #bioclimv<-merge(bioclim,bioclimv, by="VARDESCR", all=F)
-  #bioclimv<-as.character(bioclimv[,3])
+  bioclim2<-1:length(bioclimv)
+  bioclimv<-as.data.frame(cbind(bioclim2,bioclimv))
+  colnames(bioclimv)[2]<-"VARDESCR"
   
+  bioclimv<-merge(bioclim,bioclimv, by="VARDESCR", all=F)
+  bioclimv<-as.character(bioclimv[,3])
   
-  #Introducing the list of geophysic variables selected by the users.
-  #Translating names process would be block and the user has to introduce directly the variable CODE reported in "Variables names - Nombres de variables.xlsx" file
   ##Elemento introducido por el usuario: geophysv
-  #geophys2<-1:length(geophysv)
-  #geophysv<-as.data.frame(cbind(geophys2,geophysv))
-  #colnames(geophysv)[2]<-"VARDESCR"
-  #geophysv<-merge(geophys,geophysv, by="VARDESCR", all=FALSE,sort=FALSE)
-  #geophysv<-as.character(geophysv[,3])
+  geophys2<-1:length(geophysv)
+  geophysv<-as.data.frame(cbind(geophys2,geophysv))
+  colnames(geophysv)[2]<-"VARDESCR"
   
-  #Introducing the list of edaphic variables selected by the users.
-  #Translating names process would be block and the user has to introduce directly the variable CODE reported in "Variables names - Nombres de variables.xlsx" file
+  geophysv<-merge(geophys,geophysv, by="VARDESCR", all=F)
+  geophysv<-as.character(geophysv[,3])
+  
   ##Elemento introducido por el usuario: edaphv
-  #edaph2<-1:length(edaphv)
-  #edaphv<-as.data.frame(cbind(edaph2,edaphv))
-  #colnames(edaphv)[2]<-"VARDESCR"
-  #edaphv<-merge(edaph,edaphv, by="VARDESCR", all=F)
-  #edaphv<-as.character(edaphv[,3])
-
-}
-
-#4. Creating stacks of raster layers (introducing selected ecogeographical layers)
-
-{
-  #Creating raster layers within r using the list of variables per component and other user's parameters
-  #Creating raster stacks to be sure the raster layers are fully compatible and available for extraction
+  edaph2<-1:length(edaphv)
+  edaphv<-as.data.frame(cbind(edaph2,edaphv))
+  colnames(edaphv)[2]<-"VARDESCR"
+  
+  edaphv<-merge(edaph,edaphv, by="VARDESCR", all=F)
+  edaphv<-as.character(edaphv[,3])
+  
+  write("3.Terminado proceso de arreglo de tablas finales de variables", file="Error/process_info.txt", append=TRUE)
+  
   #carga capas
   #concatenaci?n de todas las variables seleccionadas de todos los componentes
   #produccion de dos stacks
   biocliml<-list()
   for(i in 1:length(bioclimv)){
-    biocliml[[i]]<-raster(paste("rdatamaps/",pais,"/",resol1,"/",bioclimv[i],".tif",sep=""))
+    biocliml[[i]]<-raster(paste("rdatamaps/",pais,"/",resol,"/",bioclimv[i],".tif",sep=""))
     names(biocliml[[i]])<-paste(bioclimv[i])
   }
   bioclimstack<-do.call("stack",biocliml)
   geophysl<-list()
   for(i in 1:length(geophysv)){
-    geophysl[[i]]<-raster(paste("rdatamaps/",pais,"/",resol1,"/",geophysv[i],".tif",sep=""))
+    geophysl[[i]]<-raster(paste("rdatamaps/",pais,"/",resol,"/",geophysv[i],".tif",sep=""))
     names(geophysl[[i]])<-paste(geophysv[i])
   }
   geophysstack<-do.call("stack",geophysl)
   edaphl<-list()
   for(i in 1:length(edaphv)){
-    edaphl[[i]]<-raster(paste("rdatamaps/",pais,"/",resol1,"/",edaphv[i],".tif",sep=""))
+    edaphl[[i]]<-raster(paste("rdatamaps/",pais,"/",resol,"/",edaphv[i],".tif",sep=""))
     names(edaphl[[i]])<-paste(edaphv[i])
   }
   edaphstack<-do.call("stack",edaphl)
   
-}
-
-#5. Creating matrices of values from each stack (one cell in a map – one value in a matrix)
-
-{
-  #extracting information from the raster stacks per component for each centroid
-  #creating the input table for further cluster analysis
+  write("4.Terminado proceso de carga de capas raster ecogeograficas .tif", file="Error/process_info.txt", append=TRUE)
+  
   #Extracci?n de informaci?n
   #bioclim?tica
   bioclim<-extract(bioclimstack,puntos[,c("POINT_X","POINT_Y")])
@@ -267,8 +273,6 @@
   geophys<-extract(geophysstack,puntos[,c("POINT_X","POINT_Y")])
   geophys<-cbind(puntos[,1],geophys)
   colnames(geophys)[1]<-"POINTID"
-  
-  #Introducing Longitude and/or Latitude of each centroid as a variable for the cluster analysis according to user's parameters 
   ##Aqu? entran los logical latitud y longitud a gusto del usuario
   if(longitud){
     geophys<-cbind(geophys,puntos[,2])
@@ -282,17 +286,15 @@
   edaph<-extract(edaphstack,puntos[,c("POINT_X","POINT_Y")])
   edaph<-cbind(puntos[,1],edaph)
   colnames(edaph)[1]<-"POINTID"
-
+  
+  write("5.Terminado proceso de extraccion para puntos/pais desde stacks", file="Error/process_info.txt", append=TRUE)
+  
+  
   #Se salvan las tablas de datos originales para estadisticas posteriores
   save(bioclim,file="bioclimorg.RData")
   save(geophys,file="geophysorg.RData")
   save(edaph,file="edaphorg.RData")
   
-}
-
-# 6. Standardizing (rescaling) the variables (mean zero, sd=1)
-
-{
   #Estandarizaci?n de las variables
   bioclim<-data.frame(bioclim[,1],scale(bioclim[,-1]))
   bioclim<- na.omit(bioclim)
@@ -303,16 +305,12 @@
   edaph<-data.frame(edaph[,1],scale(edaph[,-1]))
   edaph<- na.omit(edaph)
   colnames(edaph)[1]<-"POINTID"
-
+  
+  write("6.Terminado proceso de estandarizacion de variables ecogeograficas", file="Error/process_info.txt", append=TRUE)
+  
   #M?todos de cluster
   ##Aqu? entra la variable "metodo" definida por usuario
-  ##aqu? entra la variable "maxg" definida por usuario 
-}
-
-#7. Finding the optimal number of clusters for each ecogeographic component (six methods)
-#8. Clustering
-
-{
+  ##aqu? entra la variable "maxg" definida por usuario
   ############################################################
   #######Methodo de sucesivos K-mens y BIC criterios##########
   if(metodo=="kmeansbic"){
@@ -395,6 +393,7 @@
     }
     write("7.Terminado proceso de agrupamiento por componente - Medoides", file="Error/process_info.txt", append=TRUE)
   }
+  
   
   ############################################################
   #M?todo "elbow", o disminuci?n suma de cuadrados intragrupo#
@@ -633,12 +632,6 @@
     rm(g_summary)
   }
   
-  #End of part 8
-}
-#9. Combining clusters from each component to obtain ecogeographical categories (bioclimatic, edaphic and geophysical unique conditions)
-#10. Creating each component and the combination (ELC) map
-
-{
   ########################################################################
   ##################FIN de CLUSTERIZACION#################################
   #Eliminaci?n variables estandarizadas y adici?n de variables originales#
@@ -653,6 +646,9 @@
   geophys<-merge(geophys,geophys2,by="POINTID")
   edaph<-merge(edaph,edaph2,by="POINTID")
   rm(bioclim2,geophys2,edaph2)
+  
+  write("8.Terminado proceso de reintroduccion de variables originales no estandarizadas", file="Error/process_info.txt", append=TRUE)
+  
   
   #Consolidaci?n de tabla ?nica a trav?s de tabla puntos
   tabla<-merge(puntos,bioclim,by="POINTID",all.x=T)
@@ -670,12 +666,11 @@
   elc<-subset(mapaelc,!duplicated(COMBI),select=-POINTID)
   elc<-subset(elc,!is.na(COMBI))
   i <- order(elc$COMBI)
-  elc<- elc[i,] 
-  
-  #Asigning numbers to each categorie
+  elc<- elc[i,]
+  #Bautizo
   elc[,2]<-1:nrow(elc)
   mapaelc<-mapaelc[,1:2]
-  #Asignation
+  #Asignaci?n
   mapaelc<-merge(mapaelc,elc,by="COMBI")
   colnames(mapaelc)[3]<-"ELC_CAT"
   tabla<-merge(tabla,mapaelc,by="POINTID",all.x=T)
@@ -683,20 +678,15 @@
   tabla$BIOCLUST[is.na(tabla$BIOCLUST)]<-0
   tabla$GEOCLUST[is.na(tabla$GEOCLUST)]<-0
   tabla$EDACLUST[is.na(tabla$EDACLUST)]<-0
-  
-  #Creating ELC raster map
+  #Creaci?n del mapa r?ster ELC
   mapaelc0<-raster(matrix(nrow=dim(biocliml[[1]])[1],ncol=dim(biocliml[[1]])[2]),template=bioclimstack)
   mapaelc1<-rasterize(cbind(tabla[,2],tabla[,3]),mapaelc0,field=tabla$ELC_CAT)
   mapaelc2<-rasterize(cbind(tabla[,2],tabla[,3]),mapaelc0,field=tabla$BIOCLUST)
   mapaelc3<-rasterize(cbind(tabla[,2],tabla[,3]),mapaelc0,field=tabla$GEOCLUST)
   mapaelc4<-rasterize(cbind(tabla[,2],tabla[,3]),mapaelc0,field=tabla$EDACLUST)
   
-}
-
-#11. Characterizing each final cluster by the original variables (not rescaled)
-#12. Exporting tables and maps in different formats
-
-{
+  write("9.Terminado proceso de consolidaci?n de tabla unica y generacion mapa ELC", file="Error/process_info.txt", append=TRUE)
+  
   #mostrar mapa
   #brk<-seq(0,max(tabla$ELC_CAT),by=1)
   #nb<-length(brk)
@@ -720,10 +710,17 @@
   
   writeRaster(mapaelc2,filename=paste(resultados,"/mapa_bioclimatico_",pais,".grd",sep=""),overwrite=T,datatype='FLT4S')
   writeRaster(mapaelc2,filename=paste(resultados,"/mapa_bioclimatico_",pais,".tif",sep=""),overwrite=T,datatype='FLT4S')
+  
   writeRaster(mapaelc3,filename=paste(resultados,"/mapa_geofisico_",pais,".grd",sep=""),overwrite=T,datatype='FLT4S')
   writeRaster(mapaelc3,filename=paste(resultados,"/mapa_geofisico_",pais,".tif",sep=""),overwrite=T,datatype='FLT4S')
+  
   writeRaster(mapaelc4,filename=paste(resultados,"/mapa_edafico_",pais,".grd",sep=""),overwrite=T,datatype='FLT4S')
   writeRaster(mapaelc4,filename=paste(resultados,"/mapa_edafico_",pais,".tif",sep=""),overwrite=T,datatype='FLT4S')
+  
+  KML(mapaelc1,file=paste(resultados,"/mapa_elc_",pais,".kml",sep=""),overwrite=T)
+  
+  write("10.Terminado proceso de exportacion de mapa ELC", file="Error/process_info.txt", append=TRUE)
+  
   
   #OBJETO SALIDA 3
   #tablas estad?sticas por componente
@@ -779,7 +776,8 @@
   tablaedaph<-merge(tablaedaph,tablaedaph2, by="EDAPH_CAT")
   write.table(tablaedaph, file = paste(resultados,"/Estadist_EDAPH_",pais,".txt",sep=""), sep = "\t", row.names = FALSE, qmethod = "double")
   write.table(tablaedaph, file = paste(resultados,"/Estadist_EDAPH_",pais,".xls",sep=""), sep = "\t", row.names = FALSE, qmethod = "double")
-  write.table(tabla, file = paste(resultados,"/Tabla_ELC_celdas_",pais,".txt",sep=""), sep = "\t", row.names = FALSE, qmethod = "double")
+  tablaf<-tabla
+  write.table(tablaf, file = paste(resultados,"/Tabla_ELC_celdas_",pais,".txt",sep=""), sep = "\t", row.names = FALSE, qmethod = "double")
   
   if(any(unique(tabla$BIOCLUST)==0)){
     N_bioclust<-length(unique(tabla$BIOCLUST))-1
@@ -809,6 +807,8 @@
   
   #OBJETO SALIDA 4
   write.table(NCATS, file = paste(resultados,"/numero_categorias_",pais,".txt",sep=""), sep = "\t", row.names = FALSE, qmethod = "double")
+  write("11.Terminado proceso de exportacion tabla categorias resultantes mapa ELC", file="Error/process_info.txt", append=TRUE)
+  
   
   ##Obtenci?n de estad?sticas descriptivas para cada categor?a ELc
   nbioclim<-length(bioclimv)
@@ -840,13 +840,334 @@
   #Exportar estad?sticas descriptivas
   write.table(estad, file = paste(resultados,"/Estadist_ELC_",pais,".txt",sep=""), sep = "\t", row.names = FALSE, qmethod = "double")
   write.table(estad, file = paste(resultados,"/Estadist_ELC_",pais,".xls",sep=""), sep = "\t", row.names = FALSE, qmethod = "double")
-  
-  #Exportar tabla de equivalencias Combinaci?n (Bio-Geo-Eda) y categor?a final mapa
-  colnames(elc)[2]<-"ELC_CAT"
-  write.table(estad, file = paste(resultados,"/Combi_ELC_",pais,".txt",sep=""), sep = "\t", row.names = FALSE, qmethod = "double")
-  write.table(estad, file = paste(resultados,"/Combi_ELC_",pais,".xls",sep=""), sep = "\t", row.names = FALSE, qmethod = "double")
-  
+  write("12.Terminado proceso de exportacion tabla estadisticas descriptivas mapa ELC", file="Error/process_info.txt", append=TRUE)
+  write("13.Proceso terminado exitosamente", file="Error/process_info.txt", append=TRUE)
+  setwd(resultados)
+  rm(tabla)
+  save.image("Producto.RData")
 }
 
 
+#############################################################################
+#############################################################################
+#############################################################################
+#Proyecci?n de categor?as bioclim?ticas de futuro
+#############################################################################
+#########################################
+#Carga de datos de parte anterior
+if(elcready){
+  gcm1<-gcm
+  ssp1<-ssp
+  proy1<-proy
+  iterarf1<-iterarf
+  transfer1<-transfer
+  pasaporte1<-pasaporte
+  tecogaps1<-tecogaps
+  ttresh1<-ttresh
+  resultados21<-resultados2
+  setwd(resultados)
+  load("Producto.RData")
+  gcm<-gcm1
+  ssp<-ssp1
+  proy<-proy1
+  iterarf<-iterarf1
+  transfer<-transfer1
+  pasaporte<-pasaporte1
+  tecogaps<-tecogaps1
+  ttresh<-ttresh1
+  resultados2<-resultados21
+  rm(gcm1)
+  rm(ssp1)
+  rm(proy1)
+  rm(iterarf1)
+  rm(transfer1)
+  rm(pasaporte1)
+  rm(tecogaps1)
+  rm(ttresh1)
+  rm(resultados21)
+}
+#
+setwd(paste(ruta))
+#Stack datos futuro bioclim?tico para todo Colombia / geof?sico y ed?fico presente
+
+pais<-tolower(pais)
+
+#Check del nombre del set de capas ecogeograficas en rdatamap
+#Carga del pais
+loadError<-FALSE
+abcd<-try(load("lista.paises.RData"),silent=TRUE)
+loadError <- (is(abcd, 'try-error')|is(abcd,'error'))
+if(loadError){
+  Paises<-read.delim("lista.paises.txt")
+}
+rm(abcd)
+rm(loadError)
+
+pais2<-data.frame(pais)
+colnames(pais2)[1]<-"Paises"
+
+abcd<-merge(Paises,pais2,by="Paises",all.y=TRUE)
+
+if(is.na(abcd[1,2])){
+  stop("pais parameter introduced by the user is not the expected, please check lista_paises.xlsx file for the correct option",call.=FALSE)
+}
+rm(abcd)
+rm(pais2)
+
+#carga capa de puntos
+#Bioclim futuro
+biocliml<-list()
+for(i in 1:length(bioclimv)){
+  biocliml[[i]]<-raster(paste(ruta,"/rdatamapsf/",pais,"/",gcm,"_",ssp,"_",proy,"/",resol,"/",bioclimv[i],".tif",sep=""))
+#names(biocliml[[i]])<-paste(bioclimv[i])
+}
+bioclimstackf<-do.call("stack",biocliml)
+#Extracci?n de informaci?n
+bioclimf<-extract(bioclimstackf,puntos[,c("POINT_X","POINT_Y")])
+bioclimf<-data.frame(cbind(puntos[,1],bioclimf))
+colnames(bioclimf)[1]<-"POINTID"
+############################################
+####predicci?n de clasificaci?n bioclim?tica a futuro con Random Forest
+#Tabla de predictores
+##Arreglo inicial para que coincidan tablas presente y futuro
+#eliminar NAs
+repeat{
+  bioclim<-na.omit(bioclim)
+  bioclimf<-na.omit(bioclimf)
+  if(length(bioclim[,1])<length(bioclimf[,1])){
+    bioclimenor<-data.frame(bioclim[,1])
+    colnames(bioclimenor)[1]<-"POINTID"
+    bioclimf<-merge(bioclimf,bioclimenor,by="POINTID",all.y=TRUE)
+    rm(bioclimenor)
+  }
+  if(length(bioclimf[,1])<length(bioclim[,1])){
+    bioclimenor<-data.frame(bioclimf[,1])
+    colnames(bioclimenor)[1]<-"POINTID"
+    bioclim<-merge(bioclim,bioclimenor,by="POINTID",all.y=TRUE)
+    rm(bioclimenor)
+  } 
+  if(all(!is.na(bioclim[,]))) {break}
+}
+#Eliminaci?n columnas inservibles
+bioclimpresent<-bioclim[,c(-1,as.numeric(paste("-",length(colnames(bioclim)),sep="")))]
+#Tabla donde predecir el patr?n encontrado por RF
+bioclimfuture<-bioclimf[,-1]
+colnames(bioclimfuture)[]<-colnames(bioclimpresent)
+#Response vector para RF (como factor para que asuma que es una clasificaci?n)
+BioCat<-as.factor(bioclim$BIOCLUST)
+#Determinaci?n patr?n RF de clasificaci?n bioclim?tica (ntree = 1000 error por memoria)
+RFpredict<-randomForest(bioclimpresent,y=BioCat,ntree=100)
+#Proyecci?n sobre datos bioclim de futuro
+RFpredict<-as.numeric(predict(RFpredict, bioclimfuture))
+#Tabla de variables originales bioclim de futuro y el grupo proyectado
+bioclimf<-data.frame(bioclimf[,1],bioclimfuture,RFpredict)
+#Renombrar variables y variable de grupo bioclim?tico
+colnames(bioclimf)[1]<-"POINTID"
+colnames(bioclimf)[ncol(bioclimf)]<-"BIOCLUST2"
+for(i in 2:(ncol(bioclimf)-1)){
+  colnames(bioclimf)[i]<-paste(colnames(bioclimf)[i],"_f",sep="")
+}
+rm(bioclimfuture)
+rm(bioclimpresent)
+
+######################################################################
+######################################################################
+#########################PARTE FINAL##################################
+
+#merge proyecci?n bioclim a futuro con tabla ELC de presente
+############
+###Aqu? cambiar el all.x all o all.y porque dependiendo del tama?o de la tabla m?s peque?a
+tabla<-merge(tablaf,bioclimf,by="POINTID",all.x=T)
+#Se crea la tabla de comparaci?n presente-futuro que luego se termina de llenar con futuro
+tablacomp<-tablaf[,c("POINTID","POINT_X","POINT_Y","ELC_CAT")]
+rm(tablaf)
+#Marcar como 0 celdas sin datos de geophys o edaph en BIOCLUST2
+for(i in 1:nrow(tabla)){
+  if(tabla$BIOCLUST[i]==0){
+    tabla$BIOCLUST2[i]<-0
+  }
+  if(is.na(tabla$BIOCLUST2[i])){
+    tabla$BIOCLUST2[i]<-0
+  }
+}
+
+##############################
+#Repetici?n de proceso creaci?n de combinaciones y asignaci?n
+#Primero, GEOCLUST y EDAPCLUST deben numeric
+GEOCLUST<-as.integer(tabla$GEOCLUST)
+#Buscar la columna GEOCLUST 
+posgeoclust<-which(colnames(tabla)=="GEOCLUST")
+#y reemplazar por la num?rica
+tabla<-cbind(tabla[,1:(posgeoclust-1)],GEOCLUST,tabla[,(posgeoclust+1):(ncol(tabla))])
+
+#Buscar manualmente la columna EDACLUST y reemplazar por la num?rica
+EDACLUST<-as.integer(tabla$EDACLUST)
+posedaclust<-which(colnames(tabla)=="EDACLUST")
+tabla<-cbind(tabla[,1:(posedaclust-1)],EDACLUST,tabla[,(posedaclust+1):(ncol(tabla))])
+
+rm(GEOCLUST)
+rm(EDACLUST)
+rm(posgeoclust)
+rm(posedaclust)
+
+################################
+#Repetici?n de generaci?n de combinaciones
+mapaelc2<-as.data.frame(matrix(nrow = length(tabla[,1]), ncol = 3))
+mapaelc2[,1]<-tabla[,1]
+colnames(mapaelc2)[1]<-"POINTID"
+colnames(mapaelc2)[2]<-"COMBI"
+for (i in 1:length(tabla[,1])) {
+  mapaelc2[i,2]<-ifelse(substr(tabla$BIOCLUST2[i],1,1)==0|substr(tabla$GEOCLUST[i],1,1)==0|substr(tabla$EDACLUST[i],1,1)==0,NA,
+                        paste(substr(tabla$BIOCLUST2[i],1,1),substr(tabla$GEOCLUST[i],1,1),substr(tabla$EDACLUST[i],1,1),sep=""))
+}
+
+################################################
+
+elc2<-subset(mapaelc2,!duplicated(COMBI),select=-POINTID)
+elc2<-subset(elc2,!is.na(COMBI))
+i <- order(elc2$COMBI)
+elc2<- elc2[i,]
+#Tabla de asignaci?n de las mismas categor?as a las combinaciones que las usadas en mapa ELC presente
+elc2<-merge(elc2,elc,by="COMBI",all=TRUE)
+elc2<-elc2[,c(1,3)]
+colnames(elc2)[2]<-"ELC_CAT2"
+######OJO
+#Se dan m?s combinaciones con futuro que con presente, se deben crear nuevas categor?as 9 seguido del valor combi
+if(nrow(elc2)>nrow(elc)){
+  for(i in 1:nrow(elc2)){
+    if(is.na(elc2$ELC_CAT2[i]))
+      elc2$ELC_CAT2[i]<-as.integer(paste(9,elc2$COMBI[i],sep=""))
+  }
+}
+mapaelc2<-mapaelc2[,1:2]
+#Asignaci?n
+mapaelc2<-merge(mapaelc2,elc2,by="COMBI")
+mapaelc2<-mapaelc2[,c(2,1,3)]
+colnames(mapaelc2)[2]<-"COMBI2"
+tabla<-merge(tabla,mapaelc2,by="POINTID",all.x=T)
+#Se rellenan igual los NA como categor?as 0
+tabla$ELC_CAT2[is.na(tabla$ELC_CAT2)]<-0
+tabla$BIOCLUST2[is.na(tabla$BIOCLUST2)]<-0
+#Creaci?n mapas
+mapaelc7<-rasterize(cbind(tabla[,2],tabla[,3]),mapaelc0,field=tabla$ELC_CAT2)
+mapaelc8<-rasterize(cbind(tabla[,2],tabla[,3]),mapaelc0,field=tabla$BIOCLUST2)
+
+#Exportar mapas (finalmente)
+crs(mapaelc7)<-"+proj=longlat"
+writeRaster(mapaelc7,filename=paste(resultados2,"/mapa_ssp",ssp,"_elcF_",pais,".grd",sep=""),overwrite=T,datatype='FLT4S')
+crs(mapaelc8)<-"+proj=longlat"
+writeRaster(mapaelc7,filename=paste(resultados2,"/mapa_ssp",ssp,"_elcF_DIVA_",pais,".grd",sep=""),overwrite=T,datatype='FLT4S')
+writeRaster(mapaelc7,filename=paste(resultados2,"/mapa_ssp",ssp,"_elcF_",pais,".tif",sep=""),overwrite=T,datatype='FLT4S')
+
+writeRaster(mapaelc8,filename=paste(resultados2,"/mapa_ssp",ssp,"_bioclimaticoF_",pais,".grd",sep=""),overwrite=T,datatype='FLT4S')
+writeRaster(mapaelc8,filename=paste(resultados2,"/mapa_ssp",ssp,"_bioclimaticoF_",pais,".tif",sep=""),overwrite=T,datatype='FLT4S')
+
+
+#Ahora tabla de cat bioclim?ticas de futuro
+tablabio<-data.frame(table(bioclimf$BIOCLUST2))
+colnames(tablabio)[1]<-"BIOCLIM_CATF"
+tablabioclim<-aggregate(bioclimf[,2:(ncol(bioclimf)-1)],by=list(bioclimf$BIOCLUST2),mean,na.rm=TRUE)
+colnames(tablabioclim)[1]<-"BIOCLIM_CATF"
+tablabioclim1<-aggregate(bioclimf[,2:(ncol(bioclimf)-1)],by=list(bioclimf$BIOCLUST2),min,na.rm=TRUE)
+colnames(tablabioclim1)[1]<-"BIOCLIM_CATF"
+tablabioclim2<-aggregate(bioclimf[,2:(ncol(bioclimf)-1)],by=list(bioclimf$BIOCLUST2),max,na.rm=TRUE)
+colnames(tablabioclim2)[1]<-"BIOCLIM_CATF"
+tablabioclim3<-aggregate(bioclimf[,2:(ncol(bioclimf)-1)],by=list(bioclimf$BIOCLUST2),sd,na.rm=TRUE)
+colnames(tablabioclim3)[1]<-"BIOCLIM_CATF"
+tablabioclim<-merge(tablabio,tablabioclim, by="BIOCLIM_CATF")
+tablabioclim<-merge(tablabioclim,tablabioclim1, by="BIOCLIM_CATF",suffixes=c(".media",".min"))
+tablabioclim2<-merge(tablabioclim2,tablabioclim3, by="BIOCLIM_CATF",suffixes=c(".max",".sd"))
+tablabioclim<-merge(tablabioclim,tablabioclim2, by="BIOCLIM_CATF")
+write.table(tablabioclim, file = paste(resultados2,"/Estadist_gcm",gcm,"_ssp",ssp,"_proy",proy,"_BIOCLIMF_",pais,".txt",sep=""), sep = "\t", row.names = FALSE, qmethod = "double")
+write.table(tablabioclim, file = paste(resultados2,"/Estadist_gcm",gcm,"_ssp",ssp,"_proy",proy,"_BIOCLIMF_",pais,".xls",sep=""), sep = "\t", row.names = FALSE, qmethod = "double")
+#Tabla completa de trabajo
+write.table(tabla, file = paste(resultados2,"/Tabla_ELCF_celdas_",pais,".txt",sep=""), sep = "\t", row.names = FALSE, qmethod = "double")
+
+#Completar tabla de comparaci?n
+tablacomp<-data.frame(tablacomp,tabla$ELC_CAT2)
+colnames(tablacomp)[ncol(tablacomp)]<-"ELC_CAT2"
+PRESvsFUT<-vector(mode="numeric")
+for(i in 1:nrow(tablacomp)){
+  if(tablacomp$ELC_CAT[i]==tablacomp$ELC_CAT2[i]){
+    PRESvsFUT[i]<-0
+  }
+  else{
+    PRESvsFUT[i]<-1
+  }
+  if(is.na(tablacomp$ELC_CAT[i])|is.na(tablacomp$ELC_CAT[i])|tablacomp$ELC_CAT[i]==0|tablacomp$ELC_CAT2[i]==0){
+    PRESvsFUT[i]<-NA
+  }
+}
+tablacomp2<-data.frame(tablacomp,PRESvsFUT)
+tablacomp2<-subset(tablacomp2,PRESvsFUT==1)
+
+#TablaFrecuencias de categor?as que cambian
+stats_comp<-data.frame(table(tablacomp2$ELC_CAT))
+colnames(stats_comp)[1]<-"ELC_CAT_present"
+write.table(stats_comp, file = paste(resultados2,"/stats_change_table.txt",sep=""), sep = "\t", row.names = FALSE, qmethod = "double")
+write.table(stats_comp, file = paste(resultados2,"/stats_change_table.xls",sep=""), sep = "\t", row.names = FALSE, qmethod = "double")
+
+
+#Mapas de cambio de categor?a
+mapaelc9<-rasterize(cbind(tablacomp2[,2],tablacomp2[,3]),mapaelc0,field=tablacomp2$ELC_CAT)
+crs(mapaelc9)<-"+proj=longlat"
+writeRaster(mapaelc9,filename=paste(resultados2,"/map_change_pres_",pais,".grd",sep=""),overwrite=T,datatype='FLT4S')
+mapaelc10<-rasterize(cbind(tablacomp2[,2],tablacomp2[,3]),mapaelc0,field=tablacomp2$ELC_CAT2)
+writeRaster(mapaelc9,filename=paste(resultados2,"/map_change_pres_",pais,".tif",sep=""),overwrite=T,datatype='FLT4S')
+crs(mapaelc10)<-"+proj=longlat"
+writeRaster(mapaelc10,filename=paste(resultados2,"/map_change_fut_",pais,".grd",sep=""),overwrite=T,datatype='FLT4S')
+writeRaster(mapaelc10,filename=paste(resultados2,"/map_change_fut_",pais,".tif",sep=""),overwrite=T,datatype='FLT4S')
+
+
+#Parte de Transfer zones
+if(transfer){
+  setwd(ruta)
+  pasaporte<-read.delim(paste(ruta,"/Pasaporte/",pasaporte,sep=""))
+  if(geoqual){
+    pasaporte<-subset(pasaporte,TOTALQUAL100>=totalqual)
+  }
+  setwd(resultados2)
+  PopsEndangered<-extract(mapaelc9,pasaporte[,c("DECLONGITUDE","DECLATITUDE")])
+  catactual2<-table(PopsEndangered)
+  if(length(catactual2)==0){
+    write(paste(), file="ResultadoTransferZones.txt", append=TRUE)
+    write("No populations occur in changing ELC categories areas", file="ResultadoTransferZones.txt", append=TRUE)
+    write("Ninguna poblaci?n cae en ?reas con categorias ELC cambiante", file="ResultadoTransferZones.txt", append=TRUE)
+  }
+  else{
+    BG_ELC_pres<-extract(mapaelc1,pasaporte[,c("DECLONGITUDE","DECLATITUDE")])
+    BG_ELC_fut<-extract(mapaelc7,pasaporte[,c("DECLONGITUDE","DECLATITUDE")])
+    pasaporte2<-data.frame(pasaporte,BG_ELC_pres,BG_ELC_fut,PopsEndangered)
+    pasaporte3<-subset(pasaporte2,PopsEndangered>=1)
+    buscarelc<-unique(pasaporte3$BG_ELC_fut)
+    Sources<-vector(length=nrow(pasaporte2),mode="numeric")
+    for(i in 1:nrow(pasaporte2)){
+      for(j in 1:length(buscarelc)){
+        if(!is.na(pasaporte2$BG_ELC_pres[i])&pasaporte2$BG_ELC_pres[i]==buscarelc[j]){
+          Sources[i]<-1
+        }
+      }
+    }
+    pasaporte2<-data.frame(pasaporte2,Sources)
+    #Aqu? viene lo diferente para tecogaps
+    if(tecogaps){
+      Priority<-vector(length=nrow(pasaporte2),mode="numeric")
+      for(i in 1:nrow(pasaporte2)){
+        if(!is.na(pasaporte2$GAPTYPE[i])&pasaporte2$GAPTYPE[i]<=ttresh&pasaporte2$Sources[i]==1){
+          Priority[i]<-1
+        }
+      }
+      pasaporte2<-data.frame(pasaporte2,Priority)
+      pasaporte2<-pasaporte2[,c("ACCENUMB","DECLATITUDE","DECLONGITUDE","GAPTYPE","BG_ELC_pres","BG_ELC_fut","PopsEndangered","Sources","Priority")]
+    }
+    if(!tecogaps){
+      pasaporte2<-pasaporte2[,c("ACCENUMB","DECLATITUDE","DECLONGITUDE","BG_ELC_pres","BG_ELC_fut","PopsEndangered","Sources")]
+    }
+    write.table(pasaporte2, file = paste(resultados2,"/TransferZoneAnalysis.txt",sep=""), sep = "\t", row.names = FALSE, qmethod = "double")
+    write.table(pasaporte2, file = paste(resultados2,"/TransferZoneAnalysis.xls",sep=""), sep = "\t", row.names = FALSE, qmethod = "double")
+    shapefile2<-SpatialPointsDataFrame(pasaporte2[,c(3,2)],pasaporte2[,c(-2,-3)])
+    shapefile2<- st_as_sf(shapefile2)
+    st_write(shapefile2,dsn=paste(resultados2),layer="MapTransferZone",driver="ESRI Shapefile")
+  }
+}
 
