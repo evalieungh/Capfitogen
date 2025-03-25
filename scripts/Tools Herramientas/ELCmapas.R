@@ -177,7 +177,7 @@ loadError<-FALSE
 abcd<-try(load("bioclim.RData"),silent=TRUE)
 loadError <- (is(abcd, 'try-error')|is(abcd,'error'))
 if(loadError){
-  bioclim<-read.delim("bioclim.txt")
+  bioclim<-read.delim("bioclim.txt",fileEncoding="latin1")
 }
 rm(abcd)
 rm(loadError)
